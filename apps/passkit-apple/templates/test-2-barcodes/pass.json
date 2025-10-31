@@ -1,0 +1,60 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-2-BARCODES",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Test 2: Barcodes Array - Exchange Reserve",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "title",
+        "label": "WELCOME",
+        "value": "Test 2"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "subtitle",
+        "label": "Exchange Reserve",
+        "value": "LocalFund LIFT Certificate"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "status",
+        "label": "Status",
+        "value": "Test 2: barcodes[]"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "about",
+        "label": "About",
+        "value": "Test 2: This pass adds the barcodes array field in addition to the singular barcode field. Testing if having both causes validation issues."
+      },
+      {
+        "key": "contact",
+        "label": "Contact",
+        "value": "hello@exchangereserve.org"
+      }
+    ]
+  },
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://exchangereserve.org/verify/TEST-2-BARCODES",
+    "messageEncoding": "iso-8859-1"
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.org/verify/TEST-2-BARCODES",
+      "messageEncoding": "iso-8859-1"
+    }
+  ],
+  "backgroundColor": "rgb(23, 99, 183)",
+  "foregroundColor": "rgb(0, 0, 0)",
+  "labelColor": "rgb(0, 0, 0)",
+  "sharingProhibited": false
+}

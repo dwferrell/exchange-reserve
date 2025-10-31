@@ -186,6 +186,37 @@
                 <a href="hello-world.pkpass" class="btn">📲 Add to Wallet</a>
             </div>
 
+            <div class="pass-card" style="border: 2px solid rgba(255, 255, 255, 0.3);">
+                <div>
+                    <span class="badge">🔬 Isolation Tests</span>
+                </div>
+                <h2>Test Series: Field-by-Field Validation</h2>
+                <p>Progressive test passes to isolate which field causes Safari download failures. Each test builds on the previous, adding one feature at a time.</p>
+
+                <div style="margin-top: 20px;">
+                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 1: logoText</strong> — Adds logoText field only</p>
+                    <a href="test-1-logotext.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 1</a>
+
+                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 2: barcodes[]</strong> — Adds barcodes array</p>
+                    <a href="test-2-barcodes.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 2</a>
+
+                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 3: relevantDate</strong> — Adds time-based notification date</p>
+                    <a href="test-3-relevantdate.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 3</a>
+
+                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 4: locations</strong> — Adds geofencing (HIGH SUSPECT)</p>
+                    <a href="test-4-locations.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 4</a>
+
+                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 5: semantics</strong> — Adds Apple Maps integration (no phone)</p>
+                    <a href="test-5-semantics-basic.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 5</a>
+
+                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 6: phone</strong> — Adds venuePhoneNumber to semantics</p>
+                    <a href="test-6-semantics-phone.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 6</a>
+
+                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 7: webService</strong> — Adds webServiceURL (HIGHEST SUSPECT)</p>
+                    <a href="test-7-webservice.pkpass" class="btn">📲 Test 7</a>
+                </div>
+            </div>
+
             <div class="notice">
                 <strong>📱 How to Install:</strong>
                 On iPhone, tap "Add to Wallet" above. The pass will open in Wallet app.<br>
