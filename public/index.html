@@ -157,6 +157,42 @@
         </header>
 
         <main>
+            <!-- iOS 26 Isolation Tests -->
+            <div class="pass-card" style="border: 3px solid rgba(255, 152, 0, 0.6);">
+                <div>
+                    <span class="badge" style="background: rgba(255, 152, 0, 0.4);">🧪 TEST 1</span>
+                    <span class="badge" style="background: rgba(33, 150, 243, 0.3);">Semantics + Dates</span>
+                </div>
+                <h2>Test: LIFT Certificate with eventStartDate/eventEndDate</h2>
+                <p>Testing if iOS 26 requires eventStartDate and eventEndDate in semantics block. Event Poster V2 has these; V3 doesn't.</p>
+                <a href="test-lift-semantics-dates.pkpass" class="btn">📲 Test 1: With Event Dates</a>
+                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-LIFT-SEMANTICS-DATES</p>
+            </div>
+
+            <div class="pass-card" style="border: 3px solid rgba(156, 39, 176, 0.6);">
+                <div>
+                    <span class="badge" style="background: rgba(156, 39, 176, 0.4);">🧪 TEST 2</span>
+                    <span class="badge" style="background: rgba(33, 150, 243, 0.3);">No Semantics</span>
+                </div>
+                <h2>Test: LIFT Certificate without semantics</h2>
+                <p>Testing if removing the entire semantics block resolves the issue.</p>
+                <a href="test-lift-no-semantics.pkpass" class="btn">📲 Test 2: No Semantics</a>
+                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-LIFT-NO-SEMANTICS</p>
+            </div>
+
+            <div class="pass-card" style="border: 3px solid rgba(0, 150, 136, 0.6);">
+                <div>
+                    <span class="badge" style="background: rgba(0, 150, 136, 0.4);">🧪 TEST 3</span>
+                    <span class="badge" style="background: rgba(33, 150, 243, 0.3);">Minimal Structure</span>
+                </div>
+                <h2>Test: Minimal LIFT Certificate (Hello World style)</h2>
+                <p>Testing with minimal eventTicket structure - just primary/secondary/auxiliary fields, no complex backFields or semantics.</p>
+                <a href="test-lift-minimal.pkpass" class="btn">📲 Test 3: Minimal</a>
+                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-LIFT-MINIMAL</p>
+            </div>
+
+            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+
             <div class="pass-card" style="border: 2px solid rgba(76, 175, 80, 0.4);">
                 <div>
                     <span class="badge" style="background: rgba(76, 175, 80, 0.4);">🎯 LIFT Certificate</span>

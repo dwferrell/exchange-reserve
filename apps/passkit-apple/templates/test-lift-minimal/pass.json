@@ -1,0 +1,47 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-LIFT-MINIMAL",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Test: Minimal LIFT Certificate",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "maturity",
+        "label": "MATURITY VALUE",
+        "value": "$3,780 USD"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "holder",
+        "label": "Holder",
+        "value": "Raul Hernandez"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "series",
+        "label": "Series",
+        "value": "2025Q4"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "about",
+        "label": "About",
+        "value": "Minimal LIFT Certificate test for iOS 26 validation. Testing if a simple structure works."
+      }
+    ]
+  },
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://exchangereserve.netlify.app/verify/TEST-LIFT-MINIMAL",
+    "messageEncoding": "iso-8859-1"
+  },
+  "backgroundColor": "#1763b7",
+  "foregroundColor": "#000000",
+  "labelColor": "#000000"
+}
