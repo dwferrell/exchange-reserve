@@ -51,7 +51,7 @@
     "messageEncoding": "iso-8859-1"
   },
   "backgroundColor": "rgb(23, 99, 183)",
-  "foregroundColor": "rgb(0, 40, 85)",
-  "labelColor": "rgb(23, 99, 183)",
+  "foregroundColor": "rgb(0, 0, 0)",
+  "labelColor": "rgb(40, 40, 40)",
   "sharingProhibited": false
 }
