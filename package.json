@@ -1,0 +1,33 @@
+{
+  "name": "exchange-reserve",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Exchange Reserve - Regenerative Capital Framework with Apple Wallet and Google Wallet Integration",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwferrell/exchange-reserve.git"
+  },
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api dev",
+    "build": "pnpm -r build",
+    "build:passes": "pnpm --filter passkit-apple build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r clean && rm -rf node_modules"
+  },
+  "keywords": [
+    "passkit",
+    "apple-wallet",
+    "google-wallet",
+    "regenerative-capital",
+    "monorepo"
+  ],
+  "author": "Exchange Reserve",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}

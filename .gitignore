@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+*.log
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Environment variables
+.env
+.env*.local
+.env.production
+
+# Certificates and Keys (IMPORTANT: Never commit these!)
+*.p12
+*.pem
+*.cer
+*.key
+**/certificates/*
+!**/certificates/.gitkeep
+
+# PassKit
+*.pkpass
+**/dist/*.pkpass
+manifest.json
+signature
+
+# OS
+.DS_Store
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-*
+.history/
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Misc
+*.tsbuildinfo
+.turbo/

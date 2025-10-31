@@ -1,0 +1,23 @@
+{
+  "name": "passkit-apple",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Apple Wallet PassKit generation for Exchange Reserve",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-pass.js",
+    "build:hello": "node scripts/build-pass.js hello-world",
+    "build:event": "node scripts/build-pass.js event-poster",
+    "verify": "node scripts/verify-pass.js",
+    "clean": "rm -rf dist/*.pkpass dist/temp"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.2",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
