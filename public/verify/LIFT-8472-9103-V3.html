@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFT Certificate Verification - LIFT-8472-9103-V3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1763b7 0%, #0d4685 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 32px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .status {
+            display: inline-block;
+            background: rgba(76, 175, 80, 0.3);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .field {
+            margin-bottom: 20px;
+        }
+        .label {
+            font-size: 12px;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .value {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        a:hover {
+            border-bottom-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <span class="status">✓ Verified</span>
+            <h1>LIFT Certificate</h1>
+            <p style="opacity: 0.9; margin-bottom: 24px;">Capitol Fund Series 2025Q4</p>
+
+            <div class="field">
+                <div class="label">Certificate ID</div>
+                <div class="value">LIFT-8472-9103-V3</div>
+            </div>
+
+            <div class="grid">
+                <div class="field">
+                    <div class="label">Holder</div>
+                    <div class="value">Raul Hernandez</div>
+                </div>
+                <div class="field">
+                    <div class="label">Maturity Value</div>
+                    <div class="value">$3,780 USD</div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="field">
+                    <div class="label">Issue Date</div>
+                    <div class="value">March 15, 2024</div>
+                </div>
+                <div class="field">
+                    <div class="label">Maturity Date</div>
+                    <div class="value">March 15, 2029</div>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="label">Term Details</div>
+                <div class="value" style="font-size: 16px;">60 month term • 20% growth by maturity</div>
+            </div>
+
+            <div class="field">
+                <div class="label">Engagement Phase</div>
+                <div class="value" style="font-size: 16px;">◉◉◉○○ Phase 1: Engagement</div>
+            </div>
+
+            <div class="field">
+                <div class="label">Selected Priorities</div>
+                <div>
+                    <span class="badge">Community Living</span>
+                    <span class="badge">Resilient Infrastructure</span>
+                    <span class="badge">Food & Farming</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 style="font-size: 20px; margin-bottom: 16px;">Issuer Information</h2>
+            <div class="field">
+                <div class="label">Offered Through</div>
+                <div class="value" style="font-size: 16px;">LocalFund — Capitol Fund (Series 2025Q4)</div>
+            </div>
+            <div class="field">
+                <div class="label">Registered In</div>
+                <div class="value" style="font-size: 16px;">Exchange Reserve PBLLC</div>
+            </div>
+            <div class="field">
+                <div class="label">Governed By</div>
+                <div class="value" style="font-size: 16px;">Legacy Impact Futures Trust (LIFT)</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <p style="font-size: 14px; opacity: 0.9; line-height: 1.6;">
+                This certificate has been verified against Exchange Reserve's meta-ledger.
+                For questions or to access your holder dashboard, visit
+                <a href="https://afluant.com">afluant.com</a> or contact
+                <a href="mailto:hello@exchangereserve.org">hello@exchangereserve.org</a>.
+            </p>
+        </div>
+
+        <div style="text-align: center; opacity: 0.7; margin-top: 32px; font-size: 14px;">
+            <p>Exchange Reserve / LocalFund</p>
+            <p style="margin-top: 8px;">Verified via meta-ledger • <a href="/">Return to passes</a></p>
+        </div>
+    </div>
+</body>
+</html>
