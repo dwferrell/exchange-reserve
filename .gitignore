@@ -29,6 +29,7 @@ dist/
 # PassKit
 *.pkpass
 **/dist/*.pkpass
+!public/*.pkpass
 manifest.json
 signature
 
