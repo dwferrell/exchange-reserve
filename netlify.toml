@@ -6,12 +6,12 @@
   publish = "public"
   command = "echo 'No build needed for Phase 1'"
 
-# Serve .pkpass files with correct MIME type
-# Note: No Content-Disposition header - let Safari handle pkpass files naturally
+# Serve .pkpass files with correct MIME type for Apple Wallet
 [[headers]]
   for = "/*.pkpass"
   [headers.values]
     Content-Type = "application/vnd.apple.pkpass"
+    Content-Disposition = "inline"
 
 # Security headers
 [[headers]]
