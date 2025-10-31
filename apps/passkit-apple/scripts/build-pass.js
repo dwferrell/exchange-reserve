@@ -60,13 +60,22 @@ async function generateManifest(passDir) {
 async function signManifest(passDir) {
   const manifestPath = path.join(passDir, 'manifest.json');
   const signaturePath = path.join(passDir, 'signature');
+  const certsDir = path.join(rootDir, 'certificates');
 
   try {
-    // Use security command to sign with keychain
-    const cmd = `security cms -S -N "Pass Type ID: ${PASS_TYPE_ID}" -i "${manifestPath}" -o "${signaturePath}"`;
+    // Use OpenSSL to sign with certificate and key files
+    const cmd = `openssl smime -binary -sign \
+      -certfile "${certsDir}/apple_wwdr_g4.pem" \
+      -signer "${certsDir}/signerCert-new.pem" \
+      -inkey "${certsDir}/signerKey.pem" \
+      -in "${manifestPath}" \
+      -out "${signaturePath}" \
+      -outform DER \
+      -passin pass:`;
+
     const { stdout, stderr } = await execAsync(cmd);
 
-    if (stderr) {
+    if (stderr && !stderr.includes('Signature')) {
       console.log('Signing output:', stderr);
     }
 
@@ -79,8 +88,8 @@ async function signManifest(passDir) {
     console.log(`✅ Signed manifest (signature size: ${stats.size} bytes)`);
   } catch (error) {
     console.error('❌ Signing failed:', error.message);
-    console.error('Make sure the certificate "Pass Type ID: pass.exchangereserve.lift" is in your keychain');
-    console.error('And that you have the private key associated with it');
+    console.error('Make sure certificates are in:', certsDir);
+    console.error('Required files: signerCert-new.pem, signerKey.pem, apple_wwdr_g4.pem');
     throw error;
   }
 }
