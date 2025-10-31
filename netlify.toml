@@ -1,0 +1,40 @@
+# Netlify configuration for Exchange Reserve
+
+[build]
+  # For now, we're just serving static files
+  # Later this will build Next.js app
+  publish = "public"
+  command = "echo 'No build needed for Phase 1'"
+
+# Serve .pkpass files with correct MIME type
+[[headers]]
+  for = "/*.pkpass"
+  [headers.values]
+    Content-Type = "application/vnd.apple.pkpass"
+    Content-Disposition = "attachment"
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Future: Next.js app rewrites
+# [[redirects]]
+#   from = "/api/*"
+#   to = "https://[YOUR-PROJECT].supabase.co/functions/v1/:splat"
+#   status = 200
+
+# Future: Pass verification endpoint
+# [[redirects]]
+#   from = "/verify/:serial"
+#   to = "/index.html"
+#   status = 200
+
+[context.production.environment]
+  NODE_VERSION = "18"
+
+[context.deploy-preview.environment]
+  NODE_VERSION = "18"

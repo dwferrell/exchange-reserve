@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Reserve - LIFT Certificates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1763b7 0%, #0d4685 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .pass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .pass-card h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .pass-card p {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .pass-card .features {
+            font-size: 13px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .pass-card .features li {
+            margin-left: 20px;
+            margin-bottom: 6px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #fff;
+            color: #1763b7;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-right: 8px;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            opacity: 0.7;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .notice {
+            background: rgba(255, 255, 255, 0.15);
+            border-left: 4px solid #fff;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 30px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .notice strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .pass-card {
+                padding: 20px;
+            }
+
+            .btn {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌱 Exchange Reserve</h1>
+            <p class="subtitle">LIFT Certificates — Regenerative Capital Framework</p>
+        </header>
+
+        <main>
+            <div class="pass-card">
+                <div>
+                    <span class="badge">✨ Featured</span>
+                    <span class="badge">🎫 Event Pass</span>
+                </div>
+                <h2>Impact Briefing — Capitol Fund</h2>
+                <p>Your exclusive Early Adopter certificate for the Capitol Fund Quarterly Update at Bell Tower Hall, Frederick, MD.</p>
+
+                <ul class="features">
+                    <li>📍 Geofencing: Get notified when you arrive at the venue</li>
+                    <li>⏰ Time-based reminders: Pass appears on lock screen 1 hour before</li>
+                    <li>🗺️ Apple Maps integration with directions</li>
+                    <li>📱 QR code for verification</li>
+                    <li>🔔 PassKit Web Service for real-time updates</li>
+                </ul>
+
+                <a href="event-poster.pkpass" class="btn">📲 Add to Wallet</a>
+            </div>
+
+            <div class="pass-card">
+                <div>
+                    <span class="badge">👋 Test Pass</span>
+                </div>
+                <h2>Hello World Pass</h2>
+                <p>A simple validation pass to test the PassKit integration and certificate signing chain.</p>
+
+                <a href="hello-world.pkpass" class="btn">📲 Add to Wallet</a>
+            </div>
+
+            <div class="notice">
+                <strong>📱 How to Install:</strong>
+                On iPhone, tap "Add to Wallet" above. The pass will open in Wallet app.<br>
+                <br>
+                <strong>🔐 Certificate Details:</strong>
+                Pass Type: pass.exchangereserve.lift<br>
+                Team ID: 5A984FTAG3<br>
+                Organization: Localight Inc. / LocalFund
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                Exchange Reserve / LocalFund<br>
+                <a href="https://exchangereserve.org">exchangereserve.org</a> •
+                <a href="mailto:hello@exchangereserve.org">Contact</a>
+            </p>
+            <p style="margin-top: 16px; font-size: 12px;">
+                Phase 1: PassKit Integration • Oct 2025
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
