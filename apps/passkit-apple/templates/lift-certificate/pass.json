@@ -1,0 +1,107 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "LIFT-8472-9103",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "LIFT Certificate — Capitol Fund Series 2025Q4",
+  "logoText": "LocalFund",
+  "generic": {
+    "headerFields": [
+      {
+        "key": "maturity",
+        "label": "Maturity Value",
+        "value": "$3,780 USD",
+        "textAlignment": "PKTextAlignmentCenter"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "certificate",
+        "label": "CERTIFICATE TYPE",
+        "value": "LIFT — Series 2025Q4"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "holder",
+        "label": "Holder",
+        "value": "Raul Hernandez",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "certId",
+        "label": "Certificate ID",
+        "value": "LIFT-8472-9103",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "issueDate",
+        "label": "Issue Date",
+        "value": "2024-03-15",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "maturityDate",
+        "label": "Maturity Date",
+        "value": "2029-03-15",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "term",
+        "label": "Term Details",
+        "value": "60 month term • 20% growth by maturity\n$250 deposited to date"
+      },
+      {
+        "key": "phase",
+        "label": "Engagement Phase",
+        "value": "◉◉◉○○ Phase 1 of 5: Engagement\n\nPhases: Engagement → Residency → Anchorship\n\nYour certificate unlocks access to Impact Briefings and priority allocation windows as you advance through holder phases."
+      },
+      {
+        "key": "priorities",
+        "label": "Selected Priorities",
+        "value": "Your contribution supports projects focused on:\n\n• Community Living\n• Resilient Infrastructure  \n• Food & Farming\n\nThese priorities guide Capitol Fund's investment strategy and impact measurement."
+      },
+      {
+        "key": "issuer",
+        "label": "Issuer Hierarchy",
+        "value": "Offered thru: LocalFund — Capitol Fund (Series 2025Q4)\n\nRegistered in: Exchange Reserve PBLLC\n\nGoverned by: Legacy Impact Futures Trust (LIFT)\n\nExchange Reserve acts as custodial issuer, signer, and meta-ledger for all REV Certificates. LIFT provides governance framework analogous to a REIT for regenerative capital."
+      },
+      {
+        "key": "verification",
+        "label": "Certificate Verification",
+        "value": "Verify authenticity and view full certificate details:\n\nhttps://exchangereserve.netlify.app/verify/LIFT-8472-9103\n\nThis pass receives automatic updates via Exchange Reserve's meta-ledger system for balance changes, milestone notifications, and new offering windows."
+      },
+      {
+        "key": "disclosures",
+        "label": "Trust Disclosures",
+        "value": "This certificate represents participation in a regenerative capital framework. It is not a traditional security or investment product. Maturity values are projections based on Capitol Fund performance and impact metrics.\n\nHolders may qualify for priority access to future offerings based on engagement phase and contribution history. Geographic restrictions may apply.\n\nFor complete terms, visit: https://exchangereserve.netlify.app/terms/lift-2025q4"
+      },
+      {
+        "key": "contact",
+        "label": "Contact & Support",
+        "value": "Exchange Reserve\nhello@exchangereserve.org\n\nQuestions about your certificate, holder benefits, or upcoming briefings? Contact us anytime.\n\nDashboard: https://afluant.com"
+      }
+    ]
+  },
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "Holder briefing at Bell Tower Hall - Capitol Fund Quarterly Update",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-15T17:00:00-05:00",
+  "maxDistance": 500,
+  "webServiceURL": "https://exchangereserve.netlify.app/api/v1/passes",
+  "authenticationToken": "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
+  "backgroundColor": "#1763b7",
+  "foregroundColor": "#000000",
+  "labelColor": "#000000",
+  "sharingProhibited": false
+}
