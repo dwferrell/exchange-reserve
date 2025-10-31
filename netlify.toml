@@ -7,11 +7,11 @@
   command = "echo 'No build needed for Phase 1'"
 
 # Serve .pkpass files with correct MIME type
+# Note: No Content-Disposition header - let Safari handle pkpass files naturally
 [[headers]]
   for = "/*.pkpass"
   [headers.values]
     Content-Type = "application/vnd.apple.pkpass"
-    Content-Disposition = "attachment"
 
 # Security headers
 [[headers]]
