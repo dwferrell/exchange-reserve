@@ -110,8 +110,8 @@
     "eventStartDate": "2025-11-15T18:00:00-05:00",
     "eventEndDate": "2025-11-15T20:00:00-05:00"
   },
-  "backgroundColor": "rgb(23, 99, 183)",
-  "foregroundColor": "rgb(0, 0, 0)",
-  "labelColor": "rgb(0, 0, 0)",
+  "backgroundColor": "#1763b7",
+  "foregroundColor": "#000000",
+  "labelColor": "#000000",
   "sharingProhibited": false
 }
