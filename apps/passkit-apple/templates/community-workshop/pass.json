@@ -1,0 +1,73 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "WORKSHOP-2025-001",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Regenerative Agriculture Workshop",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "WORKSHOP",
+        "value": "Regenerative Agriculture 101",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "location",
+        "label": "Location",
+        "value": "Bell Tower Hall",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "date",
+        "label": "Date",
+        "value": "2025-11-04T14:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium",
+        "timeStyle": "PKDateStyleShort",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "instructor",
+        "label": "Instructor",
+        "value": "Dr. Maria Santos"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "details",
+        "label": "Workshop Details",
+        "value": "Learn the fundamentals of regenerative agriculture and soil health.\n\nTopics:\n• Soil biology and carbon sequestration\n• Composting techniques\n• Crop rotation strategies\n\nMaterials provided. Please bring a notebook."
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/WORKSHOP-2025-001",
+      "messageEncoding": "iso-8859-1",
+      "altText": "WORKSHOP-2025-001"
+    }
+  ],
+  "semantics": {
+    "eventType": "PKEventTypeGeneric",
+    "eventName": "Regenerative Agriculture 101",
+    "venueName": "Bell Tower Hall",
+    "venueLocation": {
+      "latitude": 39.4143,
+      "longitude": -77.4105
+    },
+    "venuePhoneNumber": "+19492026850",
+    "eventStartDate": "2025-11-04T14:00:00-05:00",
+    "eventEndDate": "2025-11-04T16:00:00-05:00"
+  },
+  "backgroundColor": "#2d5016",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#a8d08d"
+}

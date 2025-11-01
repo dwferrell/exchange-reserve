@@ -1,0 +1,81 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "FILM-2025-001",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "The Future of Food - Documentary",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "movie",
+        "label": "FILM",
+        "value": "The Future of Food",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "theater",
+        "label": "Theater",
+        "value": "Alamo Drafthouse",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "showtime",
+        "label": "Showtime",
+        "value": "2025-11-03T20:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium",
+        "timeStyle": "PKDateStyleShort",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "screen",
+        "label": "Screen",
+        "value": "Theater 2"
+      },
+      {
+        "key": "runtime",
+        "label": "Runtime",
+        "value": "2h 15m"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "details",
+        "label": "Screening Details",
+        "value": "Documentary screening with Q&A session following the film.\n\nRuntime: 2 hours 15 minutes\nRating: NR (Not Rated)\n\nDoors open 30 minutes before showtime.\nTheater 2 - Reserved seating."
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/FILM-2025-001",
+      "messageEncoding": "iso-8859-1",
+      "altText": "FILM-2025-001"
+    }
+  ],
+  "semantics": {
+    "eventType": "PKEventTypeMovie",
+    "eventName": "The Future of Food",
+    "venueName": "Alamo Drafthouse Cinema",
+    "venueLocation": {
+      "latitude": 37.7694,
+      "longitude": -122.4631
+    },
+    "venuePhoneNumber": "+14155496753",
+    "eventStartDate": "2025-11-03T20:00:00-05:00",
+    "eventEndDate": "2025-11-03T22:15:00-05:00",
+    "duration": 135,
+    "originalLanguage": "en",
+    "genre": "Documentary"
+  },
+  "backgroundColor": "#1a1a1a",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffd700"
+}

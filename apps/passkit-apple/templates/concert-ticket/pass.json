@@ -1,0 +1,80 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "CONCERT-2025-001",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Summer Nights Music Festival",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Summer Nights Festival",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "location",
+        "label": "Venue",
+        "value": "The Fillmore",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "date",
+        "label": "Date",
+        "value": "2025-11-08T19:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium",
+        "timeStyle": "PKDateStyleShort",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "doors",
+        "label": "Doors Open",
+        "value": "6:00 PM"
+      },
+      {
+        "key": "section",
+        "label": "Section",
+        "value": "GA Floor"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "details",
+        "label": "Event Details",
+        "value": "Doors open at 6:00 PM. Show starts at 7:00 PM.\n\nLineup:\n• Indie Rock Collective\n• The Sonic Waves\n• DJ Midnight\n\nAll ages welcome. Bar with valid ID."
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/CONCERT-2025-001",
+      "messageEncoding": "iso-8859-1",
+      "altText": "CONCERT-2025-001"
+    }
+  ],
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Summer Nights Music Festival",
+    "venueName": "The Fillmore",
+    "venueLocation": {
+      "latitude": 37.7833,
+      "longitude": -122.4333
+    },
+    "venuePhoneNumber": "+14155677200",
+    "eventStartDate": "2025-11-08T19:00:00-05:00",
+    "eventEndDate": "2025-11-08T23:00:00-05:00",
+    "performers": ["Indie Rock Collective", "The Sonic Waves", "DJ Midnight"],
+    "genre": "Indie Rock"
+  },
+  "backgroundColor": "#2d1b4e",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#b794f6"
+}
