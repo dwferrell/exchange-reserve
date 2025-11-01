@@ -1,0 +1,115 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "LIFT-CERT-V5-COMPLETE",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "LIFT Certificate V5 — Series 2025Q4",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "maturity-value",
+        "label": "MATURITY VALUE",
+        "value": "$3,780 USD",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "holder",
+        "label": "Certificate Holder",
+        "value": "Raul Hernandez",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "phase",
+        "label": "Engagement Phase",
+        "value": "◉◉◉○○ Phase 3 of 5",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "series",
+        "label": "Series",
+        "value": "2025Q4"
+      },
+      {
+        "key": "maturity-date",
+        "label": "Maturity",
+        "value": "2029-03-15T00:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "certificate-details",
+        "label": "Certificate Details",
+        "value": "Certificate ID: LIFT-CERT-V5-COMPLETE\nHolder: Raul Hernandez\nSeries: 2025Q4\n\nIssue Date: October 31, 2025\nMaturity Date: March 15, 2029 (42 months)\n\nMaturity Value: $3,780 USD\nDeposited to Date: $250\nProjected Annual Growth: 20%\n\nThis certificate represents your participation in the Exchange Reserve regenerative capital framework through the Capitol Fund."
+      },
+      {
+        "key": "engagement-progress",
+        "label": "Engagement & Progression",
+        "value": "Current Phase: ◉◉◉○○ Engagement (Phase 3 of 5)\n\nProgression Path:\nPhase 1-2: Onboarding ✓\nPhase 3: Engagement ← You are here\nPhase 4: Residency (Next)\nPhase 5: Anchorship (Final)\n\nUnlocked Benefits:\n• Access to Impact Briefings\n• Priority event notifications\n• Community forum access\n\nNext Phase Unlocks:\n• Private placement access\n• Quarterly liquidity windows\n• Governance participation"
+      },
+      {
+        "key": "priorities-events",
+        "label": "Your Priorities & Upcoming Events",
+        "value": "Selected Impact Priorities:\n• Community Living\n• Resilient Infrastructure\n• Food & Farming\n\nYou'll receive invitations to learning events, private placements, and impact announcements aligned with these priorities.\n\nNext Impact Briefing:\nCapitol Fund Quarterly Update\nNovember 15, 2025 @ 6:00 PM\nBell Tower Hall, Frederick MD\n\nYou'll receive a geofenced notification when you're near the venue."
+      },
+      {
+        "key": "structure-verification",
+        "label": "Issuer Structure & Verification",
+        "value": "Organizational Hierarchy:\nLocalFund → Capitol Fund → Exchange Reserve → LIFT Trust\n\n• LocalFund: Community-facing brand\n• Capitol Fund: Regional capital pool\n• Exchange Reserve: Meta-ledger operator\n• LIFT Trust: Delaware Statutory Trust (DST) series\n\nVerify Certificate:\nhttps://exchangereserve.netlify.app/verify/LIFT-CERT-V5-COMPLETE\n\nScan QR code or visit link to view complete certificate details and transaction history."
+      },
+      {
+        "key": "support-disclosures",
+        "label": "Support & Trust Disclosures",
+        "value": "Contact & Support:\nEmail: hello@exchangereserve.org\nPhone: +1 (949) 202-6850\nWebsite: https://exchangereserve.org\nDashboard: https://afluant.com\n\nLegal Disclosure:\nThis certificate represents participation in a regenerative capital framework. It is not a traditional security or investment product. Maturity values are projections based on Capitol Fund performance and community impact metrics.\n\nHolders may qualify for priority access to future offerings based on engagement phase and contribution history. Geographic restrictions may apply.\n\nComplete Terms:\nhttps://exchangereserve.netlify.app/terms/lift-2025q4"
+      }
+    ]
+  },
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://exchangereserve.netlify.app/verify/LIFT-CERT-V5-COMPLETE",
+    "messageEncoding": "iso-8859-1",
+    "altText": "LIFT-CERT-V5-COMPLETE"
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/LIFT-CERT-V5-COMPLETE",
+      "messageEncoding": "iso-8859-1",
+      "altText": "LIFT-CERT-V5-COMPLETE"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "Upcoming Impact Briefing at Bell Tower Hall — Capitol Fund Quarterly Update",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-15T17:00:00-05:00",
+  "maxDistance": 500,
+  "webServiceURL": "https://exchangereserve.org/api/passes",
+  "authenticationToken": "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
+  "semantics": {
+    "eventType": "PKEventTypeGeneric",
+    "eventName": "LIFT Certificate — Series 2025Q4",
+    "venueName": "Exchange Reserve",
+    "venueLocation": {
+      "latitude": 39.4143,
+      "longitude": -77.4105
+    },
+    "venuePhoneNumber": "+19492026850",
+    "eventStartDate": "2025-10-31T00:00:00-04:00",
+    "eventEndDate": "2029-03-15T23:59:59-05:00"
+  },
+  "backgroundColor": "#1763b7",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#e3f2fd",
+  "sharingProhibited": false
+}

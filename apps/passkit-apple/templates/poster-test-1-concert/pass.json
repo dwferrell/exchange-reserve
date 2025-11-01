@@ -1,0 +1,107 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "POSTER-TEST-1-CONCERT",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Summer Nights Music Festival",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Summer Nights Festival",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "location",
+        "label": "Venue",
+        "value": "The Fillmore",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "date",
+        "label": "Date",
+        "value": "2025-11-08T19:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium",
+        "timeStyle": "PKDateStyleShort",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "doors",
+        "label": "Doors",
+        "value": "7:00 PM"
+      },
+      {
+        "key": "genre",
+        "label": "Genre",
+        "value": "Indie Rock"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "lineup",
+        "label": "Lineup",
+        "value": "Headliners:\n• Indie Rock Collective (9:00 PM)\n• The Sonic Waves (8:00 PM)\n• DJ Midnight (7:30 PM)\n\nDoors open at 7:00 PM. Show starts at 7:30 PM."
+      },
+      {
+        "key": "venue-info",
+        "label": "Venue Information",
+        "value": "The Fillmore\nSan Francisco, CA\n\nA legendary music venue hosting live performances since 1965."
+      },
+      {
+        "key": "ticket-details",
+        "label": "Ticket Details",
+        "value": "General Admission\nStanding Room Only\nAge: All ages welcome\n\nBarcode required for entry."
+      }
+    ]
+  },
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://exchangereserve.netlify.app/verify/POSTER-TEST-1-CONCERT",
+    "messageEncoding": "iso-8859-1",
+    "altText": "POSTER-TEST-1-CONCERT"
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/POSTER-TEST-1-CONCERT",
+      "messageEncoding": "iso-8859-1",
+      "altText": "POSTER-TEST-1-CONCERT"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 37.7833,
+      "longitude": -122.4333,
+      "relevantText": "You're near The Fillmore! Concert starts at 7:30 PM.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-08T18:30:00-05:00",
+  "maxDistance": 500,
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Summer Nights Music Festival",
+    "venueName": "The Fillmore",
+    "venueLocation": {
+      "latitude": 37.7833,
+      "longitude": -122.4333
+    },
+    "venuePhoneNumber": "+14155677200",
+    "eventStartDate": "2025-11-08T19:00:00-05:00",
+    "eventEndDate": "2025-11-08T23:00:00-05:00",
+    "performers": ["Indie Rock Collective", "The Sonic Waves", "DJ Midnight"],
+    "genre": "Indie Rock"
+  },
+  "backgroundColor": "#1a1a1a",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffd700",
+  "sharingProhibited": false
+}

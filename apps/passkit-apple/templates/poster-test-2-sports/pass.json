@@ -1,0 +1,109 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "POSTER-TEST-2-SPORTS",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Warriors vs Lakers - NBA Game",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "NBA GAME",
+        "value": "Warriors vs Lakers",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "location",
+        "label": "Arena",
+        "value": "Chase Center",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "date",
+        "label": "Date",
+        "value": "2025-11-10T19:30:00-08:00",
+        "dateStyle": "PKDateStyleMedium",
+        "timeStyle": "PKDateStyleShort",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "section",
+        "label": "Section",
+        "value": "114"
+      },
+      {
+        "key": "seat",
+        "label": "Seat",
+        "value": "Row 12, Seat 8"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "game-info",
+        "label": "Game Information",
+        "value": "Golden State Warriors vs Los Angeles Lakers\nNBA Regular Season\n\nTip-off: 7:30 PM PST\nDoors open: 6:00 PM\n\nSection 114, Row 12, Seat 8"
+      },
+      {
+        "key": "venue-info",
+        "label": "Venue Information",
+        "value": "Chase Center\nSan Francisco, CA\n\nHome of the Golden State Warriors.\nParking available at Lot A."
+      },
+      {
+        "key": "ticket-details",
+        "label": "Ticket Details",
+        "value": "Reserved Seating\nSection 114\n\nBarcode required for entry.\nNo refunds or exchanges."
+      }
+    ]
+  },
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://exchangereserve.netlify.app/verify/POSTER-TEST-2-SPORTS",
+    "messageEncoding": "iso-8859-1",
+    "altText": "POSTER-TEST-2-SPORTS"
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/POSTER-TEST-2-SPORTS",
+      "messageEncoding": "iso-8859-1",
+      "altText": "POSTER-TEST-2-SPORTS"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 37.7680,
+      "longitude": -122.3877,
+      "relevantText": "You're near Chase Center! Warriors vs Lakers tips off at 7:30 PM.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-10T18:00:00-08:00",
+  "maxDistance": 500,
+  "semantics": {
+    "eventType": "PKEventTypeSports",
+    "eventName": "Warriors vs Lakers",
+    "venueName": "Chase Center",
+    "venueLocation": {
+      "latitude": 37.7680,
+      "longitude": -122.3877
+    },
+    "venuePhoneNumber": "+14159713200",
+    "eventStartDate": "2025-11-10T19:30:00-08:00",
+    "eventEndDate": "2025-11-10T22:00:00-08:00",
+    "awayTeamName": "Los Angeles Lakers",
+    "homeTeamName": "Golden State Warriors",
+    "sport": "Basketball",
+    "leagueName": "NBA"
+  },
+  "backgroundColor": "#1763b7",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffd700",
+  "sharingProhibited": false
+}

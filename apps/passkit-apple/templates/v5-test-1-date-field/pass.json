@@ -1,0 +1,118 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "V5-TEST-1-DATE-FIELD",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "V5 Test 1: Date Field Format Fix",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "TEST 1",
+        "value": "Date Field Format Fix",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "holder",
+        "label": "Holder Status",
+        "value": "Early Adopter ⓢ2025Q4",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "venue",
+        "label": "Location",
+        "value": "Bell Tower Hall",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "date",
+        "label": "Date & Time",
+        "value": "2025-11-15T18:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium",
+        "timeStyle": "PKDateStyleShort",
+        "isRelative": false
+      },
+      {
+        "key": "maturity-date",
+        "label": "Maturity",
+        "value": "2029-03-15T00:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "about",
+        "label": "Test Purpose",
+        "value": "Test 1: Date Field Format Fix\n\nThis test validates that dateStyle works correctly with a date-only field when using full ISO 8601 datetime format.\n\nOriginal V5 Issue:\n• maturity-date used \"2029-03-15\" (date-only string)\n• Should be \"2029-03-15T00:00:00-05:00\" (full datetime)\n\nFixed in this test."
+      },
+      {
+        "key": "venue-details",
+        "label": "Venue Details",
+        "value": "Bell Tower Hall\nFrederick, Maryland\n\nWalking distance from downtown Frederick. Parking available on-site."
+      },
+      {
+        "key": "holder-info",
+        "label": "Your Certificate",
+        "value": "This LIFT Certificate represents your participation in Exchange Reserve's regenerative capital framework. As an Early Adopter, you have priority access to Impact Briefings and exclusive community events."
+      },
+      {
+        "key": "contact",
+        "label": "Contact",
+        "value": "hello@exchangereserve.org\n\nQuestions? Email us or visit:\nhttps://exchangereserve.org"
+      },
+      {
+        "key": "verification",
+        "label": "Test Verification",
+        "value": "This is Test 1 in the V5 isolation testing series.\n\nSerial Number: V5-TEST-1-DATE-FIELD"
+      }
+    ]
+  },
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://exchangereserve.netlify.app/verify/V5-TEST-1-DATE-FIELD",
+    "messageEncoding": "iso-8859-1",
+    "altText": "V5-TEST-1-DATE-FIELD"
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/V5-TEST-1-DATE-FIELD",
+      "messageEncoding": "iso-8859-1",
+      "altText": "V5-TEST-1-DATE-FIELD"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "Welcome to Bell Tower Hall! Your Impact Briefing starts soon.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-15T17:00:00-05:00",
+  "maxDistance": 500,
+  "webServiceURL": "https://exchangereserve.org/api/passes",
+  "authenticationToken": "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
+  "semantics": {
+    "eventType": "PKEventTypeGeneric",
+    "eventName": "V5 Test 1: Date Field Format",
+    "venueName": "Bell Tower Hall",
+    "venueLocation": {
+      "latitude": 39.4143,
+      "longitude": -77.4105
+    },
+    "venuePhoneNumber": "+19492026850",
+    "eventStartDate": "2025-11-15T18:00:00-05:00",
+    "eventEndDate": "2025-11-15T20:00:00-05:00"
+  },
+  "backgroundColor": "#1763b7",
+  "foregroundColor": "#000000",
+  "labelColor": "#000000",
+  "sharingProhibited": false
+}
