@@ -1,0 +1,92 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "LIFT-PHASE-LOCKED-2025Q4",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "LIFT Phase-Locked Journey Certificate",
+  "logoText": "LocalFund",
+  "storeCard": {
+    "headerFields": [
+      {
+        "key": "current-phase",
+        "label": "Current Phase",
+        "value": "Phase 3: Engagement"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "balance",
+        "label": "Certificate Value",
+        "value": "$3,780",
+        "currencyCode": "USD"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "progress",
+        "label": "Journey Progress",
+        "value": "60% Complete"
+      },
+      {
+        "key": "next-unlock",
+        "label": "Next Unlock",
+        "value": "18 months (Phase 4)"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "days-in-phase",
+        "label": "Days in Phase 3",
+        "value": "127 days"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "phase-1",
+        "label": "✓ Phase 1: Discovery (Complete)",
+        "value": "Duration: 90 days (Completed Nov 1, 2024)\nFlexible Commitment Window\n\nAchievements:\n• Initial investment: $3,000\n• Selected 3 impact priorities\n• Attended orientation briefing\n• No fees for adjustments during this phase\n\nYou successfully completed your discovery phase!"
+      },
+      {
+        "key": "phase-2",
+        "label": "✓ Phase 2: Foundation (Complete)",
+        "value": "Duration: 12 months (Completed Aug 1, 2025)\nBuilding Your Impact Foundation\n\nAchievements:\n• First quarterly briefing attended\n• Priority projects identified\n• Community connections established\n• Value growth: $3,000 → $3,420 (14%)\n\nFoundation phase complete! Moving to active engagement."
+      },
+      {
+        "key": "phase-3",
+        "label": "● Phase 3: Engagement (Current)",
+        "value": "Duration: 18 months (Started Aug 1, 2025)\nActive Community Participation\n\nCurrent Progress:\n• 127 days into phase (23%)\n• 2 learning events attended\n• 4 priority project updates received\n• Current value: $3,780 (26% total growth)\n\nWhat's Available Now:\n• Quarterly impact briefings\n• Priority learning events\n• Project site visits\n• Community networking\n\nNext: Phase 4 unlocks in 18 months with impact measurement tools!"
+      },
+      {
+        "key": "phase-4",
+        "label": "🔒 Phase 4: Impact (Locked)",
+        "value": "Duration: 18 months\nUnlocks: February 1, 2027 (18 months)\n\nThis phase is locked. You'll unlock exclusive features:\n• Direct project impact tracking\n• Enhanced measurement dashboard\n• Priority steering committee access\n• Advanced reporting tools\n\nKeep engaging in Phase 3 to unlock these benefits!"
+      },
+      {
+        "key": "phase-5",
+        "label": "🔒 Phase 5: Maturity (Locked)",
+        "value": "Duration: Until maturity\nUnlocks: August 1, 2028 (54 months)\nMatures: March 15, 2029\n\nFinal phase features:\n• Full certificate maturity ($3,780+)\n• Legacy impact report\n• Renewal options\n• Liquidity event planning\n\nStay committed to reach full maturity and maximum impact!"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/LIFT-PHASE-LOCKED-2025Q4",
+      "messageEncoding": "iso-8859-1",
+      "altText": "LIFT-PHASE-LOCKED-2025Q4"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "You're at Bell Tower Hall! Unlock more about your current phase during today's briefing.",
+      "distance": 100
+    }
+  ],
+  "backgroundColor": "#2e7d32",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#c8e6c9",
+  "sharingProhibited": false
+}

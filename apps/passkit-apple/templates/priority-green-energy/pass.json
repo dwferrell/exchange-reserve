@@ -1,0 +1,92 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "PRIORITY-GREEN-ENERGY-Q4-2025",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "Green Energy Priority Impact Update - Q4 2025",
+  "logoText": "LocalFund",
+  "coupon": {
+    "headerFields": [
+      {
+        "key": "priority",
+        "label": "Priority",
+        "value": "⚡ Green Energy"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "impact",
+        "label": "Quarterly Impact",
+        "value": "3 Solar Projects Funded!"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "homes",
+        "label": "Homes Powered",
+        "value": "47 households"
+      },
+      {
+        "key": "capacity",
+        "label": "Capacity",
+        "value": "215 kW installed"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "carbon",
+        "label": "Carbon Offset",
+        "value": "38 tons/year"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "q4-impact",
+        "label": "⚡ Q4 2025 Green Energy Impact",
+        "value": "Your Green Energy priority funding helped complete three major solar projects this quarter!\n\nTotal LIFT Pool Contribution: $42,150\nYour Share: ~$1,247 (33% of your $3,780 certificate)\n\nThis pooled funding leveraged $380,000 in additional financing to bring clean energy to our community."
+      },
+      {
+        "key": "project-1",
+        "label": "Project 1: Community Solar Garden Phase 2",
+        "value": "Location: Rural Frederick County\nCapacity: 150 kW\nStatus: ✓ Online October 2025\n\nImpact:\n• Powers 35 households\n• 25 tons CO2 offset/year\n• Subscriber program: 50 families\n• 20% savings on electric bills\n\nThis is the second phase of our successful community solar program, now serving 85 total households!"
+      },
+      {
+        "key": "project-2",
+        "label": "Project 2: Residential Rooftop Solar (3 Homes)",
+        "value": "Locations: Frederick City\nCapacity: 45 kW total (15 kW each)\nStatus: ✓ Installed September 2025\n\nImpact:\n• Powers 3 households (100% of needs)\n• 8 tons CO2 offset/year\n• Average savings: $1,800/year per home\n• All low-income homeowners\n\nThese installations were prioritized for income-qualified households with high energy burdens."
+      },
+      {
+        "key": "project-3",
+        "label": "Project 3: Nonprofit Solar (Local Food Bank)",
+        "value": "Location: Frederick Community Food Bank\nCapacity: 20 kW\nStatus: ✓ Installed November 2025\n\nImpact:\n• Powers refrigeration + operations\n• 5 tons CO2 offset/year\n• Savings: $2,400/year (reinvested in services)\n• Serves 2,000+ families/month\n\nReducing operating costs allows the food bank to serve more families in need!"
+      },
+      {
+        "key": "next-quarter",
+        "label": "Coming Next Quarter (Q1 2026)",
+        "value": "Exciting projects in the pipeline:\n\n• EV Charging Network (4 public stations)\n• Home Energy Efficiency Retrofit Program (12 homes)\n• Solar Carport (Community Center)\n• Battery Storage Pilot (2 installations)\n\nYour continued commitment to Green Energy priority is making a measurable difference in our climate goals!\n\nDetailed impact reports: exchangereserve.org/priorities/green-energy"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/priorities/green-energy/q4-2025",
+      "messageEncoding": "iso-8859-1",
+      "altText": "GREEN-ENERGY-Q4-2025"
+    }
+  },
+  "locations": [
+    {
+      "latitude": 39.3849,
+      "longitude": -77.3914,
+      "relevantText": "You're near the Community Solar Garden! Your Green Energy priority helped fund this project.",
+      "distance": 500
+    }
+  ],
+  "expirationDate": "2026-01-31T23:59:59-05:00",
+  "backgroundColor": "#388e3c",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#c8e6c9",
+  "sharingProhibited": false
+}

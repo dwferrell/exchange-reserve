@@ -1,0 +1,84 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "LIFT-REFERRAL-REWARDS-2025Q4",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "LIFT Referral Rewards Program",
+  "logoText": "LocalFund",
+  "storeCard": {
+    "headerFields": [
+      {
+        "key": "program",
+        "label": "Program",
+        "value": "Referral Rewards"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "balance",
+        "label": "Reward Balance",
+        "value": "$150",
+        "currencyCode": "USD"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "referrals",
+        "label": "Successful Referrals",
+        "value": "2 members"
+      },
+      {
+        "key": "pending",
+        "label": "Pending",
+        "value": "1 ($75)"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "lifetime",
+        "label": "Lifetime Earned",
+        "value": "$150"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "program-details",
+        "label": "How Referral Rewards Work",
+        "value": "Earn rewards for bringing new members to LIFT!\n\n💰 Reward Amount:\n• $75 per successful referral\n• Paid when friend's certificate activates\n• Applied as credit to your certificate\n\n🎯 Qualification:\nYour referral must:\n• Complete application\n• Purchase minimum $1,000 certificate\n• Complete 30-day discovery period\n• Use your unique referral code\n\nNo limit on referrals - earn unlimited rewards!"
+      },
+      {
+        "key": "your-referrals",
+        "label": "Your Referral History",
+        "value": "✓ Sarah Martinez (Nov 2024)\n  Status: Active member\n  Reward: $75 credited\n  Their certificate: $2,500\n\n✓ James Wilson (Oct 2025)\n  Status: Active member  \n  Reward: $75 credited\n  Their certificate: $5,000\n\n⏳ Emily Chen (Oct 2025)\n  Status: Discovery period (Day 28)\n  Reward: $75 pending\n  Activates: November 15, 2025\n\nTotal: 2 active + 1 pending = 3 referrals"
+      },
+      {
+        "key": "your-referral-code",
+        "label": "Your Unique Referral Link",
+        "value": "Share your personalized link:\n\nhttps://exchangereserve.org/join?ref=ALEX-BENNETT-2024\n\nOr use QR code on front of pass\n\n📱 Easy sharing:\n• Text the link to friends\n• Post on social media\n• Email to connections\n• Show QR code in person\n\nFriends get $25 bonus when they use your link!"
+      },
+      {
+        "key": "tier-bonuses",
+        "label": "Tier Bonus Rewards",
+        "value": "Earn bonus rewards based on your tier:\n\n🥉 Bronze: $75 per referral (standard)\n⭐ Silver: $75 + 10% bonus = $82.50 (You!)\n🏆 Gold: $75 + 25% bonus = $93.75\n\nYour current bonus: +10% (Silver tier)\nNext bonus level: +25% at Gold ($10K)\n\nYou've earned $150 total\nWith Gold tier would have earned: $187.50\nPotential increase: +$37.50"
+      },
+      {
+        "key": "reward-usage",
+        "label": "Using Your Rewards",
+        "value": "Current balance: $150\n\nYou can use rewards for:\n✓ Apply to certificate (increases value)\n✓ Purchase additional certificate\n✓ Gift to another member\n✓ Donate to community project\n✓ Event registration credits\n\nRewards never expire!\n\nApply rewards: exchangereserve.org/rewards\nQuestions: rewards@exchangereserve.org"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.org/join?ref=ALEX-BENNETT-2024",
+      "messageEncoding": "iso-8859-1",
+      "altText": "ALEX-BENNETT-2024"
+    }
+  ],
+  "backgroundColor": "#00897b",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#b2dfdb",
+  "sharingProhibited": false
+}

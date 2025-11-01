@@ -180,6 +180,246 @@
 
             <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
 
+            <!-- StoreCard Prototypes Section -->
+            <div style="background: rgba(76, 175, 80, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 2px solid rgba(76, 175, 80, 0.4);">
+                <h2 style="margin-bottom: 10px; font-size: 28px;">🏪 StoreCard Prototypes - LIFT Certificates</h2>
+                <p style="opacity: 0.9; margin-bottom: 20px;">Exploring PassKit's <code>storeCard</code> pass type for LIFT Certificates with balance tracking, tiered membership, phase progression, and engagement gamification.</p>
+
+                <!-- V6 StoreCard Base -->
+                <div class="pass-card" style="border: 2px solid rgba(25, 118, 210, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(25, 118, 210, 0.6);">🎯 V6 - StoreCard Base</span>
+                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">Balance Tracking</span>
+                    </div>
+                    <h3>LIFT Certificate V6 - StoreCard Format</h3>
+                    <p>Converted from eventTicket to storeCard with proper balance tracking and value display.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>💰 Primary field: Maturity Value ($3,780 with currency formatting)</li>
+                        <li>📊 Phase progression: ◉◉◉○○ Engagement (3 of 5)</li>
+                        <li>📅 Maturity date with proper date formatting</li>
+                        <li>🎯 Next milestone tracking</li>
+                        <li>📋 5 backFields: Certificate Details, Phase Progress, Priorities, Structure, Support</li>
+                    </ul>
+                    <a href="lift-certificate-v6-storecard.pkpass" class="btn">📲 Add V6 StoreCard</a>
+                </div>
+
+                <!-- Phase-Locked Journey -->
+                <div class="pass-card" style="border: 2px solid rgba(46, 125, 50, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(46, 125, 50, 0.6);">🔒 Phase-Locked</span>
+                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">Progressive Unlock</span>
+                    </div>
+                    <h3>Phase-Locked Journey Certificate</h3>
+                    <p>Shows only unlocked phases with locked future phases. Reveals next phase as user progresses.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>✓ Phase 1 & 2: Complete (visible details)</li>
+                        <li>● Phase 3: Current (60% progress, 127 days in phase)</li>
+                        <li>🔒 Phase 4 & 5: Locked (unlocks at milestones)</li>
+                        <li>🎯 Phase 1: 90-day flexible commitment window</li>
+                        <li>📈 Journey progress tracking</li>
+                    </ul>
+                    <a href="phase-locked-journey.pkpass" class="btn">📲 Add Phase-Locked Pass</a>
+                </div>
+
+                <!-- Tiered Membership -->
+                <div class="pass-card" style="border: 2px solid rgba(33, 150, 243, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.6);">⭐ Silver Tier</span>
+                        <span class="badge" style="background: rgba(255, 215, 0, 0.3);">Tiered Benefits</span>
+                    </div>
+                    <h3>Tiered Membership Pass</h3>
+                    <p>Visual tier differentiation with Bronze/Silver/Gold levels based on certificate value.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>⭐ Current: Silver tier ($3,000-$9,999)</li>
+                        <li>📊 Progress to Gold: $6,220 remaining</li>
+                        <li>🎁 10 active Silver benefits</li>
+                        <li>🏆 Gold tier preview (unlocks at $10K)</li>
+                        <li>📈 Tier history tracking</li>
+                    </ul>
+                    <a href="tiered-membership.pkpass" class="btn">📲 Add Tiered Membership</a>
+                </div>
+
+                <!-- Engagement Score -->
+                <div class="pass-card" style="border: 2px solid rgba(123, 31, 162, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(123, 31, 162, 0.6);">🎮 Gamified</span>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">Level 7</span>
+                    </div>
+                    <h3>Engagement Score Tracker</h3>
+                    <p>Gamified pass showing engagement metrics, points balance, achievements, and community rank.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>🏆 Level 7 Contributor (2,450 points)</li>
+                        <li>📊 Community rank: Top 15%</li>
+                        <li>🔥 87-day active streak</li>
+                        <li>🎯 12 of 25 achievements unlocked</li>
+                        <li>📈 Leaderboard positioning</li>
+                    </ul>
+                    <a href="engagement-score-tracker.pkpass" class="btn">📲 Add Score Tracker</a>
+                </div>
+
+                <!-- Milestone Celebration -->
+                <div class="pass-card" style="border: 2px solid rgba(211, 47, 47, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(211, 47, 47, 0.6);">🎉 1-Year Milestone</span>
+                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">Celebration</span>
+                    </div>
+                    <h3>Milestone Celebration Pass</h3>
+                    <p>Special pass celebrating 1-year membership anniversary with impact summary and exclusive event invite.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>🎊 Year-one impact statistics</li>
+                        <li>💰 Value growth: +26% ($3,780)</li>
+                        <li>🏆 Achievements: 18 projects supported</li>
+                        <li>🎁 Exclusive 1-year member celebration event</li>
+                        <li>🔮 Year-two preview</li>
+                    </ul>
+                    <a href="milestone-celebration.pkpass" class="btn">📲 Add Milestone Pass</a>
+                </div>
+
+                <!-- Referral Rewards -->
+                <div class="pass-card" style="border: 2px solid rgba(0, 137, 123, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(0, 137, 123, 0.6);">🤝 Referrals</span>
+                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">$150 Balance</span>
+                    </div>
+                    <h3>Referral Rewards Pass</h3>
+                    <p>Track referrals made, reward balance, and earn bonus credits for bringing new members.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>💰 Reward balance: $150 ($75 per referral)</li>
+                        <li>✓ 2 successful referrals + 1 pending</li>
+                        <li>📱 Unique referral link QR code</li>
+                        <li>⭐ Tier bonus: +10% (Silver)</li>
+                        <li>🎁 Multiple reward redemption options</li>
+                    </ul>
+                    <a href="referral-rewards.pkpass" class="btn">📲 Add Referral Rewards</a>
+                </div>
+
+                <!-- Impact Portfolio -->
+                <div class="pass-card" style="border: 2px solid rgba(21, 101, 192, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(21, 101, 192, 0.6);">📊 Portfolio</span>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">18 Projects</span>
+                    </div>
+                    <h3>Impact Portfolio Dashboard</h3>
+                    <p>Aggregated view of all funded projects across three priorities with impact metrics.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>💰 Total community impact: $127,450</li>
+                        <li>📈 Your contribution: $3,780 (3% of pool)</li>
+                        <li>🏘️ 18 projects (12 active, 6 completed)</li>
+                        <li>👥 1,240+ people impacted</li>
+                        <li>🌱 Detailed breakdown by priority</li>
+                    </ul>
+                    <a href="impact-portfolio.pkpass" class="btn">📲 Add Impact Portfolio</a>
+                </div>
+
+                <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
+                    💡 <strong>Testing Goal:</strong> These storeCard prototypes explore balance tracking, tiered membership, phase progression, gamification, and portfolio management features for LIFT Certificates.
+                </p>
+            </div>
+
+            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+
+            <!-- Coupon Prototypes Section -->
+            <div style="background: rgba(255, 152, 0, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 2px solid rgba(255, 152, 0, 0.4);">
+                <h2 style="margin-bottom: 10px; font-size: 28px;">🎫 Coupon Prototypes - Priority Impact Updates</h2>
+                <p style="opacity: 0.9; margin-bottom: 20px;">Exploring PassKit's <code>coupon</code> pass type for quarterly priority impact updates, project achievements, and engagement opportunities.</p>
+
+                <!-- Green Energy -->
+                <div class="pass-card" style="border: 2px solid rgba(56, 142, 60, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(56, 142, 60, 0.6);">⚡ Green Energy</span>
+                        <span class="badge" style="background: rgba(255, 215, 0, 0.3);">Q4 2025</span>
+                    </div>
+                    <h3>Green Energy Priority Impact - Q4 2025</h3>
+                    <p>Quarterly impact update: 3 solar projects funded, 47 homes powered, 215 kW installed.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>⚡ 3 solar projects completed this quarter</li>
+                        <li>🏠 47 households powered</li>
+                        <li>🌱 38 tons CO2 offset/year</li>
+                        <li>📍 Location-based: Near Community Solar Garden</li>
+                        <li>🗓️ Expires: Jan 31, 2026 (quarterly update)</li>
+                    </ul>
+                    <a href="priority-green-energy.pkpass" class="btn">📲 Add Green Energy Update</a>
+                </div>
+
+                <!-- Affordable Housing -->
+                <div class="pass-card" style="border: 2px solid rgba(216, 67, 21, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(216, 67, 21, 0.6);">🏠 Affordable Housing</span>
+                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">12 Units!</span>
+                    </div>
+                    <h3>Affordable Housing Major Milestone - Q4 2025</h3>
+                    <p>Big achievement: 12 workforce housing units completed and fully occupied in Frederick!</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>🏠 12 apartments completed (100% occupied)</li>
+                        <li>👨‍👩‍👧‍👦 12 families housed at 60% AMI</li>
+                        <li>💰 $600/month rent savings vs market</li>
+                        <li>🎉 Ribbon cutting: Dec 8 @ 2 PM</li>
+                        <li>📍 Location-based: Near project site</li>
+                    </ul>
+                    <a href="priority-affordable-housing.pkpass" class="btn">📲 Add Housing Update</a>
+                </div>
+
+                <!-- City Infrastructure -->
+                <div class="pass-card" style="border: 2px solid rgba(255, 111, 0, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(255, 111, 0, 0.6);">🏗️ Infrastructure</span>
+                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">2 Projects</span>
+                    </div>
+                    <h3>City Infrastructure Impact - Q4 2025</h3>
+                    <p>Protected bike lanes (1.2 miles) + pocket park restoration (0.5 acres) completed.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>🚴 Protected bike lanes: 1.2 miles downtown</li>
+                        <li>🌳 Pocket park restored: 0.5 acres</li>
+                        <li>👥 850+ daily users combined</li>
+                        <li>🌱 50,000 gal/year stormwater captured</li>
+                        <li>🎯 Guided bike tour: Dec 12 @ 10 AM</li>
+                    </ul>
+                    <a href="priority-city-infrastructure.pkpass" class="btn">📲 Add Infrastructure Update</a>
+                </div>
+
+                <!-- Triple Priority Dashboard -->
+                <div class="pass-card" style="border: 2px solid rgba(106, 27, 154, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(106, 27, 154, 0.6);">📊 All 3 Priorities</span>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">Dashboard</span>
+                    </div>
+                    <h3>Triple Priority Dashboard - Q4 2025</h3>
+                    <p>Combined impact across all three selected priorities with aggregate metrics.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>🏘️ Community Living: 6 active projects</li>
+                        <li>⚡ Green Energy: 5 active projects (3 completed Q4)</li>
+                        <li>🏠 Affordable Housing: 6 active projects (1 completed Q4)</li>
+                        <li>👥 380+ people directly impacted</li>
+                        <li>💰 28:1 social ROI ($106K leveraged from $3,780)</li>
+                    </ul>
+                    <a href="triple-priority-dashboard.pkpass" class="btn">📲 Add Triple Dashboard</a>
+                </div>
+
+                <!-- Priority Unlock -->
+                <div class="pass-card" style="border: 2px solid rgba(245, 124, 0, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(245, 124, 0, 0.6);">🎯 Quarterly Review</span>
+                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">Update Available</span>
+                    </div>
+                    <h3>Priority Review & Update Coupon</h3>
+                    <p>Quarterly opportunity to review and update your three impact priorities (expires Dec 31).</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>🔄 Update your 3 priorities quarterly</li>
+                        <li>📋 12 total priorities available to choose from</li>
+                        <li>🆕 New option: Digital Equity</li>
+                        <li>📅 Deadline: December 31, 2025</li>
+                        <li>🔗 Direct link to update form (QR code)</li>
+                    </ul>
+                    <a href="priority-unlock-coupon.pkpass" class="btn">📲 Add Priority Review</a>
+                </div>
+
+                <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
+                    💡 <strong>Testing Goal:</strong> These coupon prototypes explore quarterly impact updates, project achievements, location-based activation, and priority engagement for pooled funding model.
+                </p>
+            </div>
+
+            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+
             <!-- Apple-Style Event Passes Section -->
             <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 30px;">
                 <h2 style="margin-bottom: 10px; font-size: 28px;">🎫 Apple-Style Event Passes</h2>

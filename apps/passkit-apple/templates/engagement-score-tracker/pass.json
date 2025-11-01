@@ -1,0 +1,96 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "LIFT-ENGAGEMENT-SCORE-2025Q4",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "LIFT Engagement Score Tracker",
+  "logoText": "LocalFund",
+  "storeCard": {
+    "headerFields": [
+      {
+        "key": "level",
+        "label": "Level",
+        "value": "Level 7"
+      },
+      {
+        "key": "rank",
+        "label": "Community Rank",
+        "value": "Top 15%"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "score",
+        "label": "Engagement Score",
+        "value": "2,450 points"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "next-level",
+        "label": "To Level 8",
+        "value": "550 points (22%)"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "streak",
+        "label": "Active Streak",
+        "value": "87 days"
+      },
+      {
+        "key": "achievements",
+        "label": "Achievements",
+        "value": "12 unlocked"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "scoring-system",
+        "label": "How Engagement Scoring Works",
+        "value": "Earn points for meaningful participation in the LIFT community:\n\n• Attend Impact Briefing: 100 pts\n• Complete Learning Event: 75 pts\n• Visit Project Site: 50 pts\n• Read Impact Report: 25 pts\n• Refer New Member: 200 pts\n• Update Priorities: 10 pts\n• Daily Login: 5 pts\n\nYour current score: 2,450 points (Level 7)\nAll-time rank: Top 15% of community"
+      },
+      {
+        "key": "activity-breakdown",
+        "label": "Your Activity (Last 90 Days)",
+        "value": "✓ Impact Briefings: 2 attended (200 pts)\n✓ Learning Events: 3 completed (225 pts)\n✓ Project Visits: 1 site tour (50 pts)\n✓ Impact Reports: 4 read (100 pts)\n✓ Referrals: 1 successful (200 pts)\n✓ Priority Updates: 2 changes (20 pts)\n✓ Daily Engagement: 87 day streak (435 pts)\n\nTotal earned: 1,230 points this quarter\nYou're 23% more active than average!"
+      },
+      {
+        "key": "achievements",
+        "label": "🏆 Unlocked Achievements",
+        "value": "✓ First Steps (Complete orientation)\n✓ Community Builder (Refer first member)\n✓ Learning Enthusiast (Attend 3 events)\n✓ Impact Observer (Visit project site)\n✓ Consistent Contributor (30 day streak)\n✓ Quarter Champion (87 day streak)\n✓ Knowledge Seeker (Read 4 reports)\n✓ Priority Focused (Select 3 priorities)\n✓ Silver Status (Reach Silver tier)\n✓ Level 5 Master (Reach Level 5)\n✓ Level 7 Expert (Reach Level 7)\n✓ Top 20% Club (Community rank)\n\n12 of 25 achievements unlocked\nNext: Century Club (100 day streak)"
+      },
+      {
+        "key": "level-benefits",
+        "label": "Level 7 Benefits",
+        "value": "Current level unlocks:\n• Priority event registration\n• Exclusive Level 7+ networking channel\n• Quarterly bonus: +5% engagement points\n• Special badge on community forum\n• Early access to new features\n\nNext Level (8) unlocks:\n• VIP event access\n• Double referral bonuses\n• Impact advisory council nomination\n• +10% engagement point bonus"
+      },
+      {
+        "key": "leaderboard",
+        "label": "Community Leaderboard (This Month)",
+        "value": "1. Jordan Smith - Level 12 (4,890 pts)\n2. Maria Santos - Level 11 (4,120 pts)\n3. David Chen - Level 10 (3,650 pts)\n...\n24. You - Level 7 (2,450 pts) ⭐\n...\n\nYou're in the top 15% of 167 active members!\nKeep engaging to climb the leaderboard."
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/LIFT-ENGAGEMENT-SCORE-2025Q4",
+      "messageEncoding": "iso-8859-1",
+      "altText": "LIFT-ENGAGEMENT-SCORE-2025Q4"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "Earn 100 engagement points by checking in at today's event!",
+      "distance": 100
+    }
+  ],
+  "backgroundColor": "#7b1fa2",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ce93d8",
+  "sharingProhibited": false
+}

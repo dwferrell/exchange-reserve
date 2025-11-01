@@ -1,0 +1,93 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "PRIORITY-INFRASTRUCTURE-Q4-2025",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "City Infrastructure Priority Impact - Q4 2025",
+  "logoText": "LocalFund",
+  "coupon": {
+    "headerFields": [
+      {
+        "key": "priority",
+        "label": "Priority",
+        "value": "🏗️ City Infrastructure"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "impact",
+        "label": "Quarterly Impact",
+        "value": "2 Projects Launched"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "bike-lanes",
+        "label": "Bike Lanes",
+        "value": "1.2 miles added"
+      },
+      {
+        "key": "green-space",
+        "label": "Green Space",
+        "value": "0.5 acres restored"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "beneficiaries",
+        "label": "Daily Users",
+        "value": "850+ people"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "q4-summary",
+        "label": "🏗️ Q4 Infrastructure Achievements",
+        "value": "Your City Infrastructure priority funded two transformative projects improving mobility and green space in downtown Frederick!\n\nTotal LIFT Contribution: $46,900\nYour Share: ~$1,286 (34% of certificate)\n\nThese projects make our city more livable, sustainable, and connected."
+      },
+      {
+        "key": "project-1",
+        "label": "Project 1: Downtown Protected Bike Lanes",
+        "value": "Route: Market Street Corridor\nLength: 1.2 miles\nStatus: ✓ Complete October 2025\n\nFeatures:\n• Protected bike lanes (both directions)\n• 8 new bike parking corrals\n• Green-painted intersections\n• LED street lighting\n• ADA-compliant curb cuts\n\nImpact:\n• Daily cyclists: 320+ (up from 80)\n• 400% increase in bike commuting\n• Reduced car trips: ~500/day\n• Carbon savings: 12 tons/year\n• Zero bike accidents since opening\n\n\"I can finally bike safely to work with my kids to daycare. This changed our daily routine!\" - Parent commuter\n\nYour funding helped make Frederick a bike-friendly city!"
+      },
+      {
+        "key": "project-2",
+        "label": "Project 2: Pocket Park Restoration",
+        "value": "Location: Corner of Church & Market\nSize: 0.5 acres\nStatus: ✓ Reopened November 2025\n\nImprovements:\n• Native plantings (pollinator garden)\n• Stormwater bioswales\n• Accessible pathways\n• Community gathering space\n• Public art installation\n• Free WiFi\n\nImpact:\n• Daily visitors: 530+ people\n• Stormwater captured: 50,000 gal/year\n• Native plants: 2,400+ installed\n• Pollinator species: 47 documented\n• Community events hosted: 12/year\n\nThis forgotten corner is now a vibrant community hub and environmental asset!"
+      },
+      {
+        "key": "leverage-story",
+        "label": "📊 Funding Leverage Success",
+        "value": "Your pooled LIFT contribution unlocked major public funding:\n\nTotal Project Costs: $620,000\n• Bike lanes: $480,000\n• Pocket park: $140,000\n\nFunding Sources:\n• LIFT Pool: $46,900 (7.6%)\n• State Transportation Grant: $350,000\n• City Capital Budget: $150,000\n• Private Donations: $73,100\n\nYour $1,286 leveraged $12,950 in public/private funding - a 10:1 ratio!\n\nLIFT's early commitment gave the city confidence to pursue state grants."
+      },
+      {
+        "key": "tour-invitation",
+        "label": "🚴 Guided Infrastructure Tour",
+        "value": "See your impact firsthand!\n\nDowntown Infrastructure Tour\nDecember 12, 2025 @ 10:00 AM\nMeet: Bell Tower Hall\n\nTour includes:\n• Guided bike ride on new protected lanes\n• Pocket park visit with landscape designer\n• Meet transportation planning team\n• Discussion: Future infrastructure priorities\n• Lunch at local restaurant\n\nBikes provided or bring your own!\nRSVP: tours@exchangereserve.org\n\nShow this pass for priority registration.\n\nExperience how your City Infrastructure priority is reshaping Frederick for sustainable, livable growth!"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/priorities/infrastructure/q4-2025",
+      "messageEncoding": "iso-8859-1",
+      "altText": "INFRASTRUCTURE-Q4-2025"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4147,
+      "longitude": -77.4111,
+      "relevantText": "You're on Market Street! Check out the new protected bike lanes your City Infrastructure priority helped fund.",
+      "distance": 300
+    }
+  ],
+  "relevantDate": "2025-12-12T10:00:00-05:00",
+  "expirationDate": "2026-01-31T23:59:59-05:00",
+  "backgroundColor": "#ff6f00",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffe0b2",
+  "sharingProhibited": false
+}

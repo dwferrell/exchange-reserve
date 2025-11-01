@@ -1,0 +1,92 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "LIFT-MILESTONE-1YEAR-2025",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "LIFT 1-Year Milestone Celebration",
+  "logoText": "LocalFund",
+  "storeCard": {
+    "headerFields": [
+      {
+        "key": "milestone",
+        "label": "Milestone",
+        "value": "🎉 1 Year!"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "achievement",
+        "label": "Congratulations!",
+        "value": "One Year Member"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "joined",
+        "label": "Member Since",
+        "value": "November 1, 2024"
+      },
+      {
+        "key": "growth",
+        "label": "Value Growth",
+        "value": "+26% ($3,780)"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "next-milestone",
+        "label": "Next Milestone",
+        "value": "2 Years (11 months)"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "celebration",
+        "label": "🎊 Your First Year with LIFT!",
+        "value": "November 1, 2024 - November 1, 2025\n\nYou've completed an incredible first year as a LIFT certificate holder! This special milestone pass celebrates your commitment to regenerative capital and community impact.\n\nYou're invited to our exclusive 1-Year Member Celebration event!"
+      },
+      {
+        "key": "year-one-stats",
+        "label": "Your Year One Impact",
+        "value": "💰 Certificate Value: $3,000 → $3,780 (+26%)\n📊 Phase Progress: Discovery → Foundation → Engagement\n🎓 Learning Events: 5 attended\n📍 Project Visits: 2 site tours\n🤝 Referrals: 1 new member\n📧 Impact Reports: 12 received & read\n⭐ Tier Achievement: Silver Member\n🏆 Engagement Score: Level 7 (Top 15%)\n\nYou've made a real difference this year!"
+      },
+      {
+        "key": "community-impact",
+        "label": "Community Impact: Your Priorities",
+        "value": "Your $3,000+ certificate helped fund:\n\n🏘️ Community Living\n• 3 co-housing feasibility studies\n• 1 intentional community land purchase\n• 2 community center improvements\n\n⚡ Green Energy & Climate\n• 5 solar installations (residential)\n• 1 community solar garden\n• 3 energy efficiency retrofits\n\n🏠 Affordable Housing\n• 12 units completed in Frederick, MD\n• 2 rehab projects (8 units)\n• 1 land bank acquisition\n\nTotal projects supported: 18 across your priorities"
+      },
+      {
+        "key": "exclusive-invite",
+        "label": "🎁 Exclusive 1-Year Member Event",
+        "value": "You're invited to:\n\n1-Year Member Celebration\nDecember 15, 2025 @ 5:00 PM\nBell Tower Hall, Frederick MD\n\nEvent includes:\n• Special recognition ceremony\n• Year-one impact showcase\n• Networking with fellow 1-year members\n• Preview of Year 2 opportunities\n• Celebration dinner\n• Commemorative gift\n\nRSVP required: events@exchangereserve.org\nShow this pass for VIP check-in!"
+      },
+      {
+        "key": "looking-ahead",
+        "label": "Looking Ahead: Year Two",
+        "value": "What's next in your LIFT journey?\n\n📅 Next 12 Months:\n• Continue Phase 3: Engagement (7 months remaining)\n• Unlock Phase 4: Impact (Feb 2027)\n• Target value: $4,200+ (11% projected growth)\n• Path to Gold tier ($10K milestone)\n• Enhanced engagement opportunities\n\nNext major milestone: 2-Year Anniversary (Nov 2026)\n\nThank you for your commitment to regenerative capital!"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/LIFT-MILESTONE-1YEAR-2025",
+      "messageEncoding": "iso-8859-1",
+      "altText": "LIFT-MILESTONE-1YEAR-2025"
+    }
+  },
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "Welcome to your 1-Year Celebration! Show this milestone pass for VIP check-in.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-12-15T17:00:00-05:00",
+  "backgroundColor": "#d32f2f",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffcdd2",
+  "sharingProhibited": false
+}

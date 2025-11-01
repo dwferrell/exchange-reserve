@@ -1,0 +1,88 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "LIFT-IMPACT-PORTFOLIO-2025Q4",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "LIFT Impact Portfolio Dashboard",
+  "logoText": "LocalFund",
+  "storeCard": {
+    "headerFields": [
+      {
+        "key": "portfolio",
+        "label": "Portfolio",
+        "value": "18 Projects"
+      },
+      {
+        "key": "updated",
+        "label": "Updated",
+        "value": "Nov 2025"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "impact-value",
+        "label": "Total Community Impact",
+        "value": "$127,450"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "your-contribution",
+        "label": "Your Contribution",
+        "value": "$3,780 (3%)"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "active-projects",
+        "label": "Active",
+        "value": "12 ongoing"
+      },
+      {
+        "key": "completed",
+        "label": "Completed",
+        "value": "6 finished"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "portfolio-overview",
+        "label": "Your Impact Portfolio",
+        "value": "Your $3,780 certificate is pooled with other LIFT members to fund regenerative projects across your three selected priorities.\n\nTotal Pool: $127,450 (42 members)\nYour Share: 3% of pool\nProjects Funded: 18 total\n• Active: 12 projects\n• Completed: 6 projects\n\nUpdated monthly with new project data"
+      },
+      {
+        "key": "priority-1",
+        "label": "🏘️ Community Living (33% allocation)",
+        "value": "Your contribution: ~$1,247 (33% of $3,780)\n\nActive Projects (4):\n1. Frederick Co-Housing Collective\n   Status: Construction phase\n   Impact: 24 units planned\n   \n2. Bell Tower Community Center Renovation\n   Status: Design complete\n   Impact: 500+ weekly visitors\n   \n3. Urban Farm Commons Land Purchase\n   Status: Closing Nov 2025\n   Impact: 3-acre shared space\n   \n4. Tool Library Startup\n   Status: Pilot program\n   Impact: 50 members, 200+ tools\n\nCompleted (2):\n✓ Community Kitchen Feasibility Study\n✓ Shared Housing Policy Research"
+      },
+      {
+        "key": "priority-2",
+        "label": "⚡ Green Energy & Climate (33% allocation)",
+        "value": "Your contribution: ~$1,247 (33% of $3,780)\n\nActive Projects (5):\n1. Community Solar Garden Phase 2\n   Status: Installation underway\n   Impact: 2.5 MW capacity\n   \n2. Residential Solar Program (5 homes)\n   Status: 3 installed, 2 pending\n   Impact: 40 kW total\n   \n3. Energy Efficiency Retrofit Program\n   Status: Audits complete\n   Impact: 12 homes scheduled\n   \n4. Electric Vehicle Charging Network\n   Status: Permitting phase\n   Impact: 4 public stations\n   \n5. Climate Action Plan Development\n   Status: Community input phase\n   Impact: County-wide strategy\n\nCompleted (2):\n✓ Home Energy Audit Training\n✓ Solar Feasibility Assessments"
+      },
+      {
+        "key": "priority-3",
+        "label": "🏠 Affordable Housing (33% allocation)",
+        "value": "Your contribution: ~$1,247 (33% of $3,780)\n\nActive Projects (3):\n1. Downtown Apartments Rehabilitation\n   Status: Construction phase 2\n   Impact: 8 units at 60% AMI\n   \n2. First-Time Homebuyer Fund\n   Status: Active lending\n   Impact: 3 families assisted\n   \n3. Land Bank Acquisitions\n   Status: 2 properties secured\n   Impact: Future affordable development\n\nCompleted (2):\n✓ Frederick Workforce Housing (12 units)\n✓ Mobile Home Park Stabilization\n\nCompleted Projects Impact:\n• 12 workforce housing units\n• 15 families stabilized\n• 100% occupancy rate"
+      },
+      {
+        "key": "impact-metrics",
+        "label": "📊 Aggregate Impact Metrics",
+        "value": "Across all 18 projects:\n\n👥 People Impacted: 1,240+ individuals\n🏘️ Housing Units: 44 total (32 complete, 12 in progress)\n⚡ Clean Energy: 2.54 MW generated\n🌱 Carbon Offset: 180 tons CO2/year\n💼 Jobs Created: 67 construction + operations\n📈 Leveraged Funding: $4.2M total ($127K LIFT + $4.1M other)\n🎯 ROI (Social): 33:1 ratio\n\nYour $3,780 contribution helped leverage $106,000 in additional funding!\n\nDetailed reports: exchangereserve.org/impact"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/impact/LIFT-IMPACT-PORTFOLIO-2025Q4",
+      "messageEncoding": "iso-8859-1",
+      "altText": "LIFT-IMPACT-PORTFOLIO-2025Q4"
+    }
+  },
+  "backgroundColor": "#1565c0",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#bbdefb",
+  "sharingProhibited": false
+}

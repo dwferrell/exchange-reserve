@@ -1,0 +1,93 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "PRIORITY-HOUSING-Q4-2025",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "Affordable Housing Priority Impact - Q4 2025",
+  "logoText": "LocalFund",
+  "coupon": {
+    "headerFields": [
+      {
+        "key": "priority",
+        "label": "Priority",
+        "value": "🏠 Affordable Housing"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "impact",
+        "label": "Quarterly Achievement",
+        "value": "12 Units Completed!"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "location",
+        "label": "Project",
+        "value": "Frederick, MD"
+      },
+      {
+        "key": "families",
+        "label": "Families Housed",
+        "value": "12 households"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "affordability",
+        "label": "Affordability",
+        "value": "60% AMI"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "q4-achievement",
+        "label": "🏠 Major Milestone: 12 Units Complete!",
+        "value": "Your Affordable Housing priority just achieved a major milestone - 12 workforce housing units completed and fully occupied in downtown Frederick!\n\nProject: Frederick Workforce Apartments\nTotal LIFT Contribution: $38,500\nYour Share: ~$1,247 (33% of certificate)\n\nRibbon Cutting Ceremony:\nDecember 8, 2025 @ 2:00 PM\nYou're invited! RSVP: events@exchangereserve.org"
+      },
+      {
+        "key": "project-details",
+        "label": "Frederick Workforce Apartments",
+        "value": "Location: 425 W Patrick Street, Frederick\nUnits: 12 apartments (1BR & 2BR)\nStatus: ✓ 100% occupied (Nov 2025)\n\nAffordability:\n• Rent: $900-$1,200/month\n• Target: 60% Area Median Income\n• Below market rate by 40%\n\nBuilding Features:\n• Historic rehabilitation project\n• Energy efficient (LEED Silver)\n• Transit-oriented location\n• Ground floor retail spaces\n• Community room\n\nThis project transformed a vacant historic building into quality affordable housing!"
+      },
+      {
+        "key": "resident-impact",
+        "label": "Meet Your Neighbors",
+        "value": "12 families now call this home:\n\n• 5 single parents with children\n• 3 seniors on fixed income\n• 2 young professional couples\n• 2 essential workers (nurse, teacher)\n\nAverage household:\n• Income: $32,000-$48,000/year\n• Rent savings: $600/month vs market\n• Within walking distance of work\n\n\"This apartment changed my life. As a single mom, I couldn't find anything affordable near my job. Now I'm 10 minutes from work and my daughter's school.\" - Sarah M., Resident\n\nYour LIFT certificate directly helped house these families!"
+      },
+      {
+        "key": "financial-structure",
+        "label": "📊 How Your Funding Worked",
+        "value": "Total Project Cost: $2.4 million\n\nFunding Structure:\n• LIFT Pool: $38,500 (1.6%)\n• Community Development Loan: $500,000\n• Tax Credit Equity: $1,200,000\n• Developer Equity: $400,000\n• City Grant: $261,500\n\nYour $1,247 share helped leverage $75,000 in additional funding - a 60:1 ratio!\n\nThis is the power of pooled regenerative capital - small contributions create big impact."
+      },
+      {
+        "key": "visit-invitation",
+        "label": "🎉 Ribbon Cutting & Site Tour",
+        "value": "You're invited to celebrate this achievement!\n\nRibbon Cutting Ceremony\nDecember 8, 2025 @ 2:00 PM\n425 W Patrick Street, Frederick MD\n\nEvent Schedule:\n• 2:00 PM - Welcome & Opening Remarks\n• 2:15 PM - LIFT Member Recognition\n• 2:30 PM - Ribbon Cutting\n• 2:45 PM - Guided Building Tours\n• 3:30 PM - Meet the Residents Reception\n• 4:00 PM - Q&A with Development Team\n\nRSVP: events@exchangereserve.org\nShow this pass for VIP access!\n\nSee your impact in action and meet the families you helped house."
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/priorities/housing/frederick-workforce",
+      "messageEncoding": "iso-8859-1",
+      "altText": "HOUSING-Q4-2025"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4168,
+      "longitude": -77.4136,
+      "relevantText": "You're near Frederick Workforce Apartments! Your Affordable Housing priority helped fund these 12 units. Ribbon cutting Dec 8 @ 2 PM.",
+      "distance": 200
+    }
+  ],
+  "relevantDate": "2025-12-08T14:00:00-05:00",
+  "expirationDate": "2026-01-31T23:59:59-05:00",
+  "backgroundColor": "#d84315",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffccbc",
+  "sharingProhibited": false
+}
