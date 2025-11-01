@@ -1,0 +1,92 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "LEARNING-COMMUNITY-001",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Co-Housing & Intentional Communities Workshop",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "workshop",
+        "label": "LEARNING EVENT",
+        "value": "Co-Housing & Community Living",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "venue",
+        "label": "Location",
+        "value": "Bell Tower Hall",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "date",
+        "label": "Date",
+        "value": "2025-11-09T14:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium",
+        "timeStyle": "PKDateStyleShort",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "instructor",
+        "label": "Facilitator",
+        "value": "Diana Chen"
+      },
+      {
+        "key": "priority",
+        "label": "Priority",
+        "value": "Community Living"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "description",
+        "label": "Workshop Overview",
+        "value": "Explore models for co-housing, intentional communities, and collaborative living arrangements.\n\nTopics:\n• Legal structures for community land trusts\n• Shared resource management\n• Governance models and decision-making\n• Financial planning for co-housing\n• Case studies from successful communities\n\n3-hour interactive workshop with Q&A.\nMaterials and light refreshments provided."
+      },
+      {
+        "key": "lift-priority",
+        "label": "LIFT Priority Connection",
+        "value": "This learning event is offered to LIFT Certificate holders who selected 'Community Living' as a priority interest.\n\nAs a holder, you receive:\n• Free access to priority learning events\n• Early notification of related private placements\n• Invitations to community site visits\n• Access to facilitator network\n\nYour LIFT Certificate phase progression is enhanced by event participation."
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/LEARNING-COMMUNITY-001",
+      "messageEncoding": "iso-8859-1",
+      "altText": "LEARNING-COMMUNITY-001"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "Community Living Workshop at Bell Tower Hall starting at 2:00 PM",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-09T13:30:00-05:00",
+  "maxDistance": 500,
+  "semantics": {
+    "eventType": "PKEventTypeGeneric",
+    "eventName": "Co-Housing & Community Living Workshop",
+    "venueName": "Bell Tower Hall",
+    "venueLocation": {
+      "latitude": 39.4143,
+      "longitude": -77.4105
+    },
+    "venuePhoneNumber": "+19492026850",
+    "eventStartDate": "2025-11-09T14:00:00-05:00",
+    "eventEndDate": "2025-11-09T17:00:00-05:00"
+  },
+  "backgroundColor": "#6a1b9a",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ce93d8"
+}

@@ -1,0 +1,92 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "LEARNING-FOOD-001",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Regenerative Agriculture Deep Dive",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "workshop",
+        "label": "LEARNING EVENT",
+        "value": "Regenerative Agriculture",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "venue",
+        "label": "Location",
+        "value": "Bell Tower Hall",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "date",
+        "label": "Date",
+        "value": "2025-11-06T10:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium",
+        "timeStyle": "PKDateStyleShort",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "instructor",
+        "label": "Instructor",
+        "value": "Dr. Maria Santos"
+      },
+      {
+        "key": "priority",
+        "label": "Priority",
+        "value": "Food & Farming"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "description",
+        "label": "Workshop Overview",
+        "value": "Comprehensive workshop on regenerative agriculture principles and practices.\n\nTopics:\n• Soil biology and carbon sequestration\n• Composting and nutrient cycling\n• Crop rotation and polyculture\n• No-till farming techniques\n• Water management and conservation\n• Farm-to-market distribution models\n\nFull-day workshop with hands-on demonstrations.\nLunch provided from local regenerative farms."
+      },
+      {
+        "key": "lift-priority",
+        "label": "LIFT Priority Connection",
+        "value": "This learning event is offered to LIFT Certificate holders who selected 'Food & Farming' as a priority interest.\n\nAs a holder, you receive:\n• Free access to priority learning events\n• Farm visit opportunities\n• Early access to agricultural investments\n• Connections to local food producers\n• Impact reports from funded projects\n\nYour LIFT Certificate phase progression is enhanced by event participation."
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/LEARNING-FOOD-001",
+      "messageEncoding": "iso-8859-1",
+      "altText": "LEARNING-FOOD-001"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "Regenerative Agriculture Workshop at Bell Tower Hall starting at 10:00 AM",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-06T09:30:00-05:00",
+  "maxDistance": 500,
+  "semantics": {
+    "eventType": "PKEventTypeGeneric",
+    "eventName": "Regenerative Agriculture Deep Dive",
+    "venueName": "Bell Tower Hall",
+    "venueLocation": {
+      "latitude": 39.4143,
+      "longitude": -77.4105
+    },
+    "venuePhoneNumber": "+19492026850",
+    "eventStartDate": "2025-11-06T10:00:00-05:00",
+    "eventEndDate": "2025-11-06T17:00:00-05:00"
+  },
+  "backgroundColor": "#2d5016",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#a8d08d"
+}

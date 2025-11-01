@@ -1,0 +1,92 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "LEARNING-INFRA-001",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Resilient Infrastructure Field Tour",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "tour",
+        "label": "LEARNING EVENT",
+        "value": "Resilient Infrastructure Tour",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "venue",
+        "label": "Meeting Point",
+        "value": "Bell Tower Hall",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "date",
+        "label": "Date",
+        "value": "2025-11-12T09:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium",
+        "timeStyle": "PKDateStyleShort",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "guide",
+        "label": "Tour Guide",
+        "value": "Marcus Johnson, P.E."
+      },
+      {
+        "key": "priority",
+        "label": "Priority",
+        "value": "Infrastructure"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "description",
+        "label": "Tour Overview",
+        "value": "Half-day field tour of resilient infrastructure projects in Frederick County.\n\nSites:\n• Community microgrid and solar installation\n• Rainwater harvesting system\n• Greywater recycling facility\n• Permeable pavement demonstration\n• Bioswale stormwater management\n\nTransportation provided. Wear comfortable walking shoes.\nTour runs 9:00 AM - 1:00 PM with lunch included."
+      },
+      {
+        "key": "lift-priority",
+        "label": "LIFT Priority Connection",
+        "value": "This field tour is offered to LIFT Certificate holders who selected 'Resilient Infrastructure' as a priority interest.\n\nAs a holder, you receive:\n• Free access to priority learning events\n• Technical briefings from project engineers\n• Early access to infrastructure investments\n• Site visit reports and technical data\n\nYour LIFT Certificate phase progression is enhanced by event participation."
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/LEARNING-INFRA-001",
+      "messageEncoding": "iso-8859-1",
+      "altText": "LEARNING-INFRA-001"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "Infrastructure Tour departs from Bell Tower Hall at 9:00 AM",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-12T08:30:00-05:00",
+  "maxDistance": 500,
+  "semantics": {
+    "eventType": "PKEventTypeGeneric",
+    "eventName": "Resilient Infrastructure Field Tour",
+    "venueName": "Bell Tower Hall",
+    "venueLocation": {
+      "latitude": 39.4143,
+      "longitude": -77.4105
+    },
+    "venuePhoneNumber": "+19492026850",
+    "eventStartDate": "2025-11-12T09:00:00-05:00",
+    "eventEndDate": "2025-11-12T13:00:00-05:00"
+  },
+  "backgroundColor": "#d84315",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffccbc"
+}
