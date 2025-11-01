@@ -1,0 +1,222 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "SBJF-2025-SEASON",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "South Bay Jazz Festival - Season Pass",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "South Bay Jazz Festival",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "gate",
+        "label": "Gate",
+        "value": "3",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "section",
+        "label": "Sec",
+        "value": "100",
+        "textAlignment": "PKTextAlignmentCenter"
+      },
+      {
+        "key": "row",
+        "label": "Row",
+        "value": "3",
+        "textAlignment": "PKTextAlignmentCenter"
+      },
+      {
+        "key": "seat",
+        "label": "Seat",
+        "value": "5",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "venue",
+        "label": "Venue",
+        "value": "The Stadium"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "terms",
+        "label": "Terms & Conditions",
+        "value": "Season pass valid for all South Bay Jazz Festival events. See website for complete terms and conditions.\n\nNo refunds or exchanges. Pass is non-transferable except through official transfer link."
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/SBJF-2025-SEASON",
+      "messageEncoding": "iso-8859-1",
+      "altText": "SBJF-2025-SEASON"
+    }
+  ],
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "South Bay Jazz Festival",
+    "venueName": "The Stadium",
+    "venueLocation": {
+      "latitude": 37.334859,
+      "longitude": -122.009040
+    },
+    "venuePhoneNumber": "+14155551234",
+    "venueEntrance": "Gate 3",
+    "seats": [
+      {
+        "seatSection": "100",
+        "seatRow": "3",
+        "seatNumber": "5"
+      }
+    ]
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "bossa-nova",
+      "name": "Bossa Nova",
+      "dateInformation": {
+        "date": "2025-06-16T18:00:00-08:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Bossa Nova",
+        "venueName": "The Stadium",
+        "venueLocation": {
+          "latitude": 37.334859,
+          "longitude": -122.009040
+        },
+        "venuePhoneNumber": "+14155551234",
+        "venueEntrance": "Gate 3",
+        "performerNames": ["Bossa Nova Quartet"],
+        "genre": "Jazz",
+        "seats": [
+          {
+            "seatSection": "100",
+            "seatRow": "3",
+            "seatNumber": "5"
+          }
+        ]
+      },
+      "additionalInfoFields": [
+        {
+          "key": "doors",
+          "label": "Doors Open",
+          "value": "5:30 PM"
+        },
+        {
+          "key": "phone",
+          "label": "Phone Number",
+          "value": "(415) 555-1234"
+        },
+        {
+          "key": "bag-policy",
+          "label": "Bag Policy",
+          "value": "Small personal item allowed, no water bottles."
+        }
+      ],
+      "URLs": {
+        "sellURL": "https://exchangereserve.netlify.app/sbjf/25/sell",
+        "transferURL": "https://exchangereserve.netlify.app/sbjf/25/transfer",
+        "bagPolicyURL": "https://exchangereserve.netlify.app/sbjf/bag-policy"
+      },
+      "images": {
+        "venueMap": {
+          "URLs": [
+            {
+              "URL": "https://www.apple.com/snjf/bossa-nova/map.png",
+              "SHA256": "4b833b",
+              "scale": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "event",
+      "identifier": "classic-jazz",
+      "name": "Classic Jazz",
+      "dateInformation": {
+        "date": "2025-06-17T18:30:00-08:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Classic Jazz",
+        "venueName": "The Stadium",
+        "venueLocation": {
+          "latitude": 37.334859,
+          "longitude": -122.009040
+        },
+        "venuePhoneNumber": "+14155551234",
+        "venueEntrance": "Gate 3",
+        "performerNames": ["South Bay Jazz Festival Quartet"],
+        "genre": "Jazz",
+        "seats": [
+          {
+            "seatSection": "100",
+            "seatRow": "3",
+            "seatNumber": "5"
+          }
+        ]
+      },
+      "additionalInfoFields": [
+        {
+          "key": "doors",
+          "label": "Doors Open",
+          "value": "5:30 PM"
+        },
+        {
+          "key": "phone",
+          "label": "Phone Number",
+          "value": "(415) 555-1234"
+        },
+        {
+          "key": "bag-policy",
+          "label": "Bag Policy",
+          "value": "Small personal item allowed, no water bottles."
+        }
+      ],
+      "URLs": {
+        "sellURL": "https://exchangereserve.netlify.app/sbjf/25/sell",
+        "transferURL": "https://exchangereserve.netlify.app/sbjf/25/transfer",
+        "bagPolicyURL": "https://exchangereserve.netlify.app/sbjf/bag-policy",
+        "merchandiseURL": "https://exchangereserve.netlify.app/sbjf/25/classic-jazz/merch",
+        "accessibilityURL": "https://exchangereserve.netlify.app/sbjf/25/classic-jazz/access",
+        "contactVenueEmail": "https://exchangereserve.netlify.app/sbjf/25/classic-jazz/contact"
+      },
+      "images": {
+        "venueMap": {
+          "URLs": [
+            {
+              "URL": "https://www.apple.com/snjf/classic/map.png",
+              "SHA256": "4b833b",
+              "scale": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "sellURL": "https://exchangereserve.netlify.app/sbjf/25/sell",
+  "transferURL": "https://exchangereserve.netlify.app/sbjf/25/transfer",
+  "bagPolicyURL": "https://exchangereserve.netlify.app/sbjf/bag-policy",
+  "backgroundColor": "#2e7d32",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#c8e6c9",
+  "sharingProhibited": false
+}

@@ -237,48 +237,75 @@
 
             <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
 
-            <!-- Poster Style Tests Section -->
+            <!-- Apple-Style Event Passes Section -->
             <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 30px;">
-                <h2 style="margin-bottom: 10px; font-size: 28px;">🎫 Poster Event Ticket Tests</h2>
-                <p style="opacity: 0.9; margin-bottom: 20px;">Tests using <code>preferredStyle: "PKPosterEventTicketStylePoster"</code> with semantic tags per iOS Event Ticket Guide.</p>
+                <h2 style="margin-bottom: 10px; font-size: 28px;">🎫 Apple-Style Event Passes</h2>
+                <p style="opacity: 0.9; margin-bottom: 20px;">Complete implementations based on Apple's official WWDC 2024/2025 examples with <code>upcomingPassInformation</code>, semantic tags, and Event Guide features.</p>
 
-                <!-- Concert -->
-                <div class="pass-card" style="border: 2px solid rgba(138, 43, 226, 0.6);">
+                <!-- Jazz Festival Season Pass -->
+                <div class="pass-card" style="border: 2px solid rgba(46, 125, 50, 0.6);">
                     <div>
-                        <span class="badge" style="background: rgba(138, 43, 226, 0.4);">🎸 Concert</span>
+                        <span class="badge" style="background: rgba(46, 125, 50, 0.4);">🎷 Multi-Event Season</span>
                         <span class="badge" style="background: rgba(255, 215, 0, 0.3);">PKEventTypeLivePerformance</span>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">upcomingPassInformation</span>
                     </div>
-                    <h3>Summer Nights Music Festival</h3>
-                    <p>Indie rock concert with performers array and genre semantics.</p>
+                    <h3>South Bay Jazz Festival — Season Pass</h3>
+                    <p>Multi-event season pass with full Event Guide features: venue maps, upcoming events list, sell/transfer URLs, additional info fields.</p>
                     <ul class="features" style="font-size: 13px;">
-                        <li>📍 The Fillmore, San Francisco</li>
-                        <li>📅 Nov 8, 2025 @ 7:00 PM</li>
-                        <li>🎤 Performers: Indie Rock Collective, The Sonic Waves, DJ Midnight</li>
-                        <li>🎵 Genre: Indie Rock</li>
+                        <li>📍 The Stadium — Gate 3, Sec 100, Row 3, Seat 5</li>
+                        <li>🎵 2 upcoming events: Bossa Nova (June 16), Classic Jazz (June 17)</li>
+                        <li>🗺️ Venue maps with SHA256 verification</li>
+                        <li>🎯 Event-specific details: doors open, bag policy, phone</li>
+                        <li>🔗 Sell/Transfer/Merchandise/Accessibility URLs per event</li>
+                        <li>🎤 Performer names array, genre semantics</li>
                     </ul>
-                    <a href="poster-test-1-concert.pkpass" class="btn">📲 Add Concert</a>
+                    <a href="apple-jazz-festival.pkpass" class="btn">📲 Add Jazz Festival Pass</a>
                 </div>
 
-                <!-- Sports -->
-                <div class="pass-card" style="border: 2px solid rgba(255, 87, 34, 0.6);">
+                <!-- BOT-anist Disco -->
+                <div class="pass-card" style="border: 2px solid rgba(123, 31, 162, 0.6);">
                     <div>
-                        <span class="badge" style="background: rgba(255, 87, 34, 0.4);">🏀 Sports</span>
-                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">PKEventTypeSports</span>
+                        <span class="badge" style="background: rgba(123, 31, 162, 0.4);">🪩 Disco Concert</span>
+                        <span class="badge" style="background: rgba(255, 215, 0, 0.3);">PKEventTypeLivePerformance</span>
                     </div>
-                    <h3>Warriors vs Lakers — NBA Game</h3>
-                    <p>NBA basketball game with home/away team semantics.</p>
+                    <h3>BOT-anist Disco — General Admission</h3>
+                    <p>Electronic disco concert with poster layout showing Gate/Sec/Row/Seat fields matching Apple's example screenshots.</p>
                     <ul class="features" style="font-size: 13px;">
-                        <li>📍 Chase Center, San Francisco</li>
-                        <li>📅 Nov 10, 2025 @ 7:30 PM PST</li>
-                        <li>🏀 Home: Golden State Warriors</li>
-                        <li>🏀 Away: Los Angeles Lakers</li>
-                        <li>🎟️ Section 114, Row 12, Seat 8</li>
+                        <li>📍 Music Venue — Gate 115, Row 22, Seat 5</li>
+                        <li>📅 June 10, 2025 @ 12:00 AM (midnight event)</li>
+                        <li>🎤 Performers: DJ Botanist, The Disco Collective, Neon Groove</li>
+                        <li>🎵 Genre: Electronic/Disco</li>
+                        <li>👗 Dress code: Disco glam encouraged!</li>
+                        <li>🔞 Age restriction: 18+ with valid ID</li>
                     </ul>
-                    <a href="poster-test-2-sports.pkpass" class="btn">📲 Add Game</a>
+                    <a href="apple-disco-concert.pkpass" class="btn">📲 Add Disco Concert</a>
+                </div>
+
+                <!-- Warriors Season Pass -->
+                <div class="pass-card" style="border: 2px solid rgba(23, 99, 183, 0.6);">
+                    <div>
+                        <span class="badge" style="background: rgba(23, 99, 183, 0.4);">🏀 NBA Season</span>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">PKEventTypeSports</span>
+                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">upcomingPassInformation</span>
+                    </div>
+                    <h3>Warriors 2024-25 Season Tickets</h3>
+                    <p>NBA season pass with multiple upcoming games, sports-specific semantics (homeTeamName, awayTeamName, sport, leagueName), and per-game details.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>📍 Chase Center — Section 114, Row 12, Seat 8</li>
+                        <li>🏀 2 upcoming games: Warriors vs Lakers (Nov 10), Warriors vs Celtics (Nov 15)</li>
+                        <li>🎯 Game-specific details: doors open, tipoff, parking info</li>
+                        <li>🔗 Sell/Transfer/Merchandise/Accessibility URLs</li>
+                        <li>⚡ Sports semantics: home/away teams, sport, league</li>
+                        <li>🎟️ Mobile-only entry</li>
+                    </ul>
+                    <a href="apple-basketball-season.pkpass" class="btn">📲 Add Warriors Season Pass</a>
                 </div>
 
                 <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
-                    ⚠️ <strong>Note:</strong> Poster layout requires NFC-entitled Enhanced Pass certificate. Without it, iOS gracefully degrades to standard layout (semantics still work for Maps/Siri).
+                    ⚠️ <strong>Note:</strong> Poster layout requires NFC-entitled Enhanced Pass certificate. Without it, iOS gracefully degrades to standard layout but semantics still power Maps integration, Event Guide features, and Siri functionality.
+                </p>
+                <p style="font-size: 12px; opacity: 0.8; margin-top: 12px; background: rgba(33, 150, 243, 0.15); padding: 12px; border-radius: 8px; border-left: 3px solid rgba(33, 150, 243, 0.6);">
+                    📚 <strong>Based on:</strong> Apple WWDC 2024 poster layout + WWDC 2025 upcomingPassInformation structure. These passes include the complete iOS 18+ event ticket stack with all semantic tags, URLs, images, and additionalInfoFields shown in Apple's official examples.
                 </p>
             </div>
 

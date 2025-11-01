@@ -1,0 +1,198 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "NBA-SEASON-2025",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "Warriors Season Tickets 2024-25",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "SEASON PASS",
+        "value": "Warriors 2024-25",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "section",
+        "label": "Sec",
+        "value": "114",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "row",
+        "label": "Row",
+        "value": "12",
+        "textAlignment": "PKTextAlignmentCenter"
+      },
+      {
+        "key": "seat",
+        "label": "Seat",
+        "value": "8",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "venue",
+        "label": "Venue",
+        "value": "Chase Center"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "terms",
+        "label": "Season Pass Terms",
+        "value": "Valid for all 2024-25 home games. Mobile-only entry.\n\nSee complete season ticket holder benefits at warriors.com/season"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.netlify.app/verify/NBA-SEASON-2025",
+      "messageEncoding": "iso-8859-1",
+      "altText": "NBA-SEASON-2025"
+    }
+  ],
+  "semantics": {
+    "eventType": "PKEventTypeSports",
+    "venueName": "Chase Center",
+    "venueLocation": {
+      "latitude": 37.7680,
+      "longitude": -122.3877
+    },
+    "venuePhoneNumber": "+14159713200",
+    "seats": [
+      {
+        "seatSection": "114",
+        "seatRow": "12",
+        "seatNumber": "8"
+      }
+    ]
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "warriors-lakers-nov10",
+      "name": "Warriors vs Lakers",
+      "dateInformation": {
+        "date": "2025-11-10T19:30:00-08:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeSports",
+        "eventName": "Warriors vs Lakers",
+        "homeTeamName": "Golden State Warriors",
+        "awayTeamName": "Los Angeles Lakers",
+        "sport": "Basketball",
+        "leagueName": "NBA",
+        "venueName": "Chase Center",
+        "venueLocation": {
+          "latitude": 37.7680,
+          "longitude": -122.3877
+        },
+        "venuePhoneNumber": "+14159713200",
+        "venueEntrance": "West Entrance",
+        "eventStartDate": "2025-11-10T19:30:00-08:00",
+        "eventEndDate": "2025-11-10T22:00:00-08:00",
+        "seats": [
+          {
+            "seatSection": "114",
+            "seatRow": "12",
+            "seatNumber": "8"
+          }
+        ]
+      },
+      "additionalInfoFields": [
+        {
+          "key": "doors",
+          "label": "Doors Open",
+          "value": "6:00 PM"
+        },
+        {
+          "key": "tipoff",
+          "label": "Tipoff",
+          "value": "7:30 PM"
+        },
+        {
+          "key": "parking",
+          "label": "Parking",
+          "value": "Lot A - Section 114 pass holders"
+        }
+      ],
+      "URLs": {
+        "sellURL": "https://exchangereserve.netlify.app/warriors/sell",
+        "transferURL": "https://exchangereserve.netlify.app/warriors/transfer",
+        "merchandiseURL": "https://exchangereserve.netlify.app/warriors/shop",
+        "accessibilityURL": "https://exchangereserve.netlify.app/warriors/accessibility"
+      }
+    },
+    {
+      "type": "event",
+      "identifier": "warriors-celtics-nov15",
+      "name": "Warriors vs Celtics",
+      "dateInformation": {
+        "date": "2025-11-15T19:00:00-08:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeSports",
+        "eventName": "Warriors vs Celtics",
+        "homeTeamName": "Golden State Warriors",
+        "awayTeamName": "Boston Celtics",
+        "sport": "Basketball",
+        "leagueName": "NBA",
+        "venueName": "Chase Center",
+        "venueLocation": {
+          "latitude": 37.7680,
+          "longitude": -122.3877
+        },
+        "venuePhoneNumber": "+14159713200",
+        "venueEntrance": "West Entrance",
+        "eventStartDate": "2025-11-15T19:00:00-08:00",
+        "eventEndDate": "2025-11-15T21:30:00-08:00",
+        "seats": [
+          {
+            "seatSection": "114",
+            "seatRow": "12",
+            "seatNumber": "8"
+          }
+        ]
+      },
+      "additionalInfoFields": [
+        {
+          "key": "doors",
+          "label": "Doors Open",
+          "value": "5:30 PM"
+        },
+        {
+          "key": "tipoff",
+          "label": "Tipoff",
+          "value": "7:00 PM"
+        },
+        {
+          "key": "parking",
+          "label": "Parking",
+          "value": "Lot A - Section 114 pass holders"
+        }
+      ],
+      "URLs": {
+        "sellURL": "https://exchangereserve.netlify.app/warriors/sell",
+        "transferURL": "https://exchangereserve.netlify.app/warriors/transfer",
+        "merchandiseURL": "https://exchangereserve.netlify.app/warriors/shop",
+        "accessibilityURL": "https://exchangereserve.netlify.app/warriors/accessibility"
+      }
+    }
+  ],
+  "sellURL": "https://exchangereserve.netlify.app/warriors/sell",
+  "transferURL": "https://exchangereserve.netlify.app/warriors/transfer",
+  "backgroundColor": "#1763b7",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffd700",
+  "sharingProhibited": false
+}
