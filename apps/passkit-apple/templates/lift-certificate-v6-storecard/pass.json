@@ -22,83 +22,44 @@
     "primaryFields": [
       {
         "key": "balance",
-        "label": "Maturity Value",
-        "value": "$3,780",
-        "currencyCode": "USD",
-        "textAlignment": "PKTextAlignmentNatural"
+        "label": "Current Value",
+        "value": 3780,
+        "currencyCode": "USD"
       }
     ],
     "secondaryFields": [
       {
         "key": "holder",
-        "label": "Certificate Holder",
+        "label": "Holder",
         "value": "Alex Bennett"
-      },
-      {
-        "key": "phase",
-        "label": "Phase Progression",
-        "value": "◉◉◉○○ Engagement (3 of 5)"
       }
     ],
     "auxiliaryFields": [
       {
         "key": "maturity-date",
-        "label": "Maturity Date",
+        "label": "Maturity",
         "value": "2029-03-15T00:00:00-05:00",
-        "dateStyle": "PKDateStyleMedium",
-        "timeStyle": "PKDateStyleNone"
+        "dateStyle": "PKDateStyleMedium"
       },
       {
-        "key": "next-milestone",
-        "label": "Next Milestone",
-        "value": "Phase 4: Impact"
+        "key": "growth",
+        "label": "Growth",
+        "value": "+26%"
       }
     ],
     "backFields": [
       {
         "key": "certificate-details",
         "label": "Certificate Details",
-        "value": "Series: 2025Q4\nOriginal Value: $3,000\nCurrent Value: $3,780 (26% growth)\nAnnual Rate: 4.8% APY\n\nThis is your ongoing engagement credential with Exchange Reserve's regenerative capital framework."
-      },
-      {
-        "key": "phase-progress",
-        "label": "Phase Progression",
-        "value": "✓ Phase 1: Discovery (Complete - 90 days)\n✓ Phase 2: Foundation (Complete - 12 months)\n● Phase 3: Engagement (Current - 18 months)\n○ Phase 4: Impact (Locked - Unlock at 36 months)\n○ Phase 5: Maturity (Locked - Unlock at 54 months)\n\nYou're making excellent progress! Phase 4 unlocks in 18 months with exclusive impact measurement tools."
+        "value": "Series 2025Q4 LIFT Certificate\n\nOriginal: $3,000\nCurrent: $3,780 (+26%)\nMaturity: Mar 15, 2029\n\nPooled regenerative capital investment."
       },
       {
         "key": "priorities",
-        "label": "Your Impact Priorities",
-        "value": "1. Community Living\n2. Green Energy & Climate\n3. Affordable Housing\n\nYour certificate's pooled funding is currently supporting 12 active projects across these priorities."
-      },
-      {
-        "key": "structure",
-        "label": "Structure & Verification",
-        "value": "Certificate Type: Pooled Impact Investment\nBlockchain ID: 0x7f8a...9b2c\nVerify: exchangereserve.netlify.app/verify/LIFT-CERT-V6-STORECARD-2025Q4\n\nUpdated monthly with impact metrics and value adjustments."
-      },
-      {
-        "key": "support",
-        "label": "Support & Resources",
-        "value": "Questions? support@exchangereserve.org\nQuarterly Briefings: Bell Tower Hall, Frederick MD\nNext Event: November 15, 2025 @ 6:00 PM\n\nThis certificate is managed through Apple Wallet with automatic updates."
+        "label": "Your 3 Priorities",
+        "value": "Equal allocation (33.3% each):\n\n🏘️ Community Living\n⚡ Green Energy\n🏠 Affordable Housing"
       }
     ]
   },
-  "barcodes": [
-    {
-      "format": "PKBarcodeFormatQR",
-      "message": "https://exchangereserve.netlify.app/verify/LIFT-CERT-V6-STORECARD-2025Q4",
-      "messageEncoding": "iso-8859-1",
-      "altText": "LIFT-CERT-V6-STORECARD-2025Q4"
-    }
-  ],
-  "locations": [
-    {
-      "latitude": 39.4143,
-      "longitude": -77.4105,
-      "relevantText": "Welcome to Bell Tower Hall! Your LIFT Certificate provides access to quarterly impact briefings.",
-      "distance": 100
-    }
-  ],
-  "relevantDate": "2025-11-15T18:00:00-05:00",
   "backgroundColor": "#1763b7",
   "foregroundColor": "#ffffff",
   "labelColor": "#ffd700",

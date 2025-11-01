@@ -4,7 +4,7 @@
   "serialNumber": "TRIPLE-PRIORITY-DASHBOARD-2025Q4",
   "teamIdentifier": "5A984FTAG3",
   "organizationName": "Localight Inc.",
-  "description": "Your 3 Priorities Impact Dashboard - Q4 2025",
+  "description": "Triple Priority Dashboard - Q4 2025",
   "logoText": "LocalFund",
   "coupon": {
     "headerFields": [
@@ -18,63 +18,35 @@
       {
         "key": "total-impact",
         "label": "Combined Impact",
-        "value": "17 Projects Active"
+        "value": "17 Projects"
       }
     ],
     "secondaryFields": [
       {
         "key": "contribution",
-        "label": "Your Contribution",
-        "value": "$3,780 (pooled)"
-      },
-      {
-        "key": "leveraged",
-        "label": "Total Leveraged",
-        "value": "$106,000"
+        "label": "Your Share",
+        "value": "$3,780"
       }
     ],
     "auxiliaryFields": [
       {
-        "key": "roi",
-        "label": "Social ROI",
-        "value": "28:1 ratio"
+        "key": "leveraged",
+        "label": "Leveraged",
+        "value": "$106K"
       }
     ],
     "backFields": [
       {
-        "key": "dashboard-summary",
-        "label": "📊 Your Priority Impact Dashboard",
-        "value": "Your $3,780 certificate is allocated equally across three priorities you selected. This quarterly dashboard shows how your pooled funding is making an impact.\n\nPeriod: Q4 2025 (Oct-Dec)\nLast Updated: November 25, 2025\n\nYour three priorities are working together to create comprehensive community impact!"
+        "key": "dashboard",
+        "label": "📊 Q4 Dashboard",
+        "value": "Your 3 priorities (equal allocation):\n\n🏘️ Community Living: 6 projects\n⚡ Green Energy: 5 projects\n🏠 Affordable Housing: 6 projects\n\nTotal: 17 active projects\nPeople impacted: 380+\nLeverage ratio: 28:1"
       },
       {
-        "key": "priority-1-summary",
-        "label": "🏘️ Community Living (33% - $1,247)",
-        "value": "Active Projects: 6\nCompleted This Quarter: 1\n\nHighlights:\n✓ Co-housing land purchase closing\n✓ Community center design complete\n✓ Tool library pilot launched (50 members)\n\nImpact Metrics:\n• Households served: 74\n• Shared resources: 200+ tools\n• Community events: 12 hosted\n• Volunteer hours: 380\n\nNext Quarter:\n• Co-housing construction begins\n• Community kitchen feasibility study\n• Shared transportation pilot"
-      },
-      {
-        "key": "priority-2-summary",
-        "label": "⚡ Green Energy & Climate (33% - $1,247)",
-        "value": "Active Projects: 5\nCompleted This Quarter: 3\n\nHighlights:\n✓ Community solar phase 2 online (150 kW)\n✓ 3 residential solar installs complete\n✓ Food bank solar saving $2,400/year\n\nImpact Metrics:\n• Homes powered: 47\n• Clean energy: 215 kW installed\n• Carbon offset: 38 tons/year\n• Annual savings: $28,000 combined\n\nNext Quarter:\n• EV charging network (4 stations)\n• Energy efficiency retrofits (12 homes)\n• Battery storage pilot"
-      },
-      {
-        "key": "priority-3-summary",
-        "label": "🏠 Affordable Housing (34% - $1,286)",
-        "value": "Active Projects: 6\nCompleted This Quarter: 1\n\nHighlights:\n✓ Frederick Workforce Apts (12 units complete!)\n✓ 100% occupancy achieved\n✓ Ribbon cutting ceremony Dec 8\n\nImpact Metrics:\n• Units completed: 12 workforce housing\n• Families housed: 12 households\n• Affordability: 60% AMI\n• Rent savings: $7,200/month combined\n• Below market: 40% discount\n\nNext Quarter:\n• Downtown rehab phase 2 (8 units)\n• First-time homebuyer assistance (3 families)\n• Land bank acquisitions (2 properties)"
-      },
-      {
-        "key": "aggregate-metrics",
-        "label": "📈 Combined Quarterly Impact",
-        "value": "Across all three priorities:\n\n👥 People Directly Impacted: 380+\n🏠 Housing Units: 12 complete, 8 in progress\n⚡ Clean Energy: 215 kW installed\n🌱 Carbon Reduction: 38 tons/year\n💰 Community Savings: $35,200/year\n🏘️ Shared Resources: 200+ items\n📍 Geographic Reach: 17 project sites\n\nFinancial Leverage:\n• Your contribution: $3,780\n• Total project value: $106,000\n• Leverage ratio: 28:1\n\nYour certificate is creating measurable, lasting impact across multiple community priorities!"
+        "key": "highlights",
+        "label": "Q4 Highlights",
+        "value": "✓ 12 housing units completed\n✓ 215 kW solar installed\n✓ 1.2 miles bike lanes\n✓ Tool library launched\n✓ Community solar online"
       }
     ]
-  },
-  "barcodes": [
-    {
-      "format": "PKBarcodeFormatQR",
-      "message": "https://exchangereserve.netlify.app/dashboard/triple-priority/q4-2025",
-      "messageEncoding": "iso-8859-1",
-      "altText": "TRIPLE-PRIORITY-Q4-2025"
-    }
   },
   "expirationDate": "2026-01-31T23:59:59-05:00",
   "backgroundColor": "#6a1b9a",

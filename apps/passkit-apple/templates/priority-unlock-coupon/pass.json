@@ -4,86 +4,50 @@
   "serialNumber": "PRIORITY-UNLOCK-Q1-2026",
   "teamIdentifier": "5A984FTAG3",
   "organizationName": "Localight Inc.",
-  "description": "Quarterly Priority Review - Update Your Focus",
+  "description": "Quarterly Priority Review - Q1 2026",
   "logoText": "LocalFund",
   "coupon": {
     "headerFields": [
       {
         "key": "offer",
-        "label": "Quarterly Review",
-        "value": "Priority Update Available"
+        "label": "Review Period",
+        "value": "Dec 1-31, 2025"
       }
     ],
     "primaryFields": [
       {
         "key": "action",
-        "label": "Update Your Priorities",
-        "value": "Change Focus Areas"
+        "label": "Action Available",
+        "value": "Update Priorities"
       }
     ],
     "secondaryFields": [
       {
         "key": "current",
-        "label": "Current Priorities",
+        "label": "Current",
         "value": "3 selected"
-      },
-      {
-        "key": "deadline",
-        "label": "Deadline",
-        "value": "Dec 31, 2025"
       }
     ],
     "auxiliaryFields": [
       {
-        "key": "available",
-        "label": "Options",
-        "value": "12 priorities"
+        "key": "deadline",
+        "label": "Deadline",
+        "value": "Dec 31"
       }
     ],
     "backFields": [
       {
         "key": "review-invitation",
-        "label": "🎯 Time to Review Your Priorities!",
-        "value": "Every quarter, you have the opportunity to review and update your three impact priorities based on community needs, your personal interests, or new opportunities.\n\nYour Current Priorities:\n1. 🏘️ Community Living\n2. ⚡ Green Energy & Climate\n3. 🏠 Affordable Housing\n\nReview Period: Dec 1-31, 2025\nNew priorities take effect: January 1, 2026"
+        "label": "🎯 Quarterly Priority Review",
+        "value": "Review window: Dec 1-31, 2025\n\nYour current priorities:\n🏘️ Community Living\n⚡ Green Energy\n🏠 Affordable Housing\n\nYou can keep these or select new ones from 12 available priorities.\n\nNo action = Keep current"
       },
       {
-        "key": "why-update",
-        "label": "Why Update Your Priorities?",
-        "value": "Reasons to adjust your priority mix:\n\n✓ Respond to emerging community needs\n✓ Support time-sensitive opportunities\n✓ Shift focus based on personal interests\n✓ Rebalance based on progress/completion\n✓ Align with new strategic initiatives\n✓ Support underserved priority areas\n\nYou can keep all 3 current priorities or change up to 3!\n\nNo penalties or fees for updates during quarterly review periods."
-      },
-      {
-        "key": "available-priorities",
-        "label": "📋 All Available Priorities (Choose 3)",
-        "value": "Current Priorities (✓ = your current selection):\n\n✓ Community Living\n✓ Green Energy & Climate\n✓ Affordable Housing\n○ Local Food Systems\n○ Education & Youth Development\n○ Arts & Culture\n○ Small Business Support\n○ Healthcare Access\n○ Transportation & Mobility\n○ Environmental Conservation\n○ Senior Services\n○ Digital Equity\n\n12 total priorities available\nYou select 3 (equal 33.3% allocation each)\n\nNew This Quarter:\n🆕 Digital Equity - Closing the technology access gap"
-      },
-      {
-        "key": "update-process",
-        "label": "How to Update Your Priorities",
-        "value": "Easy 3-step process:\n\n1️⃣ Review Impact Reports\n   • Read Q4 impact summaries\n   • Check project completion status\n   • Review upcoming opportunities\n   \n2️⃣ Select Your New Mix\n   • Visit: exchangereserve.org/priorities\n   • Log in with certificate ID\n   • Choose 3 priorities from 12 options\n   \n3️⃣ Confirm Changes\n   • Review allocation (33.3% each)\n   • Confirm by December 31, 2025\n   • Effective January 1, 2026\n\nNo action = Keep current priorities\n\nQuestions? priority-support@exchangereserve.org"
-      },
-      {
-        "key": "q1-preview",
-        "label": "🔮 Q1 2026 Preview: What's Coming",
-        "value": "Exciting projects launching next quarter:\n\n🏘️ Community Living\n• Co-housing construction begins\n• Community kitchen feasibility\n\n⚡ Green Energy\n• EV charging network installation\n• Home efficiency retrofit program\n\n🏠 Affordable Housing\n• Downtown rehab phase 2\n• First-time homebuyer program\n\n🆕 Digital Equity (NEW!)\n• Community technology centers\n• Free internet access program\n• Digital literacy training\n\n🍎 Local Food Systems\n• Urban farm expansion\n• Food hub development\n\n📚 Education & Youth\n• After-school program support\n• College prep scholarships\n\nUpdate your priorities to support the projects that matter most to you!"
+        "key": "available",
+        "label": "Available Priorities",
+        "value": "Choose any 3 from:\n\n✓ Community Living (current)\n✓ Green Energy (current)\n✓ Affordable Housing (current)\n○ Local Food Systems\n○ Education & Youth\n○ Arts & Culture\n🆕 Digital Equity (new!)\n...and 5 more"
       }
     ]
   },
-  "barcodes": [
-    {
-      "format": "PKBarcodeFormatQR",
-      "message": "https://exchangereserve.org/priorities/update?cert=ALEX-BENNETT-2024",
-      "messageEncoding": "iso-8859-1",
-      "altText": "PRIORITY-UPDATE-Q1-2026"
-    }
-  },
-  "locations": [
-    {
-      "latitude": 39.4143,
-      "longitude": -77.4105,
-      "relevantText": "At Bell Tower Hall? Ask about priority updates during today's quarterly briefing!",
-      "distance": 100
-    }
-  ],
   "relevantDate": "2025-12-01T00:00:00-05:00",
   "expirationDate": "2025-12-31T23:59:59-05:00",
   "backgroundColor": "#f57c00",
