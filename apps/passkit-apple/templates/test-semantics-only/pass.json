@@ -1,0 +1,61 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-SEMANTICS-ONLY",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Test: Semantics Enhanced Details Only",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Test Semantics Display"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "holder",
+        "label": "Holder",
+        "value": "Test User"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "date",
+        "label": "Date",
+        "value": "2025-11-15T18:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium",
+        "timeStyle": "PKDateStyleShort"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "about",
+        "label": "About",
+        "value": "Testing if semantics fields activate the enhanced details section below the event card. Look for venue name, phone number, and directions in a structured format."
+      }
+    ]
+  },
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://exchangereserve.netlify.app/verify/TEST-SEMANTICS-ONLY",
+    "messageEncoding": "iso-8859-1"
+  },
+  "semantics": {
+    "eventType": "PKEventTypeGeneric",
+    "eventName": "Semantics Display Test",
+    "venueName": "Bell Tower Hall",
+    "venueLocation": {
+      "latitude": 39.4143,
+      "longitude": -77.4105
+    },
+    "venuePhoneNumber": "+19492026850",
+    "eventStartDate": "2025-11-15T18:00:00-05:00",
+    "eventEndDate": "2025-11-15T20:00:00-05:00"
+  },
+  "backgroundColor": "#1763b7",
+  "foregroundColor": "#000000",
+  "labelColor": "#000000"
+}

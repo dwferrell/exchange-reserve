@@ -157,6 +157,29 @@
         </header>
 
         <main>
+            <!-- Semantics Display Test -->
+            <div class="pass-card" style="border: 3px solid rgba(156, 39, 176, 0.7); background: rgba(156, 39, 176, 0.1);">
+                <div>
+                    <span class="badge" style="background: rgba(156, 39, 176, 0.6);">🎯 SEMANTICS TEST</span>
+                    <span class="badge" style="background: rgba(33, 150, 243, 0.4);">Enhanced Details</span>
+                </div>
+                <h2>Test: Semantics Enhanced Details Display</h2>
+                <p>Minimal test to see if semantics fields (venueName, venueLocation, venuePhoneNumber, eventStartDate/eventEndDate) activate the enhanced "DETAILS" section below the event card.</p>
+                <ul class="features">
+                    <li>📍 Venue: Bell Tower Hall</li>
+                    <li>☎️ Phone: +1 (949) 202-6850 (tap-to-call)</li>
+                    <li>🗺️ Maps integration with directions</li>
+                    <li>📅 Event dates: Nov 15, 2025 6:00-8:00 PM</li>
+                </ul>
+                <a href="test-semantics-only.pkpass" class="btn">📲 Test Semantics Display</a>
+                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-SEMANTICS-ONLY</p>
+                <p style="font-size: 11px; opacity: 0.9; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 6px;">
+                    Look for structured venue details below the card (not in backFields). Should show venue name, phone number as clickable link, and "Get Directions" button.
+                </p>
+            </div>
+
+            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+
             <!-- iOS 26 Isolation Tests -->
             <div class="pass-card" style="border: 3px solid rgba(255, 152, 0, 0.6);">
                 <div>
