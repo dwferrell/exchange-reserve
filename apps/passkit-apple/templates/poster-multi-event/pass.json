@@ -1,0 +1,180 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "SERIES-2025-001",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Impact Summit Series 2025 — Regenerative Capital Workshops",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "IMPACT SUMMIT SERIES",
+        "value": "Regenerative Capital Workshops",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "access",
+        "label": "Access",
+        "value": "3-Day VIP Pass",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "dates",
+        "label": "Dates",
+        "value": "Nov 15-17, 2025",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "venue",
+        "label": "Venue",
+        "value": "Bell Tower Hall"
+      },
+      {
+        "key": "city",
+        "label": "Location",
+        "value": "Frederick, MD"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "about",
+        "label": "About the Series",
+        "value": "Join us for a three-day deep dive into regenerative capital frameworks. This exclusive workshop series for LIFT Certificate Early Adopters covers:\n\n• Day 1: Introduction to Regenerative Finance\n• Day 2: Community Investment Strategies\n• Day 3: Building Sustainable Portfolios\n\nEach day features keynote speakers, interactive workshops, and networking opportunities."
+      },
+      {
+        "key": "schedule",
+        "label": "Daily Schedule",
+        "value": "All Sessions:\n9:00 AM - Registration & Coffee\n9:30 AM - Morning Keynote\n11:00 AM - Workshop Session 1\n12:30 PM - Lunch & Networking\n2:00 PM - Workshop Session 2\n4:00 PM - Panel Discussion\n5:30 PM - Day Wrap-up\n\nVIP Lounge open all day (2nd floor)"
+      },
+      {
+        "key": "access-info",
+        "label": "VIP Access",
+        "value": "Your 3-day pass includes:\n• Access to all workshop sessions\n• VIP Lounge (Code: VIP2025)\n• Lunch and refreshments each day\n• Exclusive materials and resources\n• Certificate of completion"
+      },
+      {
+        "key": "venue-info",
+        "label": "Venue & Parking",
+        "value": "Bell Tower Hall\nFrederick, Maryland\n\nFree parking in adjacent lot (Market Street entrance)\nVenue is fully accessible\nDowntown shuttle stops at front entrance"
+      },
+      {
+        "key": "contact",
+        "label": "Contact",
+        "value": "LocalFund Events\nPhone: +1 (949) 202-6850\nEmail: events@exchangereserve.org\n\nText HELP to the number above for event-day support."
+      }
+    ],
+    "additionalInfoFields": [
+      {
+        "key": "wifi",
+        "label": "WiFi",
+        "value": "Network: BellTower-Guest | Password: Summit2025"
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeConference",
+    "eventName": "Impact Summit Series 2025",
+    "venueName": "Bell Tower Hall",
+    "venueLocation": {
+      "latitude": 39.4143,
+      "longitude": -77.4105
+    },
+    "venuePhoneNumber": "+19492026850",
+    "organizerName": "LocalFund",
+    "organizerPhoneNumber": "+19492026850",
+    "organizerEmail": "events@exchangereserve.org"
+  },
+  "upcomingPassInformation": [
+    {
+      "semantics": {
+        "eventName": "Day 1: Introduction to Regenerative Finance",
+        "eventStartDate": "2025-11-15T09:30:00-05:00",
+        "eventEndDate": "2025-11-15T17:30:00-05:00",
+        "doorsOpenDate": "2025-11-15T09:00:00-05:00",
+        "genre": "Workshop",
+        "performers": [
+          "Dr. Jane Smith - Keynote Speaker",
+          "Prof. Michael Chen - Workshop Leader"
+        ],
+        "admissionLevel": "VIP",
+        "confirmationNumber": "SERIES-2025-001-DAY1"
+      },
+      "urls": {
+        "eventInfo": "https://exchangereserve.org/summit/day1"
+      }
+    },
+    {
+      "semantics": {
+        "eventName": "Day 2: Community Investment Strategies",
+        "eventStartDate": "2025-11-16T09:30:00-05:00",
+        "eventEndDate": "2025-11-16T17:30:00-05:00",
+        "doorsOpenDate": "2025-11-16T09:00:00-05:00",
+        "genre": "Workshop",
+        "performers": [
+          "Sarah Johnson - Community Investment Expert",
+          "Robert Taylor - Impact Measurement Specialist"
+        ],
+        "admissionLevel": "VIP",
+        "confirmationNumber": "SERIES-2025-001-DAY2"
+      },
+      "urls": {
+        "eventInfo": "https://exchangereserve.org/summit/day2"
+      }
+    },
+    {
+      "semantics": {
+        "eventName": "Day 3: Building Sustainable Portfolios",
+        "eventStartDate": "2025-11-17T09:30:00-05:00",
+        "eventEndDate": "2025-11-17T17:30:00-05:00",
+        "doorsOpenDate": "2025-11-17T09:00:00-05:00",
+        "genre": "Workshop",
+        "performers": [
+          "David Martinez - Portfolio Strategy",
+          "Emily White - Sustainable Finance"
+        ],
+        "admissionLevel": "VIP",
+        "confirmationNumber": "SERIES-2025-001-DAY3"
+      },
+      "urls": {
+        "eventInfo": "https://exchangereserve.org/summit/day3"
+      }
+    }
+  ],
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://exchangereserve.org/verify/SERIES-2025-001",
+    "messageEncoding": "iso-8859-1",
+    "altText": "SERIES-2025-001"
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.org/verify/SERIES-2025-001",
+      "messageEncoding": "iso-8859-1",
+      "altText": "SERIES-2025-001"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "Welcome to Impact Summit! Show this pass at registration. VIP check-in on the second floor.",
+      "distance": 150
+    }
+  ],
+  "relevantDate": "2025-11-15T08:30:00-05:00",
+  "maxDistance": 500,
+  "webServiceURL": "https://exchangereserve.org/api/passes",
+  "authenticationToken": "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
+  "appLaunchURL": "https://exchangereserve.org/summit/series-2025",
+  "backgroundColor": "rgb(23, 99, 183)",
+  "foregroundColor": "rgb(255, 255, 255)",
+  "labelColor": "rgb(200, 220, 255)",
+  "sharingProhibited": false
+}

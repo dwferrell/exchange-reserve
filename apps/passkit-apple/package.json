@@ -8,6 +8,10 @@
     "build": "node scripts/build-pass.js",
     "build:hello": "node scripts/build-pass.js hello-world",
     "build:event": "node scripts/build-pass.js event-poster",
+    "build:poster": "./scripts/build-poster-passes.sh",
+    "build:poster-demo": "node scripts/build-pass.js poster-event-demo",
+    "build:poster-multi": "node scripts/build-pass.js poster-multi-event",
+    "build:poster-ios18": "node scripts/build-pass.js event-poster-ios18",
     "verify": "node scripts/verify-pass.js",
     "clean": "rm -rf dist/*.pkpass dist/temp"
   },

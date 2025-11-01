@@ -1,0 +1,137 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "POSTER-DEMO-2025-001",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Impact Briefing — Capitol Fund Quarterly Update",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "IMPACT BRIEFING",
+        "value": "Capitol Fund Quarterly Update",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "holder",
+        "label": "Holder Status",
+        "value": "Early Adopter ⓢ2025Q4",
+        "textAlignment": "PKTextAlignmentLeft"
+      },
+      {
+        "key": "venue",
+        "label": "Location",
+        "value": "Bell Tower Hall",
+        "textAlignment": "PKTextAlignmentRight"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "date",
+        "label": "Date & Time",
+        "value": "2025-11-15T18:00:00-05:00",
+        "dateStyle": "PKDateStyleMedium",
+        "timeStyle": "PKDateStyleShort",
+        "isRelative": false
+      },
+      {
+        "key": "city",
+        "label": "City",
+        "value": "Frederick, MD"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "about",
+        "label": "About This Event",
+        "value": "Join us for the Capitol Fund Quarterly Update — an Impact Briefing showcasing our regenerative capital framework progress. This event is exclusive to LIFT Certificate Early Adopters (Series 2025Q4).\n\nLearn about:\n• Regenerative Capital Framework\n• Capitol Fund Investment Strategy\n• Community Impact Metrics\n• Q4 2025 Performance Review"
+      },
+      {
+        "key": "venue-details",
+        "label": "Venue Details",
+        "value": "Bell Tower Hall\nFrederick, Maryland\n\nWalking distance from downtown Frederick. Parking available on-site.\n\nParking: Free parking in adjacent lot (Market Street entrance)"
+      },
+      {
+        "key": "access",
+        "label": "VIP Access",
+        "value": "As an Early Adopter, you have:\n• VIP Lounge access (Code: VIP2025)\n• Priority seating\n• Exclusive Q&A with speakers\n• Complimentary refreshments"
+      },
+      {
+        "key": "contact",
+        "label": "Contact & Support",
+        "value": "Event Organizer: LocalFund\nPhone: +1 (949) 202-6850\nEmail: hello@exchangereserve.org\n\nFor event-day assistance, text HELP to the number above."
+      },
+      {
+        "key": "certificate",
+        "label": "Your LIFT Certificate",
+        "value": "This pass is tied to your LIFT Certificate representing participation in Exchange Reserve's regenerative capital framework.\n\nSerial: POSTER-DEMO-2025-001\nVerify: https://exchangereserve.org/verify/POSTER-DEMO-2025-001"
+      }
+    ],
+    "additionalInfoFields": [
+      {
+        "key": "wifi",
+        "label": "WiFi",
+        "value": "Network: BellTower-Guest | Password: Impact2025"
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeConference",
+    "eventName": "Capitol Fund Quarterly Update",
+    "venueName": "Bell Tower Hall",
+    "venueLocation": {
+      "latitude": 39.4143,
+      "longitude": -77.4105
+    },
+    "venuePhoneNumber": "+19492026850",
+    "eventStartDate": "2025-11-15T18:00:00-05:00",
+    "eventEndDate": "2025-11-15T20:00:00-05:00",
+    "doorsOpenDate": "2025-11-15T17:30:00-05:00",
+    "genre": "Business Conference",
+    "performers": [
+      "Capitol Fund Leadership Team",
+      "Community Impact Partners"
+    ],
+    "admissionLevel": "VIP Early Adopter",
+    "confirmationNumber": "POSTER-DEMO-001",
+    "organizerName": "LocalFund",
+    "organizerPhoneNumber": "+19492026850",
+    "organizerEmail": "hello@exchangereserve.org"
+  },
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://exchangereserve.org/verify/POSTER-DEMO-2025-001",
+    "messageEncoding": "iso-8859-1",
+    "altText": "POSTER-DEMO-2025-001"
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://exchangereserve.org/verify/POSTER-DEMO-2025-001",
+      "messageEncoding": "iso-8859-1",
+      "altText": "POSTER-DEMO-2025-001"
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "Welcome to Bell Tower Hall! Your Impact Briefing starts soon. Show this pass at VIP registration.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-15T17:00:00-05:00",
+  "maxDistance": 500,
+  "webServiceURL": "https://exchangereserve.org/api/passes",
+  "authenticationToken": "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
+  "appLaunchURL": "https://exchangereserve.org/events/poster-demo-001",
+  "backgroundColor": "rgb(23, 99, 183)",
+  "foregroundColor": "rgb(255, 255, 255)",
+  "labelColor": "rgb(200, 220, 255)",
+  "sharingProhibited": false
+}

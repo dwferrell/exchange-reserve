@@ -180,6 +180,100 @@
 
             <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
 
+            <!-- Poster-Style Event Tickets (iOS 18+) -->
+            <div style="background: rgba(33, 150, 243, 0.1); border: 3px solid rgba(33, 150, 243, 0.5); border-radius: 16px; padding: 24px; margin-bottom: 24px;">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <h2 style="font-size: 28px; margin-bottom: 8px;">🎫 Poster Event Tickets (iOS 18+)</h2>
+                    <p style="font-size: 16px; opacity: 0.9;">Enhanced passes with Maps tiles, Event Guide, and multi-event support</p>
+                </div>
+
+                <!-- Single Event Poster -->
+                <div class="pass-card" style="border: 2px solid rgba(76, 175, 80, 0.6); background: rgba(76, 175, 80, 0.1);">
+                    <div>
+                        <span class="badge" style="background: rgba(76, 175, 80, 0.6);">✅ POSTER LAYOUT</span>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.4);">Single Event</span>
+                    </div>
+                    <h2>Impact Briefing — Poster Style</h2>
+                    <p>Same event as event-poster-v2, but with <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px;">preferredStyle: "PKPosterEventTicketStylePoster"</code> to enable iOS 18+ features.</p>
+                    <ul class="features">
+                        <li>📍 <strong>Maps Tile:</strong> Interactive venue map below the pass</li>
+                        <li>🗺️ <strong>Event Guide:</strong> Tap to see venue details, phone, directions</li>
+                        <li>☎️ <strong>Tap-to-Call:</strong> Call venue directly from pass</li>
+                        <li>🧭 <strong>Directions:</strong> One-tap to open Apple Maps</li>
+                        <li>⏰ Geofencing + time-based notifications</li>
+                        <li>✅ 5 backFields (iOS 26 compatible)</li>
+                    </ul>
+                    <a href="poster-event-demo.pkpass" class="btn" style="background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);">📲 Add Poster Event (Coming Soon)</a>
+                    <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: POSTER-DEMO-2025-001</p>
+                    <p style="font-size: 11px; opacity: 0.9; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 6px;">
+                        ⚠️ <strong>Build required:</strong> Run <code style="background: rgba(0,0,0,0.3); padding: 2px 4px;">pnpm build:poster-demo</code> to generate this pass. See <a href="../BUILD_POSTER_PASSES.md" style="color: #fff; text-decoration: underline;">BUILD_POSTER_PASSES.md</a>
+                    </p>
+                </div>
+
+                <!-- Multi-Event Poster -->
+                <div class="pass-card" style="border: 2px solid rgba(156, 39, 176, 0.6); background: rgba(156, 39, 176, 0.1);">
+                    <div>
+                        <span class="badge" style="background: rgba(156, 39, 176, 0.6);">✅ MULTI-EVENT</span>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.4);">3-Day Series</span>
+                    </div>
+                    <h2>Impact Summit Series — 3 Days</h2>
+                    <p>Multi-event workshop series using <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px;">upcomingPassInformation</code> for festivals and season passes.</p>
+                    <ul class="features">
+                        <li>🗓️ <strong>Multi-Event UI:</strong> Swipe between Day 1, Day 2, Day 3</li>
+                        <li>📅 <strong>Automatic Switching:</strong> Shows current/next event based on date</li>
+                        <li>🎭 <strong>Different Details:</strong> Each day has unique speakers, URLs</li>
+                        <li>📍 All poster features (Maps, Event Guide, directions)</li>
+                        <li>🎫 One pass for entire series</li>
+                    </ul>
+                    <a href="poster-multi-event.pkpass" class="btn" style="background: linear-gradient(135deg, #9C27B0 0%, #7B1FA2 100%);">📲 Add Multi-Event Series (Coming Soon)</a>
+                    <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: SERIES-2025-001 | Days: Nov 15-17, 2025</p>
+                    <p style="font-size: 11px; opacity: 0.9; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 6px;">
+                        ⚠️ <strong>Build required:</strong> Run <code style="background: rgba(0,0,0,0.3); padding: 2px 4px;">pnpm build:poster-multi</code> to generate this pass.
+                    </p>
+                </div>
+
+                <!-- Reference Implementation -->
+                <div class="pass-card" style="border: 2px solid rgba(255, 152, 0, 0.6); background: rgba(255, 152, 0, 0.1);">
+                    <div>
+                        <span class="badge" style="background: rgba(255, 152, 0, 0.6);">📚 REFERENCE</span>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.4);">Complete Example</span>
+                    </div>
+                    <h2>Comprehensive Poster Demo</h2>
+                    <p>Full-featured reference implementation showing all available semantic tags and poster features.</p>
+                    <ul class="features">
+                        <li>💺 Seats: Section, row, number, type</li>
+                        <li>🎤 Performers/speakers with genre</li>
+                        <li>🎟️ Admission level, confirmation number</li>
+                        <li>👤 Organizer details (name, phone, email)</li>
+                        <li>📡 WiFi, check-in instructions (additionalInfoFields)</li>
+                        <li>🚪 Venue entrance location</li>
+                    </ul>
+                    <a href="event-poster-ios18.pkpass" class="btn" style="background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);">📲 Add Reference Demo (Coming Soon)</a>
+                    <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: LIFT-2025-iOS18-DEMO</p>
+                    <p style="font-size: 11px; opacity: 0.9; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 6px;">
+                        ⚠️ <strong>Build required:</strong> Run <code style="background: rgba(0,0,0,0.3); padding: 2px 4px;">pnpm build:poster-ios18</code> to generate this pass.
+                    </p>
+                </div>
+
+                <div style="background: rgba(0,0,0,0.2); padding: 16px; border-radius: 8px; margin-top: 16px;">
+                    <p style="font-size: 13px; opacity: 0.95; margin-bottom: 8px;">
+                        <strong>📱 What You'll See (iOS 18+):</strong>
+                    </p>
+                    <ul style="font-size: 12px; opacity: 0.9; margin-left: 20px; line-height: 1.6;">
+                        <li>Large poster-style visual layout (not standard card)</li>
+                        <li>Interactive Maps tile showing venue location below the pass</li>
+                        <li>Tap "Event Guide" to see venue phone (tap-to-call), address, Get Directions</li>
+                        <li>Weather, transit info in Event Guide</li>
+                        <li>(Multi-event only) Swipe between event days with unique details per day</li>
+                    </ul>
+                    <p style="font-size: 12px; opacity: 0.8; margin-top: 12px;">
+                        📖 See <a href="ios-event-ticket-guide.html" style="color: #fff; text-decoration: underline;">iOS Event Ticket Guide</a> for complete documentation
+                    </p>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+
             <!-- Semantics Display Test -->
             <div class="pass-card" style="border: 3px solid rgba(156, 39, 176, 0.7); background: rgba(156, 39, 176, 0.1);">
                 <div>
