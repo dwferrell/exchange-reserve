@@ -1,0 +1,72 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-LIFT-5BACKFIELDS",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "YOUR_ORGANIZATION",
+  "description": "Test: LIFT with 5 BackFields (Event Poster count)",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "maturity",
+        "label": "MATURITY VALUE",
+        "value": "$3,780 USD"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "holder",
+        "label": "Holder",
+        "value": "Raul Hernandez"
+      },
+      {
+        "key": "phase",
+        "label": "Phase",
+        "value": "◉◉◉○○ Engagement"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "series",
+        "label": "Series",
+        "value": "2025Q4"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "certificate-details",
+        "label": "Certificate Details",
+        "value": "Certificate ID: TEST-LIFT-5BACKFIELDS\nHolder: Raul Hernandez\nSeries: 2025Q4\nIssue Date: 2024-03-15\nMaturity Date: 2029-03-15 (60 months)\n\nMaturity Value: $3,780 USD\nDeposited to Date: $250"
+      },
+      {
+        "key": "engagement-phase",
+        "label": "Engagement Phase",
+        "value": "Phase 1 of 5: Engagement\n\nAs you deepen your participation, you'll progress through: Engagement → Residency → Anchorship"
+      },
+      {
+        "key": "priorities",
+        "label": "Your Priorities",
+        "value": "• Community Living\n• Resilient Infrastructure\n• Food & Farming"
+      },
+      {
+        "key": "contact",
+        "label": "Contact",
+        "value": "hello@exchangereserve.org\n\nQuestions? Email us or visit:\nhttps://exchangereserve.org"
+      },
+      {
+        "key": "verification",
+        "label": "Certificate Verification",
+        "value": "Verify your certificate details online.\n\nSerial Number: TEST-LIFT-5BACKFIELDS"
+      }
+    ]
+  },
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://exchangereserve.netlify.app/verify/TEST-LIFT-5BACKFIELDS",
+    "messageEncoding": "iso-8859-1"
+  },
+  "backgroundColor": "#1763b7",
+  "foregroundColor": "#000000",
+  "labelColor": "#000000"
+}
