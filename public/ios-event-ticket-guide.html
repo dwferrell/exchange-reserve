@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Event Ticket Guide - Exchange Reserve</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1763b7 0%, #0d4685 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0 30px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 16px;
+            opacity: 0.8;
+            padding: 8px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 16px;
+            margin-top: 24px;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            margin-top: 20px;
+            opacity: 0.95;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            margin-top: 16px;
+            opacity: 0.9;
+        }
+
+        p {
+            margin-bottom: 16px;
+            opacity: 0.9;
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            opacity: 0.9;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 13px;
+        }
+
+        pre {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .checklist {
+            background: rgba(76, 175, 80, 0.15);
+            border-left: 4px solid #4CAF50;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .warning {
+            background: rgba(255, 152, 0, 0.15);
+            border-left: 4px solid #FF9800;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .tip {
+            background: rgba(33, 150, 243, 0.15);
+            border-left: 4px solid #2196F3;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .resource-link {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            margin: 6px 8px 6px 0;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .resource-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        th {
+            background: rgba(0, 0, 0, 0.3);
+            font-weight: 600;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.25);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .badge-success { background: rgba(76, 175, 80, 0.4); }
+        .badge-warning { background: rgba(255, 152, 0, 0.4); }
+        .badge-error { background: rgba(244, 67, 54, 0.4); }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            opacity: 0.7;
+            font-size: 14px;
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 28px; }
+            h2 { font-size: 24px; }
+            .content-box { padding: 20px; }
+            pre { font-size: 11px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📱 iOS Event Ticket Guide</h1>
+            <p class="subtitle">Poster Layout & Semantic Tags (iOS 18+, tested on iOS 26)</p>
+            <a href="index.html" class="back-link">← Back to Passes</a>
+        </header>
+
+        <main>
+            <div class="content-box">
+                <h2>Overview</h2>
+                <p>Starting with <strong>iOS 18</strong> (WWDC 2024), Apple Wallet supports an enhanced <strong>Poster Event Ticket</strong> layout that displays rich information below your pass, including:</p>
+                <ul>
+                    <li>Interactive Maps tile showing venue location</li>
+                    <li>Event Guide button with directions, weather, and more</li>
+                    <li>Live Activities integration</li>
+                    <li>Multi-event support (festivals, season passes)</li>
+                </ul>
+
+                <div class="tip">
+                    <strong>💡 Key Insight:</strong> This extra functionality isn't driven by normal pass fields—it's driven by <strong>Semantic Tags</strong> in the <code>semantics</code> object. Without proper semantics and the poster layout, iOS Wallet won't show these features.
+                </div>
+            </div>
+
+            <div class="content-box">
+                <h2>✅ Quick Checklist</h2>
+
+                <div class="checklist">
+                    <h3>1. Use Poster Event Ticket Layout</h3>
+                    <p>In your <code>pass.json</code>, specify the poster style:</p>
+                    <pre><code>{
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster"
+  }
+}</code></pre>
+                </div>
+
+                <div class="checklist">
+                    <h3>2. Include Required Semantics</h3>
+                    <p>For the below-the-pass features to appear, Apple expects <strong>venue + date semantics</strong> at minimum:</p>
+                    <pre><code>{
+  "semantics": {
+    "eventType": "PKEventTypeGeneric",
+    "eventName": "Your Event Name",
+    "venueName": "Venue Name",
+    "venueLocation": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "eventStartDate": "2025-11-15T18:00:00-05:00",
+    "eventEndDate": "2025-11-15T20:00:00-05:00"
+  }
+}</code></pre>
+                    <p><strong>Recommended semantic tags:</strong></p>
+                    <ul>
+                        <li><code>venueName</code> (required) - Venue name as a string</li>
+                        <li><code>venueLocation</code> (recommended) - Object with latitude and longitude</li>
+                        <li><code>venuePlaceID</code> (optional) - Apple Maps place identifier</li>
+                        <li><code>eventStartDate</code> (required) - ISO 8601 date string</li>
+                        <li><code>eventEndDate</code> (optional) - ISO 8601 date string</li>
+                        <li><code>seats</code> (optional) - Seat information object</li>
+                        <li><code>performers</code> (optional) - Array of performer names</li>
+                    </ul>
+                </div>
+
+                <div class="checklist">
+                    <h3>3. Use the Right Buckets for Content</h3>
+                    <p><strong>Important distinction:</strong></p>
+                    <ul>
+                        <li><strong>Semantics</strong> = Machine-readable data that powers features (Maps, Event Guide)</li>
+                        <li><strong>Fields</strong> = Human-readable text displayed on the pass</li>
+                    </ul>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Content Type</th>
+                                <th>Where to Put It</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Venue, location, dates</td>
+                                <td><code>semantics</code></td>
+                                <td>Maps integration, Event Guide</td>
+                            </tr>
+                            <tr>
+                                <td>Seats, performers</td>
+                                <td><code>semantics</code></td>
+                                <td>Event-specific tiles</td>
+                            </tr>
+                            <tr>
+                                <td>Custom display text</td>
+                                <td><code>backFields</code> or <code>additionalInfoFields</code></td>
+                                <td>"VIP Lounge Code: 42B"</td>
+                            </tr>
+                            <tr>
+                                <td>Pass-visible fields</td>
+                                <td><code>primaryFields</code>, <code>secondaryFields</code>, etc.</td>
+                                <td>Event name, date on pass front</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="warning">
+                        <strong>⚠️ Key Point:</strong> Many semantic tags power UI features but don't render as visible text themselves. Always put display text in fields, and use semantics for machine-readable data.
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <h3>4. NFC Certificate / Entitlement</h3>
+                    <p>Poster event tickets typically require an <strong>NFC-entitled pass certificate</strong> (Enhanced Pass certificate):</p>
+                    <ul>
+                        <li>If you sign with a regular Pass Type ID certificate, iOS may refuse to install the pass or fall back to the old layout</li>
+                        <li>Request NFC entitlement from Apple Developer portal for enhanced passes</li>
+                        <li>This is separate from your standard Pass Type ID certificate</li>
+                    </ul>
+                </div>
+
+                <div class="checklist">
+                    <h3>5. (Optional) Multiple Dates on One Ticket</h3>
+                    <p>For festivals, season passes, or multi-event tickets, use the <code>upcomingPassInformation</code> array. Each entry gets its own detail screen with dedicated semantics, URLs, and images.</p>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <h2>📝 Minimal Example</h2>
+                <p>Here's a minimal <code>pass.json</code> that should trigger the Event Guide and Maps tile:</p>
+                <pre><code>{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.your.identifier",
+  "serialNumber": "EVENT-001",
+  "teamIdentifier": "YOUR_TEAM_ID",
+  "organizationName": "Your Organization",
+  "description": "Concert Ticket",
+  "logoText": "Your Brand",
+
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Music Festival 2025"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "info",
+        "label": "Event Info",
+        "value": "Gates open at 6 PM. Bring valid ID."
+      }
+    ]
+  },
+
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Music Festival 2025",
+    "venueName": "Golden Gate Park",
+    "venueLocation": {
+      "latitude": 37.7694,
+      "longitude": -122.4862
+    },
+    "eventStartDate": "2025-11-15T18:00:00-08:00",
+    "eventEndDate": "2025-11-15T23:00:00-08:00",
+    "performers": ["Artist One", "Artist Two"],
+    "genre": "Music"
+  },
+
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "https://example.com/verify/EVENT-001",
+      "messageEncoding": "iso-8859-1"
+    }
+  ],
+
+  "backgroundColor": "rgb(23, 99, 183)",
+  "foregroundColor": "rgb(255, 255, 255)",
+  "labelColor": "rgb(200, 220, 255)"
+}</code></pre>
+            </div>
+
+            <div class="content-box">
+                <h2>🔍 Troubleshooting</h2>
+
+                <h3>Event Guide / Maps Tile Not Showing</h3>
+
+                <div class="warning">
+                    <h4><span class="badge badge-error">❌</span> Not using poster style</h4>
+                    <p><strong>Fix:</strong> Add <code>"preferredStyle": "PKPosterEventTicketStylePoster"</code> to <code>eventTicket</code></p>
+                </div>
+
+                <div class="warning">
+                    <h4><span class="badge badge-error">❌</span> Missing required semantics</h4>
+                    <p><strong>Fix:</strong> Ensure you have at minimum: <code>venueName</code>, <code>venueLocation</code>, <code>eventStartDate</code></p>
+                </div>
+
+                <div class="warning">
+                    <h4><span class="badge badge-error">❌</span> Wrong certificate</h4>
+                    <p><strong>Fix:</strong> Use NFC-entitled Enhanced Pass certificate, not regular Pass Type ID certificate</p>
+                </div>
+
+                <div class="warning">
+                    <h4><span class="badge badge-error">❌</span> Semantics not rendering as text</h4>
+                    <p><strong>Expected behavior!</strong> Semantics power features, not display.</p>
+                    <p><strong>Fix:</strong> Add visible text to <code>backFields</code> or <code>additionalInfoFields</code></p>
+                </div>
+
+                <h3>Common Mistakes</h3>
+
+                <div class="warning">
+                    <p><strong>❌ Putting everything in semantics and expecting it to display</strong></p>
+                    <pre><code>"semantics": {
+  "venueName": "Bell Tower Hall",
+  "customField": "VIP Lounge Code: 42B"  // Won't show!
+}</code></pre>
+
+                    <p><strong>✅ Use fields for custom display text</strong></p>
+                    <pre><code>"semantics": {
+  "venueName": "Bell Tower Hall"
+},
+"eventTicket": {
+  "backFields": [
+    {
+      "key": "vip-code",
+      "label": "VIP Lounge Code",
+      "value": "42B"
+    }
+  ]
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <h2>📚 Official Resources</h2>
+
+                <h3>Apple Documentation</h3>
+                <a href="https://developer.apple.com/documentation/walletpasses/pass/semantics" class="resource-link" target="_blank">Supporting Semantic Tags</a>
+                <a href="https://developer.apple.com/documentation/walletpasses/pass" class="resource-link" target="_blank">Pass Documentation</a>
+                <a href="https://developer.apple.com/videos/play/wwdc2024/10106/" class="resource-link" target="_blank">WWDC 2024 - What's New in Wallet</a>
+                <a href="https://developer.apple.com/videos/play/wwdc2025/10118/" class="resource-link" target="_blank">WWDC 2025 - Multi-Event Passes</a>
+
+                <h3 style="margin-top: 24px;">Third-Party Guides</h3>
+                <a href="https://www.passcreator.com/blog/enhanced-event-tickets-apple-wallet/" class="resource-link" target="_blank">PassCreator Guide</a>
+                <a href="https://lets-dev.com/blog/new-event-ticket-layout-apple-wallet/" class="resource-link" target="_blank">let's dev Visual Guide</a>
+
+                <h3 style="margin-top: 24px;">Testing & Tools</h3>
+                <a href="https://pkpassvalidator.com/" class="resource-link" target="_blank">PKPASS Validator</a>
+                <a href="https://github.com/alexandercerutti/passkit-generator" class="resource-link" target="_blank">passkit-generator (Node.js)</a>
+                <a href="https://github.com/palfrey/passes" class="resource-link" target="_blank">passes-rs (Rust)</a>
+                <a href="https://www.passkit.com/" class="resource-link" target="_blank">PassKit Platform</a>
+                <a href="https://www.passcreator.com/" class="resource-link" target="_blank">PassCreator Platform</a>
+            </div>
+
+            <div class="content-box">
+                <h2>🎯 Best Practices Summary</h2>
+
+                <div class="tip">
+                    <p><strong>To get the enhanced iOS 18+ event ticket experience:</strong></p>
+                    <ol>
+                        <li>✅ Use <code>"preferredStyle": "PKPosterEventTicketStylePoster"</code></li>
+                        <li>✅ Include <code>semantics</code> with <code>venueName</code>, <code>venueLocation</code>, and <code>eventStartDate</code></li>
+                        <li>✅ Put custom display text in <code>backFields</code> or <code>additionalInfoFields</code></li>
+                        <li>✅ Sign with NFC-entitled Enhanced Pass certificate</li>
+                        <li>✅ (Optional) Use <code>upcomingPassInformation</code> for multi-event passes</li>
+                    </ol>
+
+                    <p style="margin-top: 16px;"><strong>Key insight:</strong> Semantics power features (Maps, Event Guide), not display. Always pair semantics with appropriate fields for visible text.</p>
+                </div>
+            </div>
+
+            <div class="content-box" style="text-align: center;">
+                <h2>📖 Full Documentation</h2>
+                <p>For a comprehensive guide with complete code examples, troubleshooting, and semantic tag reference:</p>
+                <a href="../IOS_EVENT_TICKET_GUIDE.md" class="resource-link" download style="font-size: 16px; padding: 12px 24px; margin-top: 12px;">
+                    📄 Download Full Markdown Guide
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                <a href="index.html">← Back to Passes</a>
+            </p>
+            <p style="margin-top: 16px;">
+                Exchange Reserve / LocalFund<br>
+                <a href="https://exchangereserve.org">exchangereserve.org</a> •
+                <a href="mailto:hello@exchangereserve.org">Contact</a>
+            </p>
+            <p style="margin-top: 12px; font-size: 12px; opacity: 0.6;">
+                Last updated: November 2025 | Requires: iOS 18+ | Currently tested on iOS 26
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
