@@ -180,63 +180,6 @@
 
             <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
 
-            <!-- V5 Isolation Tests Section -->
-            <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 30px;">
-                <h2 style="margin-bottom: 10px; font-size: 28px;">🔬 V5 Isolation Tests</h2>
-                <p style="opacity: 0.9; margin-bottom: 20px;">Systematic isolation tests to identify V5 failure cause. Each test adds one feature incrementally from working Event Poster V2.</p>
-
-                <!-- Test 1 -->
-                <div class="pass-card" style="border: 2px solid rgba(76, 175, 80, 0.6);">
-                    <span class="badge" style="background: rgba(76, 175, 80, 0.4);">TEST 1</span>
-                    <h3>Date Field Format Fix</h3>
-                    <p>Tests if dateStyle works with maturity-date field using full ISO 8601 datetime (not just date string).</p>
-                    <p style="font-size: 13px; opacity: 0.8;"><strong>Fix:</strong> Changed "2029-03-15" to "2029-03-15T00:00:00-05:00"</p>
-                    <a href="v5-test-1-date-field.pkpass" class="btn">📲 Test 1</a>
-                </div>
-
-                <!-- Test 2 -->
-                <div class="pass-card" style="border: 2px solid rgba(33, 150, 243, 0.6);">
-                    <span class="badge" style="background: rgba(33, 150, 243, 0.4);">TEST 2</span>
-                    <h3>Future Semantics Dates</h3>
-                    <p>Tests semantics with future dates (not past). Starts Oct 31, 2025 (today), ends March 15, 2029.</p>
-                    <p style="font-size: 13px; opacity: 0.8;"><strong>Fix:</strong> eventStartDate changed from past (2024-03-15) to today (2025-10-31)</p>
-                    <a href="v5-test-2-future-semantics.pkpass" class="btn">📲 Test 2</a>
-                </div>
-
-                <!-- Test 3 -->
-                <div class="pass-card" style="border: 2px solid rgba(156, 39, 176, 0.6);">
-                    <span class="badge" style="background: rgba(156, 39, 176, 0.4);">TEST 3</span>
-                    <h3>LIFT Front Fields Structure</h3>
-                    <p>Tests V5's specific front field structure: Maturity Value, Holder Name, Phase Indicator, Series, Maturity Date.</p>
-                    <p style="font-size: 13px; opacity: 0.8;"><strong>Tests:</strong> Primary (Maturity Value), Secondary (Holder, Phase), Auxiliary (Series, Date)</p>
-                    <a href="v5-test-3-lift-frontfields.pkpass" class="btn">📲 Test 3</a>
-                </div>
-
-                <!-- Test 4 -->
-                <div class="pass-card" style="border: 2px solid rgba(255, 152, 0, 0.6);">
-                    <span class="badge" style="background: rgba(255, 152, 0, 0.4);">TEST 4</span>
-                    <h3>LIFT Back Fields Structure</h3>
-                    <p>Tests V5's 5 consolidated backFields with comprehensive LIFT information.</p>
-                    <p style="font-size: 13px; opacity: 0.8;"><strong>Tests:</strong> Certificate Details • Engagement Progress • Priorities & Events • Structure • Support</p>
-                    <a href="v5-test-4-lift-backfields.pkpass" class="btn">📲 Test 4</a>
-                </div>
-
-                <!-- Test 5 -->
-                <div class="pass-card" style="border: 3px solid rgba(25, 118, 210, 0.8); background: rgba(25, 118, 210, 0.1);">
-                    <span class="badge" style="background: rgba(25, 118, 210, 0.6);">TEST 5 - COMPLETE</span>
-                    <h3>Full V5 with All Fixes Applied</h3>
-                    <p>Complete LIFT Certificate V5 with all identified fixes: proper date format + future semantics + V5 fields.</p>
-                    <p style="font-size: 13px; opacity: 0.8;"><strong>This should work:</strong> All V5 features with bug fixes applied</p>
-                    <a href="v5-test-5-complete.pkpass" class="btn">📲 Test 5 - Complete V5</a>
-                </div>
-
-                <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
-                    🧪 <strong>Testing Strategy:</strong> Install each test sequentially. If a test fails, the feature added in that test is the root cause.
-                </p>
-            </div>
-
-            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
-
             <!-- Apple-Style Event Passes Section -->
             <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 30px;">
                 <h2 style="margin-bottom: 10px; font-size: 28px;">🎫 Apple-Style Event Passes</h2>
@@ -306,6 +249,63 @@
                 </p>
                 <p style="font-size: 12px; opacity: 0.8; margin-top: 12px; background: rgba(33, 150, 243, 0.15); padding: 12px; border-radius: 8px; border-left: 3px solid rgba(33, 150, 243, 0.6);">
                     📚 <strong>Based on:</strong> Apple WWDC 2024 poster layout + WWDC 2025 upcomingPassInformation structure. These passes include the complete iOS 18+ event ticket stack with all semantic tags, URLs, images, and additionalInfoFields shown in Apple's official examples.
+                </p>
+            </div>
+
+            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+
+            <!-- V5 Isolation Tests Section -->
+            <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 30px;">
+                <h2 style="margin-bottom: 10px; font-size: 28px;">🔬 V5 Isolation Tests</h2>
+                <p style="opacity: 0.9; margin-bottom: 20px;">Systematic isolation tests to identify V5 failure cause. Each test adds one feature incrementally from working Event Poster V2.</p>
+
+                <!-- Test 1 -->
+                <div class="pass-card" style="border: 2px solid rgba(76, 175, 80, 0.6);">
+                    <span class="badge" style="background: rgba(76, 175, 80, 0.4);">TEST 1</span>
+                    <h3>Date Field Format Fix</h3>
+                    <p>Tests if dateStyle works with maturity-date field using full ISO 8601 datetime (not just date string).</p>
+                    <p style="font-size: 13px; opacity: 0.8;"><strong>Fix:</strong> Changed "2029-03-15" to "2029-03-15T00:00:00-05:00"</p>
+                    <a href="v5-test-1-date-field.pkpass" class="btn">📲 Test 1</a>
+                </div>
+
+                <!-- Test 2 -->
+                <div class="pass-card" style="border: 2px solid rgba(33, 150, 243, 0.6);">
+                    <span class="badge" style="background: rgba(33, 150, 243, 0.4);">TEST 2</span>
+                    <h3>Future Semantics Dates</h3>
+                    <p>Tests semantics with future dates (not past). Starts Oct 31, 2025 (today), ends March 15, 2029.</p>
+                    <p style="font-size: 13px; opacity: 0.8;"><strong>Fix:</strong> eventStartDate changed from past (2024-03-15) to today (2025-10-31)</p>
+                    <a href="v5-test-2-future-semantics.pkpass" class="btn">📲 Test 2</a>
+                </div>
+
+                <!-- Test 3 -->
+                <div class="pass-card" style="border: 2px solid rgba(156, 39, 176, 0.6);">
+                    <span class="badge" style="background: rgba(156, 39, 176, 0.4);">TEST 3</span>
+                    <h3>LIFT Front Fields Structure</h3>
+                    <p>Tests V5's specific front field structure: Maturity Value, Holder Name, Phase Indicator, Series, Maturity Date.</p>
+                    <p style="font-size: 13px; opacity: 0.8;"><strong>Tests:</strong> Primary (Maturity Value), Secondary (Holder, Phase), Auxiliary (Series, Date)</p>
+                    <a href="v5-test-3-lift-frontfields.pkpass" class="btn">📲 Test 3</a>
+                </div>
+
+                <!-- Test 4 -->
+                <div class="pass-card" style="border: 2px solid rgba(255, 152, 0, 0.6);">
+                    <span class="badge" style="background: rgba(255, 152, 0, 0.4);">TEST 4</span>
+                    <h3>LIFT Back Fields Structure</h3>
+                    <p>Tests V5's 5 consolidated backFields with comprehensive LIFT information.</p>
+                    <p style="font-size: 13px; opacity: 0.8;"><strong>Tests:</strong> Certificate Details • Engagement Progress • Priorities & Events • Structure • Support</p>
+                    <a href="v5-test-4-lift-backfields.pkpass" class="btn">📲 Test 4</a>
+                </div>
+
+                <!-- Test 5 -->
+                <div class="pass-card" style="border: 3px solid rgba(25, 118, 210, 0.8); background: rgba(25, 118, 210, 0.1);">
+                    <span class="badge" style="background: rgba(25, 118, 210, 0.6);">TEST 5 - COMPLETE</span>
+                    <h3>Full V5 with All Fixes Applied</h3>
+                    <p>Complete LIFT Certificate V5 with all identified fixes: proper date format + future semantics + V5 fields.</p>
+                    <p style="font-size: 13px; opacity: 0.8;"><strong>This should work:</strong> All V5 features with bug fixes applied</p>
+                    <a href="v5-test-5-complete.pkpass" class="btn">📲 Test 5 - Complete V5</a>
+                </div>
+
+                <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
+                    🧪 <strong>Testing Strategy:</strong> Install each test sequentially. If a test fails, the feature added in that test is the root cause.
                 </p>
             </div>
 
