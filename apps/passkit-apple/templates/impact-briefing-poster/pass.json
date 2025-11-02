@@ -12,28 +12,33 @@
       {
         "key": "event",
         "label": "EVENT",
-        "value": "Q4 Impact Briefing",
+        "value": "BOT-anist Disco",
         "textAlignment": "PKTextAlignmentLeft"
       }
     ],
     "secondaryFields": [
       {
-        "key": "location",
-        "label": "Location",
-        "value": "Bell Tower Hall",
+        "key": "admission",
+        "label": "Admission Type",
+        "value": "General Admission",
         "textAlignment": "PKTextAlignmentLeft"
       }
     ],
     "auxiliaryFields": [
       {
-        "key": "doors",
-        "label": "Doors",
-        "value": "5:30 PM"
+        "key": "section",
+        "label": "Sec",
+        "value": "115"
       },
       {
-        "key": "duration",
-        "label": "Duration",
-        "value": "90 min"
+        "key": "row",
+        "label": "Row",
+        "value": "22"
+      },
+      {
+        "key": "seat",
+        "label": "Seat",
+        "value": "5"
       }
     ],
     "backFields": [
@@ -50,63 +55,86 @@
     ]
   },
   "semantics": {
-    "eventType": "PKEventTypeGeneric",
-    "eventName": "Q4 Impact Briefing",
-    "venueName": "Bell Tower Hall",
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "BOT-anist Disco",
+    "venueName": "Music Venue",
     "venueLocation": {
-      "latitude": 39.4143,
-      "longitude": -77.4105
+      "latitude": 37.7749,
+      "longitude": -122.4194
     },
-    "venuePhoneNumber": "+13015551234",
+    "venuePhoneNumber": "+14155556789",
     "venueEntrance": "Main Entrance",
-    "eventStartDate": "2025-12-10T18:00:00-05:00",
-    "eventEndDate": "2025-12-10T19:30:00-05:00"
+    "eventStartDate": "2025-06-10T00:00:00-08:00",
+    "eventEndDate": "2025-06-10T03:00:00-08:00",
+    "performerNames": ["DJ Botanist", "The Disco Collective"],
+    "genre": "Electronic/Disco",
+    "seats": [
+      {
+        "seatSection": "115",
+        "seatRow": "22",
+        "seatNumber": "5"
+      }
+    ]
   },
   "upcomingPassInformation": [
     {
       "type": "event",
-      "identifier": "impact-briefing-main",
-      "name": "Q4 Impact Briefing",
+      "identifier": "disco-main-event",
+      "name": "BOT-anist Disco",
       "dateInformation": {
-        "date": "2025-12-10T18:00:00-05:00",
-        "timeZone": "America/New_York"
+        "date": "2025-06-10T00:00:00-08:00",
+        "timeZone": "America/Los_Angeles"
       },
       "semantics": {
-        "eventType": "PKEventTypeGeneric",
-        "eventName": "Q4 Impact Briefing",
-        "venueName": "Bell Tower Hall",
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "BOT-anist Disco",
+        "venueName": "Music Venue",
         "venueLocation": {
-          "latitude": 39.4143,
-          "longitude": -77.4105
+          "latitude": 37.7749,
+          "longitude": -122.4194
         },
-        "venuePhoneNumber": "+13015551234",
-        "venueEntrance": "Main Entrance"
+        "venuePhoneNumber": "+14155556789",
+        "venueEntrance": "Main Entrance",
+        "performerNames": ["DJ Botanist", "The Disco Collective", "Neon Groove"],
+        "genre": "Electronic/Disco",
+        "seats": [
+          {
+            "seatSection": "115",
+            "seatRow": "22",
+            "seatNumber": "5"
+          }
+        ]
       },
       "additionalInfoFields": [
         {
-          "key": "dress-code",
-          "label": "Dress Code",
-          "value": "Business casual"
+          "key": "doors",
+          "label": "Doors Open",
+          "value": "11:00 PM"
         },
         {
-          "key": "parking",
-          "label": "Parking",
-          "value": "Free parking available in adjacent lot"
+          "key": "dress-code",
+          "label": "Dress Code",
+          "value": "Disco glam encouraged! Comfortable dancing shoes recommended."
+        },
+        {
+          "key": "age-restriction",
+          "label": "Age Restriction",
+          "value": "18+ with valid ID"
         }
       ]
     }
   ],
   "locations": [
     {
-      "latitude": 39.4143,
-      "longitude": -77.4105,
-      "relevantText": "You're near Bell Tower Hall! Q4 Impact Briefing starts at 6:00 PM.",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "relevantText": "You're near Music Venue! BOT-anist Disco starts at midnight.",
       "distance": 100
     }
   ],
-  "relevantDate": "2025-12-10T18:00:00-05:00",
-  "backgroundColor": "#1763b7",
+  "relevantDate": "2025-06-10T00:00:00-08:00",
+  "backgroundColor": "#7b1fa2",
   "foregroundColor": "#ffffff",
-  "labelColor": "#ffd700",
+  "labelColor": "#ce93d8",
   "sharingProhibited": false
 }
