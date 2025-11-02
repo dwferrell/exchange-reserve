@@ -1,0 +1,135 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "DISCO-POSTER-FRESH-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "BOT-anist Disco - General Admission",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "BOT-anist Disco",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "admission",
+        "label": "Admission Type",
+        "value": "General Admission",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "section",
+        "label": "Sec",
+        "value": "115"
+      },
+      {
+        "key": "row",
+        "label": "Row",
+        "value": "22"
+      },
+      {
+        "key": "seat",
+        "label": "Seat",
+        "value": "5"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "terms",
+        "label": "Terms & Conditions",
+        "value": "General admission standing room. No refunds or exchanges.\n\nMust be 18+ to attend. Valid ID required for entry."
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "BOT-anist Disco",
+    "venueName": "Music Venue",
+    "venueLocation": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "venuePhoneNumber": "+14155556789",
+    "venueEntrance": "Main Entrance",
+    "eventStartDate": "2025-06-10T00:00:00-08:00",
+    "eventEndDate": "2025-06-10T03:00:00-08:00",
+    "performerNames": ["DJ Botanist", "The Disco Collective"],
+    "genre": "Electronic/Disco",
+    "seats": [
+      {
+        "seatSection": "115",
+        "seatRow": "22",
+        "seatNumber": "5"
+      }
+    ]
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "disco-main-event",
+      "name": "BOT-anist Disco",
+      "dateInformation": {
+        "date": "2025-06-10T00:00:00-08:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "BOT-anist Disco",
+        "venueName": "Music Venue",
+        "venueLocation": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "venuePhoneNumber": "+14155556789",
+        "venueEntrance": "Main Entrance",
+        "performerNames": ["DJ Botanist", "The Disco Collective", "Neon Groove"],
+        "genre": "Electronic/Disco",
+        "seats": [
+          {
+            "seatSection": "115",
+            "seatRow": "22",
+            "seatNumber": "5"
+          }
+        ]
+      },
+      "additionalInfoFields": [
+        {
+          "key": "doors",
+          "label": "Doors Open",
+          "value": "11:00 PM"
+        },
+        {
+          "key": "dress-code",
+          "label": "Dress Code",
+          "value": "Disco glam encouraged! Comfortable dancing shoes recommended."
+        },
+        {
+          "key": "age-restriction",
+          "label": "Age Restriction",
+          "value": "18+ with valid ID"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "relevantText": "You're near Music Venue! BOT-anist Disco starts at midnight.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-06-10T00:00:00-08:00",
+  "backgroundColor": "#7b1fa2",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ce93d8",
+  "sharingProhibited": false
+}

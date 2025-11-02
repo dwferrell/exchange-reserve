@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="2;url=../disco-poster-fresh.pkpass">
+    <title>BOT-anist Disco - Poster Event Ticket</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #7b1fa2 0%, #4a148c 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container { max-width: 500px; text-align: center; }
+        .logo { font-size: 48px; font-weight: 700; margin-bottom: 20px; }
+        .logo .local { color: #000; }
+        .logo .fund { color: #4caf50; }
+        h1 { font-size: 28px; font-weight: 600; margin-bottom: 12px; }
+        p { font-size: 16px; opacity: 0.9; margin-bottom: 30px; line-height: 1.6; }
+        .pass-preview {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .pass-preview h2 { font-size: 20px; margin-bottom: 12px; }
+        .pass-preview .detail { font-size: 14px; opacity: 0.8; margin-bottom: 8px; }
+        .wallet-button {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        .wallet-button:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); }
+        .wallet-button:active { transform: translateY(0); }
+        .auto-download-notice { font-size: 14px; opacity: 0.7; margin-top: 20px; }
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .poster-badge {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.3);
+            border: 1px solid rgba(255, 215, 0, 0.6);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .fresh-badge {
+            display: inline-block;
+            background: rgba(76, 175, 80, 0.3);
+            border: 1px solid rgba(76, 175, 80, 0.6);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"><span class="local">local</span><span class="fund">fund</span></div>
+
+        <div class="poster-badge">🎨 iOS 18+ Poster Layout</div>
+        <div class="fresh-badge">✨ Fresh Pass (No QR History)</div>
+
+        <h1>BOT-anist Disco</h1>
+        <p>Poster-style event ticket with seating</p>
+
+        <div class="pass-preview">
+            <h2>Event Details</h2>
+            <div class="detail">🎵 Event: BOT-anist Disco</div>
+            <div class="detail">📅 June 10, 2025 @ 12:00 AM</div>
+            <div class="detail">📍 Music Venue, San Francisco</div>
+            <div class="detail">🎫 General Admission</div>
+            <div class="detail">💺 Sec 115, Row 22, Seat 5</div>
+        </div>
+
+        <a href="../disco-poster-fresh.pkpass" class="wallet-button">Add to Apple Wallet</a>
+
+        <div class="auto-download-notice">
+            <span class="spinner"></span>
+            <span id="status">Preparing your poster ticket...</span>
+        </div>
+
+        <p style="font-size: 12px; opacity: 0.6; margin-top: 30px; line-height: 1.6;">
+            <strong>Fresh Pass:</strong> This pass has never used a QR code, ensuring proper poster layout display. iOS 18+ will show the full poster-style ticket with background image and footer seating info.
+        </p>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('status').textContent = 'Downloading poster ticket...';
+                window.location.href = '../disco-poster-fresh.pkpass';
+                setTimeout(function() {
+                    document.getElementById('status').textContent = 'Ticket ready! Tap "Add to Apple Wallet" if download didn\'t start.';
+                }, 1000);
+            }, 800);
+        });
+    </script>
+</body>
+</html>
