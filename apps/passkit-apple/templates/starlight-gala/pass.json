@@ -1,0 +1,135 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "STARLIGHT-GALA-2025-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "Starlight Gala - VIP Admission",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Starlight Gala",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "admission",
+        "label": "Admission Type",
+        "value": "VIP Admission",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "section",
+        "label": "Sec",
+        "value": "G1"
+      },
+      {
+        "key": "row",
+        "label": "Row",
+        "value": "3"
+      },
+      {
+        "key": "seat",
+        "label": "Seat",
+        "value": "27"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "terms",
+        "label": "Terms & Conditions",
+        "value": "VIP admission includes welcome reception. No refunds or exchanges.\n\nFormal attire required. Valid ID required for entry."
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Starlight Gala",
+    "venueName": "Grand Pavilion",
+    "venueLocation": {
+      "latitude": 40.7580,
+      "longitude": -73.9855
+    },
+    "venuePhoneNumber": "+12125551234",
+    "venueEntrance": "Main Entrance",
+    "eventStartDate": "2025-11-08T19:00:00-05:00",
+    "eventEndDate": "2025-11-09T00:00:00-05:00",
+    "performerNames": ["The Starlight Symphony", "Celestial Voices"],
+    "genre": "Classical/Orchestral",
+    "seats": [
+      {
+        "seatSection": "G1",
+        "seatRow": "3",
+        "seatNumber": "27"
+      }
+    ]
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "starlight-gala-main-event",
+      "name": "Starlight Gala",
+      "dateInformation": {
+        "date": "2025-11-08T19:00:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Starlight Gala",
+        "venueName": "Grand Pavilion",
+        "venueLocation": {
+          "latitude": 40.7580,
+          "longitude": -73.9855
+        },
+        "venuePhoneNumber": "+12125551234",
+        "venueEntrance": "Main Entrance",
+        "performerNames": ["The Starlight Symphony", "Celestial Voices", "New York Chamber Ensemble"],
+        "genre": "Classical/Orchestral",
+        "seats": [
+          {
+            "seatSection": "G1",
+            "seatRow": "3",
+            "seatNumber": "27"
+          }
+        ]
+      },
+      "additionalInfoFields": [
+        {
+          "key": "doors",
+          "label": "Doors Open",
+          "value": "6:00 PM"
+        },
+        {
+          "key": "dress-code",
+          "label": "Dress Code",
+          "value": "Formal attire required"
+        },
+        {
+          "key": "reception",
+          "label": "VIP Reception",
+          "value": "6:30 PM in the Grand Foyer"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 40.7580,
+      "longitude": -73.9855,
+      "relevantText": "You're near Grand Pavilion! Starlight Gala starts at 7:00 PM.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-08T19:00:00-05:00",
+  "backgroundColor": "#311b92",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#b39ddb",
+  "sharingProhibited": false
+}

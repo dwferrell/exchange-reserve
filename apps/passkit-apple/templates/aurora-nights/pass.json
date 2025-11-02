@@ -1,0 +1,135 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "AURORA-NIGHTS-2026-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "Aurora Nights - Deluxe Seating",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Aurora Nights Concert",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "admission",
+        "label": "Admission Type",
+        "value": "Deluxe Seating",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "section",
+        "label": "Sec",
+        "value": "D4"
+      },
+      {
+        "key": "row",
+        "label": "Row",
+        "value": "6"
+      },
+      {
+        "key": "seat",
+        "label": "Seat",
+        "value": "19"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "terms",
+        "label": "Terms & Conditions",
+        "value": "Deluxe seating with enhanced viewing. No refunds or exchanges.\n\nAll ages welcome. Minors must be accompanied by adult."
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Aurora Nights Concert",
+    "venueName": "Symphony Center",
+    "venueLocation": {
+      "latitude": 41.8781,
+      "longitude": -87.6298
+    },
+    "venuePhoneNumber": "+13125558888",
+    "venueEntrance": "Main Entrance",
+    "eventStartDate": "2026-03-21T20:00:00-05:00",
+    "eventEndDate": "2026-03-21T23:30:00-05:00",
+    "performerNames": ["Northern Lights Orchestra", "Aurora Ensemble"],
+    "genre": "Contemporary/Orchestral",
+    "seats": [
+      {
+        "seatSection": "D4",
+        "seatRow": "6",
+        "seatNumber": "19"
+      }
+    ]
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "aurora-nights-main-event",
+      "name": "Aurora Nights Concert",
+      "dateInformation": {
+        "date": "2026-03-21T20:00:00-05:00",
+        "timeZone": "America/Chicago"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Aurora Nights Concert",
+        "venueName": "Symphony Center",
+        "venueLocation": {
+          "latitude": 41.8781,
+          "longitude": -87.6298
+        },
+        "venuePhoneNumber": "+13125558888",
+        "venueEntrance": "Main Entrance",
+        "performerNames": ["Northern Lights Orchestra", "Aurora Ensemble", "Chicago String Quartet"],
+        "genre": "Contemporary/Orchestral",
+        "seats": [
+          {
+            "seatSection": "D4",
+            "seatRow": "6",
+            "seatNumber": "19"
+          }
+        ]
+      },
+      "additionalInfoFields": [
+        {
+          "key": "doors",
+          "label": "Doors Open",
+          "value": "7:00 PM"
+        },
+        {
+          "key": "dress-code",
+          "label": "Dress Code",
+          "value": "Business casual recommended"
+        },
+        {
+          "key": "age-policy",
+          "label": "Age Policy",
+          "value": "All ages - minors with adult"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 41.8781,
+      "longitude": -87.6298,
+      "relevantText": "You're near Symphony Center! Aurora Nights begins at 8:00 PM.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2026-03-21T20:00:00-05:00",
+  "backgroundColor": "#00695c",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#80cbc4",
+  "sharingProhibited": false
+}

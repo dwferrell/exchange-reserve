@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="2;url=../rhythm-fusion.pkpass">
+    <title>Rhythm Fusion Festival - Poster Event Ticket</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container { max-width: 500px; text-align: center; }
+        .logo { font-size: 48px; font-weight: 700; margin-bottom: 20px; }
+        .logo .local { color: #000; }
+        .logo .fund { color: #4caf50; }
+        h1 { font-size: 28px; font-weight: 600; margin-bottom: 12px; }
+        p { font-size: 16px; opacity: 0.9; margin-bottom: 30px; line-height: 1.6; }
+        .pass-preview {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .pass-preview h2 { font-size: 20px; margin-bottom: 12px; }
+        .pass-preview .detail { font-size: 14px; opacity: 0.8; margin-bottom: 8px; }
+        .wallet-button {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        .wallet-button:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); }
+        .wallet-button:active { transform: translateY(0); }
+        .auto-download-notice { font-size: 14px; opacity: 0.7; margin-top: 20px; }
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .poster-badge {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.3);
+            border: 1px solid rgba(255, 215, 0, 0.6);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"><span class="local">local</span><span class="fund">fund</span></div>
+
+        <div class="poster-badge">🎨 iOS 18+ Poster Layout</div>
+
+        <h1>Rhythm Fusion Festival</h1>
+        <p>Premium Access - Waterfront Arena, Seattle</p>
+
+        <div class="pass-preview">
+            <h2>Event Details</h2>
+            <div class="detail">🥁 Fusion Collective & Rhythm Kings</div>
+            <div class="detail">📅 February 14, 2026 @ 6:00 PM</div>
+            <div class="detail">📍 Waterfront Arena, Seattle</div>
+            <div class="detail">🎫 Premium Access</div>
+            <div class="detail">💺 Sec P9, Row 14, Seat 8</div>
+        </div>
+
+        <a href="../rhythm-fusion.pkpass" class="wallet-button">Add to Apple Wallet</a>
+
+        <div class="auto-download-notice">
+            <span class="spinner"></span>
+            <span id="status">Preparing your poster ticket...</span>
+        </div>
+
+        <p style="font-size: 12px; opacity: 0.6; margin-top: 30px; line-height: 1.6;">
+            <strong>Poster Event Ticket:</strong> Uses the same structure as Groove Night. iOS 18+ will display the full poster-style layout.
+        </p>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('status').textContent = 'Downloading poster ticket...';
+                window.location.href = '../rhythm-fusion.pkpass';
+                setTimeout(function() {
+                    document.getElementById('status').textContent = 'Ticket ready! Tap "Add to Apple Wallet" if download didn\'t start.';
+                }, 1000);
+            }, 800);
+        });
+    </script>
+</body>
+</html>

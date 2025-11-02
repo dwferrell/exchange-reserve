@@ -1,0 +1,135 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "RHYTHM-FUSION-2026-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "Rhythm Fusion - Premium Access",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Rhythm Fusion Festival",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "admission",
+        "label": "Admission Type",
+        "value": "Premium Access",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "section",
+        "label": "Sec",
+        "value": "P9"
+      },
+      {
+        "key": "row",
+        "label": "Row",
+        "value": "14"
+      },
+      {
+        "key": "seat",
+        "label": "Seat",
+        "value": "8"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "terms",
+        "label": "Terms & Conditions",
+        "value": "Premium access to all stages. No refunds or exchanges.\n\nMust be 18+ to attend. Valid ID required for entry."
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Rhythm Fusion Festival",
+    "venueName": "Waterfront Arena",
+    "venueLocation": {
+      "latitude": 47.6062,
+      "longitude": -122.3321
+    },
+    "venuePhoneNumber": "+12065559876",
+    "venueEntrance": "Main Entrance",
+    "eventStartDate": "2026-02-14T18:00:00-08:00",
+    "eventEndDate": "2026-02-15T01:00:00-08:00",
+    "performerNames": ["Fusion Collective", "Rhythm Kings"],
+    "genre": "World/Fusion",
+    "seats": [
+      {
+        "seatSection": "P9",
+        "seatRow": "14",
+        "seatNumber": "8"
+      }
+    ]
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "rhythm-fusion-main-event",
+      "name": "Rhythm Fusion Festival",
+      "dateInformation": {
+        "date": "2026-02-14T18:00:00-08:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Rhythm Fusion Festival",
+        "venueName": "Waterfront Arena",
+        "venueLocation": {
+          "latitude": 47.6062,
+          "longitude": -122.3321
+        },
+        "venuePhoneNumber": "+12065559876",
+        "venueEntrance": "Main Entrance",
+        "performerNames": ["Fusion Collective", "Rhythm Kings", "Global Beats Ensemble"],
+        "genre": "World/Fusion",
+        "seats": [
+          {
+            "seatSection": "P9",
+            "seatRow": "14",
+            "seatNumber": "8"
+          }
+        ]
+      },
+      "additionalInfoFields": [
+        {
+          "key": "doors",
+          "label": "Doors Open",
+          "value": "5:00 PM"
+        },
+        {
+          "key": "dress-code",
+          "label": "Dress Code",
+          "value": "Casual festival attire"
+        },
+        {
+          "key": "age-restriction",
+          "label": "Age Restriction",
+          "value": "18+ with valid ID"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 47.6062,
+      "longitude": -122.3321,
+      "relevantText": "You're near Waterfront Arena! Rhythm Fusion starts at 6:00 PM.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2026-02-14T18:00:00-08:00",
+  "backgroundColor": "#d32f2f",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffcdd2",
+  "sharingProhibited": false
+}
