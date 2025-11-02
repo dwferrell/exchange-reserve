@@ -1,0 +1,86 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "JAZZ-LOUNGE-SIMPLE-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "Blue Note Jazz Night - Reserved Table",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Blue Note Jazz Night",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "admission",
+        "label": "Type",
+        "value": "Reserved Table",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "section",
+        "label": "Sec",
+        "value": "Main"
+      },
+      {
+        "key": "row",
+        "label": "Table",
+        "value": "T5"
+      },
+      {
+        "key": "seat",
+        "label": "Seats",
+        "value": "4"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "info",
+        "label": "Event Information",
+        "value": "Jazz Night featuring Miles Ahead Quartet\n\nDoors: 8:00 PM\nShow: 9:00 PM\nTwo-drink minimum per person"
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Blue Note Jazz Night",
+    "venueName": "Blue Note Jazz Club",
+    "venueLocation": {
+      "latitude": 40.7298,
+      "longitude": -74.0057
+    },
+    "venuePhoneNumber": "+12124759592",
+    "venueEntrance": "131 W 3rd St",
+    "eventStartDate": "2025-09-12T21:00:00-04:00",
+    "eventEndDate": "2025-09-13T00:00:00-04:00",
+    "performerNames": ["Miles Ahead Quartet"],
+    "genre": "Jazz",
+    "seats": [
+      {
+        "seatSection": "Main",
+        "seatRow": "T5",
+        "seatNumber": "4"
+      }
+    ]
+  },
+  "locations": [
+    {
+      "latitude": 40.7298,
+      "longitude": -74.0057,
+      "relevantText": "Blue Note Jazz Club - Show starts at 9:00 PM",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-09-12T21:00:00-04:00",
+  "backgroundColor": "#1a237e",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#9fa8da"
+}

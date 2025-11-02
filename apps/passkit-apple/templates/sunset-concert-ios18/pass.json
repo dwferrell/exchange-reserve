@@ -1,0 +1,129 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "SUNSET-CONCERT-IOS18-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "Sunset Concert - Premium Seating",
+  "logoText": "LocalFund",
+  "userInfo": {
+    "minimumOSVersion": "18.0"
+  },
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Sunset Concert Series",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "admission",
+        "label": "Ticket Type",
+        "value": "Premium Seating",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "section",
+        "label": "Sec",
+        "value": "B7"
+      },
+      {
+        "key": "row",
+        "label": "Row",
+        "value": "12"
+      },
+      {
+        "key": "seat",
+        "label": "Seat",
+        "value": "23"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "venue-info",
+        "label": "Venue Information",
+        "value": "Red Rocks Amphitheatre\nMorrison, Colorado\n\nGates open: 6:00 PM\nShow starts: 7:30 PM\n\nParking available on-site."
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Sunset Concert Series",
+    "venueName": "Red Rocks Amphitheatre",
+    "venueLocation": {
+      "latitude": 39.6654,
+      "longitude": -105.2057
+    },
+    "venuePhoneNumber": "+17206978500",
+    "eventStartDate": "2025-07-04T19:30:00-06:00",
+    "eventEndDate": "2025-07-04T23:00:00-06:00",
+    "performerNames": ["The Sunset Orchestra", "Mountain Echo"],
+    "genre": "Classical/Ambient",
+    "seats": [
+      {
+        "seatSection": "B7",
+        "seatRow": "12",
+        "seatNumber": "23"
+      }
+    ]
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "sunset-concert-main",
+      "name": "Sunset Concert Series",
+      "dateInformation": {
+        "date": "2025-07-04T19:30:00-06:00",
+        "timeZone": "America/Denver"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Sunset Concert Series",
+        "venueName": "Red Rocks Amphitheatre",
+        "venueLocation": {
+          "latitude": 39.6654,
+          "longitude": -105.2057
+        },
+        "performerNames": ["The Sunset Orchestra", "Mountain Echo", "Echo Valley Quartet"],
+        "genre": "Classical/Ambient",
+        "seats": [
+          {
+            "seatSection": "B7",
+            "seatRow": "12",
+            "seatNumber": "23"
+          }
+        ]
+      },
+      "additionalInfoFields": [
+        {
+          "key": "parking",
+          "label": "Parking",
+          "value": "Lot A recommended - arrive early"
+        },
+        {
+          "key": "weather",
+          "label": "Weather Note",
+          "value": "Outdoor venue - dress in layers"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.6654,
+      "longitude": -105.2057,
+      "relevantText": "You're at Red Rocks! Sunset Concert begins at 7:30 PM.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-07-04T19:30:00-06:00",
+  "backgroundColor": "#ff6f00",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffe0b2"
+}

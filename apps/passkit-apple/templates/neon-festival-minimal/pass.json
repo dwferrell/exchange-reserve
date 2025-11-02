@@ -1,0 +1,75 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "NEON-FESTIVAL-MINIMAL-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "Neon Festival - VIP Access",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "preferredStyle": "PKPosterEventTicketStylePoster",
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Neon Festival",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "admission",
+        "label": "Admission",
+        "value": "VIP Access",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "section",
+        "label": "Sec",
+        "value": "VIP1"
+      },
+      {
+        "key": "row",
+        "label": "Row",
+        "value": "A"
+      },
+      {
+        "key": "seat",
+        "label": "Seat",
+        "value": "42"
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Neon Festival",
+    "venueName": "Madison Square Garden",
+    "venueLocation": {
+      "latitude": 40.7505,
+      "longitude": -73.9934
+    },
+    "eventStartDate": "2025-08-15T19:00:00-04:00",
+    "eventEndDate": "2025-08-16T01:00:00-04:00",
+    "seats": [
+      {
+        "seatSection": "VIP1",
+        "seatRow": "A",
+        "seatNumber": "42"
+      }
+    ]
+  },
+  "locations": [
+    {
+      "latitude": 40.7505,
+      "longitude": -73.9934,
+      "relevantText": "Welcome to Neon Festival at Madison Square Garden!",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-08-15T19:00:00-04:00",
+  "backgroundColor": "#ff1744",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffcdd2"
+}
