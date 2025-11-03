@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "CONTROL-BASIC-EVENT-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "LocalFund Events",
+  "description": "Control Test - Basic Event Ticket",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Control Test Concert",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "date",
+        "label": "Date",
+        "value": "March 1, 2026 @ 8:00 PM",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "venue",
+        "label": "Venue",
+        "value": "Test Arena"
+      },
+      {
+        "key": "admission",
+        "label": "Type",
+        "value": "General Admission"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "info",
+        "label": "Test Information",
+        "value": "This is a control test to verify basic eventTicket structure works with LocalFund Events organization.\n\nNO upcomingPassInformation included.\nNO NFC.\nJust basic eventTicket fields."
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Control Test Concert",
+    "venueName": "Test Arena",
+    "venueLocation": {
+      "latitude": 40.7580,
+      "longitude": -73.9855
+    },
+    "eventStartDate": "2026-03-01T20:00:00-05:00",
+    "eventEndDate": "2026-03-01T23:00:00-05:00"
+  },
+  "locations": [
+    {
+      "latitude": 40.7580,
+      "longitude": -73.9855,
+      "relevantText": "Control test event nearby",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2026-03-01T20:00:00-05:00",
+  "backgroundColor": "#e91e63",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#f8bbd0",
+  "sharingProhibited": false
+}

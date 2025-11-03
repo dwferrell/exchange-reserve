@@ -157,692 +157,229 @@
         </header>
 
         <main>
-            <!-- iOS Event Ticket Guide -->
-            <div class="pass-card" style="border: 3px solid rgba(33, 150, 243, 0.8); background: rgba(33, 150, 243, 0.15);">
-                <div>
-                    <span class="badge" style="background: rgba(33, 150, 243, 0.6);">📚 NEW GUIDE</span>
-                    <span class="badge" style="background: rgba(76, 175, 80, 0.4);">iOS 18+</span>
+            <!-- ISOLATION TESTS - TOP PRIORITY -->
+            <div style="background: rgba(255, 87, 34, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 3px solid rgba(255, 87, 34, 0.6);">
+                <h2 style="margin-bottom: 10px; font-size: 28px;">🔬 iOS 18+ Isolation Tests</h2>
+                <p style="opacity: 0.9; margin-bottom: 20px;">Testing <code>upcomingPassInformation</code> feature with/without to isolate why passes aren't adding to Wallet on iOS 26.1.</p>
+
+                <!-- Control Test: NO upcoming events -->
+                <div class="pass-card" style="border: 3px solid rgba(244, 67, 54, 0.8); background: rgba(244, 67, 54, 0.1);">
+                    <div>
+                        <span class="badge" style="background: rgba(244, 67, 54, 0.6);">🔬 CONTROL TEST</span>
+                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">NO Upcoming Events</span>
+                    </div>
+                    <h3>Control: Basic Event Ticket</h3>
+                    <p>Standard eventTicket structure WITHOUT upcomingPassInformation. Tests if base structure works with "LocalFund Events" organization.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>✅ organizationName: LocalFund Events</li>
+                        <li>✅ Standard eventTicket fields</li>
+                        <li>✅ Complete semantics (venue, location, dates)</li>
+                        <li>❌ NO upcomingPassInformation</li>
+                        <li>📍 Control Test Concert - March 1, 2026</li>
+                    </ul>
+                    <a href="passes/control-basic-event.html" class="btn">📲 Test Control (No Upcoming)</a>
+                    <p style="font-size: 11px; opacity: 0.6; margin-top: 8px;">If this FAILS: issue is with base structure or organization. If this SUCCEEDS: issue is with upcomingPassInformation.</p>
                 </div>
-                <h2>📱 iOS Event Ticket Guide</h2>
-                <p>Learn how to use <strong>Poster Event Ticket Layout</strong> and <strong>Semantic Tags</strong> to unlock enhanced iOS Wallet features like Maps tiles, Event Guide buttons, and Live Activities.</p>
-                <ul class="features">
-                    <li>🎯 Quick checklist for iOS 18+ poster layout</li>
-                    <li>📝 Complete semantic tags reference</li>
-                    <li>💡 Troubleshooting common issues</li>
-                    <li>✅ Best practices and examples</li>
-                    <li>🔗 Official Apple resources and third-party tools</li>
-                </ul>
-                <a href="ios-event-ticket-guide.html" class="btn" style="background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); color: #fff;">📖 Read the Guide</a>
-                <p style="font-size: 11px; opacity: 0.9; margin-top: 12px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 6px;">
-                    Comprehensive guide to iOS Wallet's enhanced event tickets with semantic tags, poster layout, and Event Guide features introduced at WWDC 2024.
-                </p>
-            </div>
 
-            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
-
-            <!-- StoreCard Prototypes Section -->
-            <div style="background: rgba(76, 175, 80, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 2px solid rgba(76, 175, 80, 0.4);">
-                <h2 style="margin-bottom: 10px; font-size: 28px;">🏪 StoreCard Prototypes - LIFT Certificates</h2>
-                <p style="opacity: 0.9; margin-bottom: 20px;">Exploring PassKit's <code>storeCard</code> pass type for LIFT Certificates with balance tracking, tiered membership, phase progression, and engagement gamification.</p>
-
-                <!-- V6 StoreCard Base -->
+                <!-- Test 1: LIFT Impact Series -->
                 <div class="pass-card" style="border: 2px solid rgba(25, 118, 210, 0.6);">
                     <div>
-                        <span class="badge" style="background: rgba(25, 118, 210, 0.6);">🎯 V6 - StoreCard Base</span>
-                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">Balance Tracking</span>
+                        <span class="badge" style="background: rgba(25, 118, 210, 0.6);">🎯 Test 1</span>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">upcomingPassInformation</span>
+                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">4 Events</span>
                     </div>
-                    <h3>LIFT Certificate V6 - StoreCard Format</h3>
-                    <p>Converted from eventTicket to storeCard with proper balance tracking and value display.</p>
+                    <h3>LIFT Impact Briefings 2025</h3>
+                    <p>Quarterly series pass with full upcomingPassInformation: Q1-Q4 briefings with complete semantics and additionalInfoFields.</p>
                     <ul class="features" style="font-size: 13px;">
-                        <li>💰 Primary field: Maturity Value ($3,780 with currency formatting)</li>
-                        <li>📊 Phase progression: ◉◉◉○○ Engagement (3 of 5)</li>
-                        <li>📅 Maturity date with proper date formatting</li>
-                        <li>🎯 Next milestone tracking</li>
-                        <li>📋 5 backFields: Certificate Details, Phase Progress, Priorities, Structure, Support</li>
+                        <li>📅 Q1-Q4 2025: Community Living, Green Energy, Affordable Housing, Year-End</li>
+                        <li>📍 Bell Tower Hall, Frederick MD (real venue)</li>
+                        <li>🎯 Complete semantics: venue, location, phone, dates</li>
+                        <li>📝 additionalInfoFields per event (topic, speaker)</li>
+                        <li>🗺️ Geofencing + relevantDate</li>
                     </ul>
-                    <a href="passes/certificate-v6.html" class="btn">📲 Add V6 StoreCard</a>
+                    <a href="passes/lift-impact-series.html" class="btn">📲 Test 1: LIFT Series</a>
                 </div>
 
-                <!-- Phase-Locked Journey -->
-                <div class="pass-card" style="border: 2px solid rgba(46, 125, 50, 0.6);">
+                <!-- Test 2: Summer Concert Series -->
+                <div class="pass-card" style="border: 2px solid rgba(25, 118, 210, 0.6);">
                     <div>
-                        <span class="badge" style="background: rgba(46, 125, 50, 0.6);">🔒 Phase-Locked</span>
-                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">Progressive Unlock</span>
+                        <span class="badge" style="background: rgba(25, 118, 210, 0.6);">🎯 Test 2</span>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">upcomingPassInformation</span>
+                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">3 Events</span>
                     </div>
-                    <h3>Phase-Locked Journey Certificate</h3>
-                    <p>Shows only unlocked phases with locked future phases. Reveals next phase as user progresses.</p>
+                    <h3>Summer Concert Series 2025</h3>
+                    <p>Season pass with upcomingPassInformation: June kickoff + 2 upcoming concerts with performer names, venue details.</p>
                     <ul class="features" style="font-size: 13px;">
-                        <li>✓ Phase 1 & 2: Complete (visible details)</li>
-                        <li>● Phase 3: Current (60% progress, 127 days in phase)</li>
-                        <li>🔒 Phase 4 & 5: Locked (unlocks at milestones)</li>
-                        <li>🎯 Phase 1: 90-day flexible commitment window</li>
-                        <li>📈 Journey progress tracking</li>
+                        <li>🎵 June 20, July 18, Aug 15 @ Central Park SummerStage</li>
+                        <li>🎤 Performer names array, genre semantics</li>
+                        <li>📍 venuePlaceID for Maps integration</li>
+                        <li>📝 additionalInfoFields (doors open, special guest, fireworks)</li>
+                        <li>🗺️ Geofencing + relevantDate</li>
                     </ul>
-                    <a href="passes/phase-locked.html" class="btn">📲 Add Phase-Locked Pass</a>
+                    <a href="passes/summer-concert-series.html" class="btn">📲 Test 2: Summer Concerts</a>
                 </div>
 
-                <!-- Tiered Membership -->
-                <div class="pass-card" style="border: 2px solid rgba(33, 150, 243, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(33, 150, 243, 0.6);">⭐ Silver Tier</span>
-                        <span class="badge" style="background: rgba(255, 215, 0, 0.3);">Tiered Benefits</span>
-                    </div>
-                    <h3>Tiered Membership Pass</h3>
-                    <p>Visual tier differentiation with Bronze/Silver/Gold levels based on certificate value.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>⭐ Current: Silver tier ($3,000-$9,999)</li>
-                        <li>📊 Progress to Gold: $6,220 remaining</li>
-                        <li>🎁 10 active Silver benefits</li>
-                        <li>🏆 Gold tier preview (unlocks at $10K)</li>
-                        <li>📈 Tier history tracking</li>
-                    </ul>
-                    <a href="passes/tiered-membership.html" class="btn">📲 Add Tiered Membership</a>
-                </div>
-
-                <!-- Engagement Score -->
-                <div class="pass-card" style="border: 2px solid rgba(123, 31, 162, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(123, 31, 162, 0.6);">🎮 Gamified</span>
-                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">Level 7</span>
-                    </div>
-                    <h3>Engagement Score Tracker</h3>
-                    <p>Gamified pass showing engagement metrics, points balance, achievements, and community rank.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>🏆 Level 7 Contributor (2,450 points)</li>
-                        <li>📊 Community rank: Top 15%</li>
-                        <li>🔥 87-day active streak</li>
-                        <li>🎯 12 of 25 achievements unlocked</li>
-                        <li>📈 Leaderboard positioning</li>
-                    </ul>
-                    <a href="passes/engagement-score.html" class="btn">📲 Add Score Tracker</a>
-                </div>
-
-                <!-- Milestone Celebration -->
-                <div class="pass-card" style="border: 2px solid rgba(211, 47, 47, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(211, 47, 47, 0.6);">🎉 1-Year Milestone</span>
-                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">Celebration</span>
-                    </div>
-                    <h3>Milestone Celebration Pass</h3>
-                    <p>Special pass celebrating 1-year membership anniversary with impact summary and exclusive event invite.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>🎊 Year-one impact statistics</li>
-                        <li>💰 Value growth: +26% ($3,780)</li>
-                        <li>🏆 Achievements: 18 projects supported</li>
-                        <li>🎁 Exclusive 1-year member celebration event</li>
-                        <li>🔮 Year-two preview</li>
-                    </ul>
-                    <a href="passes/milestone.html" class="btn">📲 Add Milestone Pass</a>
-                </div>
-
-                <!-- Referral Rewards -->
-                <div class="pass-card" style="border: 2px solid rgba(0, 137, 123, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(0, 137, 123, 0.6);">🤝 Referrals</span>
-                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">$150 Balance</span>
-                    </div>
-                    <h3>Referral Rewards Pass</h3>
-                    <p>Track referrals made, reward balance, and earn bonus credits for bringing new members.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>💰 Reward balance: $150 ($75 per referral)</li>
-                        <li>✓ 2 successful referrals + 1 pending</li>
-                        <li>📱 Unique referral link QR code</li>
-                        <li>⭐ Tier bonus: +10% (Silver)</li>
-                        <li>🎁 Multiple reward redemption options</li>
-                    </ul>
-                    <a href="passes/referral-rewards.html" class="btn">📲 Add Referral Rewards</a>
-                </div>
-
-                <!-- Impact Portfolio -->
-                <div class="pass-card" style="border: 2px solid rgba(21, 101, 192, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(21, 101, 192, 0.6);">📊 Portfolio</span>
-                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">18 Projects</span>
-                    </div>
-                    <h3>Impact Portfolio Dashboard</h3>
-                    <p>Aggregated view of all funded projects across three priorities with impact metrics.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>💰 Total community impact: $127,450</li>
-                        <li>📈 Your contribution: $3,780 (3% of pool)</li>
-                        <li>🏘️ 18 projects (12 active, 6 completed)</li>
-                        <li>👥 1,240+ people impacted</li>
-                        <li>🌱 Detailed breakdown by priority</li>
-                    </ul>
-                    <a href="passes/impact-portfolio.html" class="btn">📲 Add Impact Portfolio</a>
-                </div>
-
-                <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
-                    💡 <strong>Testing Goal:</strong> These storeCard prototypes explore balance tracking, tiered membership, phase progression, gamification, and portfolio management features for LIFT Certificates.
-                </p>
-            </div>
-
-            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
-
-            <!-- Coupon Prototypes Section -->
-            <div style="background: rgba(255, 152, 0, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 2px solid rgba(255, 152, 0, 0.4);">
-                <h2 style="margin-bottom: 10px; font-size: 28px;">🎫 Coupon Prototypes - Priority Impact Updates</h2>
-                <p style="opacity: 0.9; margin-bottom: 20px;">Exploring PassKit's <code>coupon</code> pass type for quarterly priority impact updates, project achievements, and engagement opportunities.</p>
-
-                <!-- Green Energy -->
-                <div class="pass-card" style="border: 2px solid rgba(56, 142, 60, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(56, 142, 60, 0.6);">⚡ Green Energy</span>
-                        <span class="badge" style="background: rgba(255, 215, 0, 0.3);">Q4 2025</span>
-                    </div>
-                    <h3>Green Energy Priority Impact - Q4 2025</h3>
-                    <p>Quarterly impact update: 3 solar projects funded, 47 homes powered, 215 kW installed.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>⚡ 3 solar projects completed this quarter</li>
-                        <li>🏠 47 households powered</li>
-                        <li>🌱 38 tons CO2 offset/year</li>
-                        <li>📍 Location-based: Near Community Solar Garden</li>
-                        <li>🗓️ Expires: Jan 31, 2026 (quarterly update)</li>
-                    </ul>
-                    <a href="passes/green-energy.html" class="btn">📲 Add Green Energy Update</a>
-                </div>
-
-                <!-- Affordable Housing -->
-                <div class="pass-card" style="border: 2px solid rgba(216, 67, 21, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(216, 67, 21, 0.6);">🏠 Affordable Housing</span>
-                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">12 Units!</span>
-                    </div>
-                    <h3>Affordable Housing Major Milestone - Q4 2025</h3>
-                    <p>Big achievement: 12 workforce housing units completed and fully occupied in Frederick!</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>🏠 12 apartments completed (100% occupied)</li>
-                        <li>👨‍👩‍👧‍👦 12 families housed at 60% AMI</li>
-                        <li>💰 $600/month rent savings vs market</li>
-                        <li>🎉 Ribbon cutting: Dec 8 @ 2 PM</li>
-                        <li>📍 Location-based: Near project site</li>
-                    </ul>
-                    <a href="passes/affordable-housing.html" class="btn">📲 Add Housing Update</a>
-                </div>
-
-                <!-- City Infrastructure -->
-                <div class="pass-card" style="border: 2px solid rgba(255, 111, 0, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(255, 111, 0, 0.6);">🏗️ Infrastructure</span>
-                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">2 Projects</span>
-                    </div>
-                    <h3>City Infrastructure Impact - Q4 2025</h3>
-                    <p>Protected bike lanes (1.2 miles) + pocket park restoration (0.5 acres) completed.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>🚴 Protected bike lanes: 1.2 miles downtown</li>
-                        <li>🌳 Pocket park restored: 0.5 acres</li>
-                        <li>👥 850+ daily users combined</li>
-                        <li>🌱 50,000 gal/year stormwater captured</li>
-                        <li>🎯 Guided bike tour: Dec 12 @ 10 AM</li>
-                    </ul>
-                    <a href="passes/city-infrastructure.html" class="btn">📲 Add Infrastructure Update</a>
-                </div>
-
-                <!-- Triple Priority Dashboard -->
+                <!-- Test 3: Film Festival Pass -->
                 <div class="pass-card" style="border: 2px solid rgba(106, 27, 154, 0.6);">
                     <div>
-                        <span class="badge" style="background: rgba(106, 27, 154, 0.6);">📊 All 3 Priorities</span>
-                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">Dashboard</span>
-                    </div>
-                    <h3>Triple Priority Dashboard - Q4 2025</h3>
-                    <p>Combined impact across all three selected priorities with aggregate metrics.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>🏘️ Community Living: 6 active projects</li>
-                        <li>⚡ Green Energy: 5 active projects (3 completed Q4)</li>
-                        <li>🏠 Affordable Housing: 6 active projects (1 completed Q4)</li>
-                        <li>👥 380+ people directly impacted</li>
-                        <li>💰 28:1 social ROI ($106K leveraged from $3,780)</li>
-                    </ul>
-                    <a href="passes/triple-dashboard.html" class="btn">📲 Add Triple Dashboard</a>
-                </div>
-
-                <!-- Priority Unlock -->
-                <div class="pass-card" style="border: 2px solid rgba(245, 124, 0, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(245, 124, 0, 0.6);">🎯 Quarterly Review</span>
-                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">Update Available</span>
-                    </div>
-                    <h3>Priority Review & Update Coupon</h3>
-                    <p>Quarterly opportunity to review and update your three impact priorities (expires Dec 31).</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>🔄 Update your 3 priorities quarterly</li>
-                        <li>📋 12 total priorities available to choose from</li>
-                        <li>🆕 New option: Digital Equity</li>
-                        <li>📅 Deadline: December 31, 2025</li>
-                        <li>🔗 Direct link to update form (QR code)</li>
-                    </ul>
-                    <a href="passes/priority-unlock.html" class="btn">📲 Add Priority Review</a>
-                </div>
-
-                <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
-                    💡 <strong>Testing Goal:</strong> These coupon prototypes explore quarterly impact updates, project achievements, location-based activation, and priority engagement for pooled funding model.
-                </p>
-            </div>
-
-            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
-
-            <!-- Apple-Style Event Passes Section -->
-            <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 30px;">
-                <h2 style="margin-bottom: 10px; font-size: 28px;">🎫 Apple-Style Event Passes</h2>
-                <p style="opacity: 0.9; margin-bottom: 20px;">Complete implementations based on Apple's official WWDC 2024/2025 examples with <code>upcomingPassInformation</code>, semantic tags, and Event Guide features.</p>
-
-                <!-- Jazz Festival Season Pass -->
-                <div class="pass-card" style="border: 2px solid rgba(46, 125, 50, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(46, 125, 50, 0.4);">🎷 Multi-Event Season</span>
-                        <span class="badge" style="background: rgba(255, 215, 0, 0.3);">PKEventTypeLivePerformance</span>
+                        <span class="badge" style="background: rgba(106, 27, 154, 0.6);">🎯 Test 3</span>
                         <span class="badge" style="background: rgba(33, 150, 243, 0.3);">upcomingPassInformation</span>
+                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">Minimal Events</span>
                     </div>
-                    <h3>South Bay Jazz Festival — Season Pass</h3>
-                    <p>Multi-event season pass with full Event Guide features: venue maps, upcoming events list, sell/transfer URLs, additional info fields.</p>
+                    <h3>Independent Film Festival 2025</h3>
+                    <p>All-Access Pass with minimal upcomingPassInformation: basic semantics only, NO additionalInfoFields.</p>
                     <ul class="features" style="font-size: 13px;">
-                        <li>📍 The Stadium — Gate 3, Sec 100, Row 3, Seat 5</li>
-                        <li>🎵 2 upcoming events: Bossa Nova (June 16), Classic Jazz (June 17)</li>
-                        <li>🗺️ Venue maps with SHA256 verification</li>
-                        <li>🎯 Event-specific details: doors open, bag policy, phone</li>
-                        <li>🔗 Sell/Transfer/Merchandise/Accessibility URLs per event</li>
-                        <li>🎤 Performer names array, genre semantics</li>
+                        <li>🎬 Sept 5-8: Opening, Documentary, International, Awards</li>
+                        <li>📍 Downtown Cinema Complex, LA</li>
+                        <li>🎯 Minimal semantics: venue, location, dates only</li>
+                        <li>❌ NO additionalInfoFields</li>
+                        <li>❌ NO Event Guide URLs</li>
                     </ul>
-                    <a href="apple-jazz-festival.pkpass" class="btn">📲 Add Jazz Festival Pass</a>
-                </div>
-
-                <!-- BOT-anist Disco -->
-                <div class="pass-card" style="border: 2px solid rgba(123, 31, 162, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(123, 31, 162, 0.4);">🪩 Disco Concert</span>
-                        <span class="badge" style="background: rgba(255, 215, 0, 0.3);">PKEventTypeLivePerformance</span>
-                    </div>
-                    <h3>BOT-anist Disco — General Admission</h3>
-                    <p>Electronic disco concert with poster layout showing Gate/Sec/Row/Seat fields matching Apple's example screenshots.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>📍 Music Venue — Gate 115, Row 22, Seat 5</li>
-                        <li>📅 June 10, 2025 @ 12:00 AM (midnight event)</li>
-                        <li>🎤 Performers: DJ Botanist, The Disco Collective, Neon Groove</li>
-                        <li>🎵 Genre: Electronic/Disco</li>
-                        <li>👗 Dress code: Disco glam encouraged!</li>
-                        <li>🔞 Age restriction: 18+ with valid ID</li>
-                    </ul>
-                    <a href="apple-disco-concert.pkpass" class="btn">📲 Add Disco Concert</a>
-                </div>
-
-                <!-- Warriors Season Pass -->
-                <div class="pass-card" style="border: 2px solid rgba(23, 99, 183, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(23, 99, 183, 0.4);">🏀 NBA Season</span>
-                        <span class="badge" style="background: rgba(33, 150, 243, 0.3);">PKEventTypeSports</span>
-                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">upcomingPassInformation</span>
-                    </div>
-                    <h3>Warriors 2024-25 Season Tickets</h3>
-                    <p>NBA season pass with multiple upcoming games, sports-specific semantics (homeTeamName, awayTeamName, sport, leagueName), and per-game details.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>📍 Chase Center — Section 114, Row 12, Seat 8</li>
-                        <li>🏀 2 upcoming games: Warriors vs Lakers (Nov 10), Warriors vs Celtics (Nov 15)</li>
-                        <li>🎯 Game-specific details: doors open, tipoff, parking info</li>
-                        <li>🔗 Sell/Transfer/Merchandise/Accessibility URLs</li>
-                        <li>⚡ Sports semantics: home/away teams, sport, league</li>
-                        <li>🎟️ Mobile-only entry</li>
-                    </ul>
-                    <a href="apple-basketball-season.pkpass" class="btn">📲 Add Warriors Season Pass</a>
+                    <a href="passes/film-festival-pass.html" class="btn">📲 Test 3: Film Festival</a>
                 </div>
 
                 <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
-                    ⚠️ <strong>Note:</strong> Poster layout requires NFC-entitled Enhanced Pass certificate. Without it, iOS gracefully degrades to standard layout but semantics still power Maps integration, Event Guide features, and Siri functionality.
+                    🧪 <strong>Testing Strategy:</strong> Install control test first. If it adds successfully, we know the base eventTicket structure works with "LocalFund Events" organization. Then test the three passes WITH upcomingPassInformation. If they fail to add, we've isolated the issue to the upcomingPassInformation feature implementation.
                 </p>
                 <p style="font-size: 12px; opacity: 0.8; margin-top: 12px; background: rgba(33, 150, 243, 0.15); padding: 12px; border-radius: 8px; border-left: 3px solid rgba(33, 150, 243, 0.6);">
-                    📚 <strong>Based on:</strong> Apple WWDC 2024 poster layout + WWDC 2025 upcomingPassInformation structure. These passes include the complete iOS 18+ event ticket stack with all semantic tags, URLs, images, and additionalInfoFields shown in Apple's official examples.
+                    📊 <strong>Current Status:</strong> iOS 26.1 on iPhone 16 Pro Max. Passes with upcomingPassInformation show "Add to Wallet" button with no error, but don't appear in Wallet. Previous test "Groove Night" (basic event WITHOUT upcoming events) successfully added.
                 </p>
             </div>
 
             <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
 
-            <!-- V5 Isolation Tests Section -->
-            <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 30px;">
-                <h2 style="margin-bottom: 10px; font-size: 28px;">🔬 V5 Isolation Tests</h2>
-                <p style="opacity: 0.9; margin-bottom: 20px;">Systematic isolation tests to identify V5 failure cause. Each test adds one feature incrementally from working Event Poster V2.</p>
+            <!-- ARCHIVED PROTOTYPES SECTION -->
+            <div style="background: rgba(158, 158, 158, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 2px solid rgba(158, 158, 158, 0.3);">
+                <h2 style="margin-bottom: 10px; font-size: 28px; opacity: 0.8;">📦 Archived Prototypes</h2>
+                <p style="opacity: 0.7; margin-bottom: 20px;">Previous testing passes and prototypes. These have been tested and are now archived for reference.</p>
 
-                <!-- Test 1 -->
-                <div class="pass-card" style="border: 2px solid rgba(76, 175, 80, 0.6);">
-                    <span class="badge" style="background: rgba(76, 175, 80, 0.4);">TEST 1</span>
-                    <h3>Date Field Format Fix</h3>
-                    <p>Tests if dateStyle works with maturity-date field using full ISO 8601 datetime (not just date string).</p>
-                    <p style="font-size: 13px; opacity: 0.8;"><strong>Fix:</strong> Changed "2029-03-15" to "2029-03-15T00:00:00-05:00"</p>
-                    <a href="v5-test-1-date-field.pkpass" class="btn">📲 Test 1</a>
-                </div>
-
-                <!-- Test 2 -->
-                <div class="pass-card" style="border: 2px solid rgba(33, 150, 243, 0.6);">
-                    <span class="badge" style="background: rgba(33, 150, 243, 0.4);">TEST 2</span>
-                    <h3>Future Semantics Dates</h3>
-                    <p>Tests semantics with future dates (not past). Starts Oct 31, 2025 (today), ends March 15, 2029.</p>
-                    <p style="font-size: 13px; opacity: 0.8;"><strong>Fix:</strong> eventStartDate changed from past (2024-03-15) to today (2025-10-31)</p>
-                    <a href="v5-test-2-future-semantics.pkpass" class="btn">📲 Test 2</a>
-                </div>
-
-                <!-- Test 3 -->
-                <div class="pass-card" style="border: 2px solid rgba(156, 39, 176, 0.6);">
-                    <span class="badge" style="background: rgba(156, 39, 176, 0.4);">TEST 3</span>
-                    <h3>LIFT Front Fields Structure</h3>
-                    <p>Tests V5's specific front field structure: Maturity Value, Holder Name, Phase Indicator, Series, Maturity Date.</p>
-                    <p style="font-size: 13px; opacity: 0.8;"><strong>Tests:</strong> Primary (Maturity Value), Secondary (Holder, Phase), Auxiliary (Series, Date)</p>
-                    <a href="v5-test-3-lift-frontfields.pkpass" class="btn">📲 Test 3</a>
-                </div>
-
-                <!-- Test 4 -->
-                <div class="pass-card" style="border: 2px solid rgba(255, 152, 0, 0.6);">
-                    <span class="badge" style="background: rgba(255, 152, 0, 0.4);">TEST 4</span>
-                    <h3>LIFT Back Fields Structure</h3>
-                    <p>Tests V5's 5 consolidated backFields with comprehensive LIFT information.</p>
-                    <p style="font-size: 13px; opacity: 0.8;"><strong>Tests:</strong> Certificate Details • Engagement Progress • Priorities & Events • Structure • Support</p>
-                    <a href="v5-test-4-lift-backfields.pkpass" class="btn">📲 Test 4</a>
-                </div>
-
-                <!-- Test 5 -->
-                <div class="pass-card" style="border: 3px solid rgba(25, 118, 210, 0.8); background: rgba(25, 118, 210, 0.1);">
-                    <span class="badge" style="background: rgba(25, 118, 210, 0.6);">TEST 5 - COMPLETE</span>
-                    <h3>Full V5 with All Fixes Applied</h3>
-                    <p>Complete LIFT Certificate V5 with all identified fixes: proper date format + future semantics + V5 fields.</p>
-                    <p style="font-size: 13px; opacity: 0.8;"><strong>This should work:</strong> All V5 features with bug fixes applied</p>
-                    <a href="v5-test-5-complete.pkpass" class="btn">📲 Test 5 - Complete V5</a>
-                </div>
-
-                <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
-                    🧪 <strong>Testing Strategy:</strong> Install each test sequentially. If a test fails, the feature added in that test is the root cause.
-                </p>
-            </div>
-
-            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
-
-            <!-- LIFT Certificate Ecosystem -->
-            <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 12px; margin-bottom: 30px;">
-                <h2 style="margin-bottom: 10px; font-size: 28px;">💎 LIFT Certificate Ecosystem</h2>
-                <p style="opacity: 0.9; margin-bottom: 20px;">Complete pass ecosystem mapping LIFT Certificate concepts to Apple Wallet eventTicket structure. Base certificate + engagement events.</p>
-
-                <!-- LIFT Certificate V5 -->
-                <div class="pass-card" style="border: 3px solid rgba(25, 118, 210, 0.7); background: rgba(25, 118, 210, 0.1);">
-                    <div>
-                        <span class="badge" style="background: rgba(25, 118, 210, 0.6);">🎯 BASE CERTIFICATE</span>
-                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">iOS 26 Optimized</span>
-                    </div>
-                    <h3>LIFT Certificate V5 — Series 2025Q4</h3>
-                    <p>Ongoing engagement credential with 5-year lifecycle. Your base access pass to the regenerative capital framework.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>💰 Maturity Value: $3,780 USD (March 15, 2029)</li>
-                        <li>📊 Phase Progression: ◉◉◉○○ Engagement (Phase 3 of 5)</li>
-                        <li>🎯 Priorities: Community Living, Infrastructure, Food & Farming</li>
-                        <li>📍 Geofencing for Impact Briefings at Bell Tower Hall</li>
-                        <li>📋 5 backFields (iOS 26 compliant)</li>
-                        <li>🗺️ Semantics: Maps/Siri integration</li>
-                    </ul>
-                    <a href="lift-certificate-v5.pkpass" class="btn">📲 Add LIFT Certificate V5</a>
-                    <p style="font-size: 11px; opacity: 0.6; margin-top: 8px;">Serial: LIFT-CERT-V5-2025Q4</p>
-                    <p style="font-size: 11px; opacity: 0.9; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 6px;">
-                        <strong>Hybrid BackField Strategy:</strong> Certificate Details • Engagement Progress • Priorities & Events • Structure & Verification • Support & Disclosures
-                    </p>
-                </div>
-
-                <!-- Impact Briefing -->
-                <div class="pass-card" style="border: 2px solid rgba(13, 71, 161, 0.6);">
-                    <div>
-                        <span class="badge" style="background: rgba(13, 71, 161, 0.5);">📅 QUARTERLY EVENT</span>
-                        <span class="badge" style="background: rgba(255, 193, 7, 0.3);">Nov 15, 2025</span>
-                    </div>
-                    <h3>Capitol Fund Q4 Impact Briefing</h3>
-                    <p>Quarterly holder update event at Bell Tower Hall. Performance review, impact metrics, and holder Q&A.</p>
-                    <ul class="features" style="font-size: 13px;">
-                        <li>📍 Venue: Bell Tower Hall, Frederick MD</li>
-                        <li>📅 November 15, 2025 @ 6:00 PM</li>
-                        <li>🎫 LIFT Holder exclusive access</li>
-                        <li>🔔 Geofenced notifications</li>
-                        <li>🍷 Networking reception follows</li>
-                    </ul>
-                    <a href="impact-briefing-q4-2025.pkpass" class="btn">📲 Add Impact Briefing</a>
-                    <p style="font-size: 11px; opacity: 0.6; margin-top: 8px;">Serial: IMPACT-BRIEF-Q4-2025</p>
-                </div>
-
-                <!-- Learning Events -->
-                <div style="margin-top: 20px;">
-                    <h3 style="font-size: 20px; margin-bottom: 12px; opacity: 0.95;">🎓 Priority Learning Events</h3>
-                    <p style="font-size: 14px; opacity: 0.85; margin-bottom: 16px;">Educational workshops and field tours aligned with your selected impact priorities. Free for LIFT holders.</p>
-
-                    <!-- Community Living -->
-                    <div class="pass-card" style="border: 2px solid rgba(106, 27, 154, 0.5); margin-bottom: 12px;">
+                <details style="margin-bottom: 20px;">
+                    <summary style="cursor: pointer; font-size: 20px; font-weight: 600; margin-bottom: 16px; padding: 12px; background: rgba(255, 255, 255, 0.05); border-radius: 8px;">📚 iOS Event Ticket Guide</summary>
+                    <div class="pass-card" style="border: 3px solid rgba(33, 150, 243, 0.8); background: rgba(33, 150, 243, 0.15);">
                         <div>
-                            <span class="badge" style="background: rgba(106, 27, 154, 0.4);">🏘️ Community Living</span>
+                            <span class="badge" style="background: rgba(33, 150, 243, 0.6);">📚 GUIDE</span>
+                            <span class="badge" style="background: rgba(76, 175, 80, 0.4);">iOS 18+</span>
                         </div>
-                        <h4 style="font-size: 16px; margin: 8px 0;">Co-Housing & Intentional Communities Workshop</h4>
-                        <p style="font-size: 13px; margin: 4px 0;">Nov 9, 2025 @ 2:00 PM • Bell Tower Hall • 3-hour workshop • Facilitator: Diana Chen</p>
-                        <a href="learning-community-living.pkpass" class="btn" style="font-size: 14px; padding: 10px 20px; margin-top: 8px;">📲 Add Workshop</a>
+                        <h2>📱 iOS Event Ticket Guide</h2>
+                        <p>Learn how to use <strong>Poster Event Ticket Layout</strong> and <strong>Semantic Tags</strong> to unlock enhanced iOS Wallet features like Maps tiles, Event Guide buttons, and Live Activities.</p>
+                        <ul class="features">
+                            <li>🎯 Quick checklist for iOS 18+ poster layout</li>
+                            <li>📝 Complete semantic tags reference</li>
+                            <li>💡 Troubleshooting common issues</li>
+                            <li>✅ Best practices and examples</li>
+                            <li>🔗 Official Apple resources and third-party tools</li>
+                        </ul>
+                        <a href="ios-event-ticket-guide.html" class="btn" style="background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); color: #fff;">📖 Read the Guide</a>
                     </div>
+                </details>
 
-                    <!-- Infrastructure -->
-                    <div class="pass-card" style="border: 2px solid rgba(216, 67, 21, 0.5); margin-bottom: 12px;">
-                        <div>
-                            <span class="badge" style="background: rgba(216, 67, 21, 0.4);">🏗️ Infrastructure</span>
+                <details style="margin-bottom: 20px;">
+                    <summary style="cursor: pointer; font-size: 20px; font-weight: 600; margin-bottom: 16px; padding: 12px; background: rgba(255, 255, 255, 0.05); border-radius: 8px;">🏪 StoreCard Prototypes</summary>
+                    <div style="padding: 16px;">
+                        <p style="opacity: 0.8; margin-bottom: 16px;">Testing storeCard pass type for LIFT Certificates with balance tracking, tiered membership, phase progression, and engagement gamification.</p>
+
+                        <div class="pass-card" style="border: 2px solid rgba(25, 118, 210, 0.6); margin-bottom: 12px;">
+                            <span class="badge" style="background: rgba(25, 118, 210, 0.6);">V6 Base</span>
+                            <h3>LIFT Certificate V6 - StoreCard</h3>
+                            <a href="passes/certificate-v6.html" class="btn" style="font-size: 14px; padding: 10px 20px;">📲 V6 StoreCard</a>
                         </div>
-                        <h4 style="font-size: 16px; margin: 8px 0;">Resilient Infrastructure Field Tour</h4>
-                        <p style="font-size: 13px; margin: 4px 0;">Nov 12, 2025 @ 9:00 AM • Bell Tower Hall (departure) • Half-day tour • Guide: Marcus Johnson, P.E.</p>
-                        <a href="learning-infrastructure.pkpass" class="btn" style="font-size: 14px; padding: 10px 20px; margin-top: 8px;">📲 Add Tour</a>
-                    </div>
 
-                    <!-- Food & Farming -->
-                    <div class="pass-card" style="border: 2px solid rgba(45, 80, 22, 0.5);">
-                        <div>
-                            <span class="badge" style="background: rgba(45, 80, 22, 0.6);">🌾 Food & Farming</span>
+                        <div class="pass-card" style="border: 2px solid rgba(46, 125, 50, 0.6); margin-bottom: 12px;">
+                            <span class="badge" style="background: rgba(46, 125, 50, 0.6);">Phase-Locked</span>
+                            <h3>Phase-Locked Journey</h3>
+                            <a href="passes/phase-locked.html" class="btn" style="font-size: 14px; padding: 10px 20px;">📲 Phase-Locked</a>
                         </div>
-                        <h4 style="font-size: 16px; margin: 8px 0;">Regenerative Agriculture Deep Dive</h4>
-                        <p style="font-size: 13px; margin: 4px 0;">Nov 6, 2025 @ 10:00 AM • Bell Tower Hall • Full-day workshop • Instructor: Dr. Maria Santos</p>
-                        <a href="learning-food-farming.pkpass" class="btn" style="font-size: 14px; padding: 10px 20px; margin-top: 8px;">📲 Add Workshop</a>
+
+                        <div class="pass-card" style="border: 2px solid rgba(33, 150, 243, 0.6); margin-bottom: 12px;">
+                            <span class="badge" style="background: rgba(33, 150, 243, 0.6);">Silver Tier</span>
+                            <h3>Tiered Membership</h3>
+                            <a href="passes/tiered-membership.html" class="btn" style="font-size: 14px; padding: 10px 20px;">📲 Tiered Pass</a>
+                        </div>
+
+                        <p style="font-size: 11px; opacity: 0.6; margin-top: 16px;">+ Engagement Score, Milestone, Referral, Impact Portfolio</p>
                     </div>
-                </div>
+                </details>
 
-                <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
-                    ℹ️ <strong>Pass Ecosystem Design:</strong> LIFT Certificate V5 is your base credential (5-year ongoing engagement). Impact Briefings and Learning Events are time-bound passes that reference your LIFT holder status. All passes share the same Pass Type ID and group together in Apple Wallet. See <a href="LIFT-PASSKIT-MAPPING.md" style="color: #fff; text-decoration: underline;">LIFT-PASSKIT-MAPPING.md</a> for complete design documentation.
-                </p>
-            </div>
+                <details style="margin-bottom: 20px;">
+                    <summary style="cursor: pointer; font-size: 20px; font-weight: 600; margin-bottom: 16px; padding: 12px; background: rgba(255, 255, 255, 0.05); border-radius: 8px;">🎫 Coupon Prototypes</summary>
+                    <div style="padding: 16px;">
+                        <p style="opacity: 0.8; margin-bottom: 16px;">Testing coupon pass type for quarterly priority impact updates and project achievements.</p>
 
-            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+                        <div class="pass-card" style="border: 2px solid rgba(56, 142, 60, 0.6); margin-bottom: 12px;">
+                            <span class="badge" style="background: rgba(56, 142, 60, 0.6);">Green Energy</span>
+                            <h3>Green Energy Q4 Update</h3>
+                            <a href="passes/green-energy.html" class="btn" style="font-size: 14px; padding: 10px 20px;">📲 Green Energy</a>
+                        </div>
 
-            <!-- Semantics Display Test -->
-            <div class="pass-card" style="border: 3px solid rgba(156, 39, 176, 0.7); background: rgba(156, 39, 176, 0.1);">
-                <div>
-                    <span class="badge" style="background: rgba(156, 39, 176, 0.6);">🎯 SEMANTICS TEST</span>
-                    <span class="badge" style="background: rgba(33, 150, 243, 0.4);">Enhanced Details</span>
-                </div>
-                <h2>Test: Semantics Enhanced Details Display</h2>
-                <p>Minimal test to see if semantics fields (venueName, venueLocation, venuePhoneNumber, eventStartDate/eventEndDate) activate the enhanced "DETAILS" section below the event card.</p>
-                <ul class="features">
-                    <li>📍 Venue: Bell Tower Hall</li>
-                    <li>☎️ Phone: +1 (949) 202-6850 (tap-to-call)</li>
-                    <li>🗺️ Maps integration with directions</li>
-                    <li>📅 Event dates: Nov 15, 2025 6:00-8:00 PM</li>
-                </ul>
-                <a href="test-semantics-only.pkpass" class="btn">📲 Test Semantics Display</a>
-                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-SEMANTICS-ONLY</p>
-                <p style="font-size: 11px; opacity: 0.9; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 6px;">
-                    Look for structured venue details below the card (not in backFields). Should show venue name, phone number as clickable link, and "Get Directions" button.
-                </p>
-            </div>
+                        <div class="pass-card" style="border: 2px solid rgba(216, 67, 21, 0.6); margin-bottom: 12px;">
+                            <span class="badge" style="background: rgba(216, 67, 21, 0.6);">Housing</span>
+                            <h3>Affordable Housing Milestone</h3>
+                            <a href="passes/affordable-housing.html" class="btn" style="font-size: 14px; padding: 10px 20px;">📲 Housing Update</a>
+                        </div>
 
-            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+                        <p style="font-size: 11px; opacity: 0.6; margin-top: 16px;">+ City Infrastructure, Triple Dashboard, Priority Review</p>
+                    </div>
+                </details>
 
-            <!-- iOS 26 Isolation Tests -->
-            <div class="pass-card" style="border: 3px solid rgba(255, 152, 0, 0.6);">
-                <div>
-                    <span class="badge" style="background: rgba(255, 152, 0, 0.4);">🧪 TEST 1</span>
-                    <span class="badge" style="background: rgba(33, 150, 243, 0.3);">Semantics + Dates</span>
-                </div>
-                <h2>Test: LIFT Certificate with eventStartDate/eventEndDate</h2>
-                <p>Testing if iOS 26 requires eventStartDate and eventEndDate in semantics block. Event Poster V2 has these; V3 doesn't.</p>
-                <a href="test-lift-semantics-dates.pkpass" class="btn">📲 Test 1: With Event Dates</a>
-                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-LIFT-SEMANTICS-DATES</p>
-            </div>
+                <details style="margin-bottom: 20px;">
+                    <summary style="cursor: pointer; font-size: 20px; font-weight: 600; margin-bottom: 16px; padding: 12px; background: rgba(255, 255, 255, 0.05); border-radius: 8px;">🎪 Apple WWDC Event Examples</summary>
+                    <div style="padding: 16px;">
+                        <p style="opacity: 0.8; margin-bottom: 16px;">Complete implementations based on Apple's official WWDC 2024/2025 examples.</p>
 
-            <div class="pass-card" style="border: 3px solid rgba(156, 39, 176, 0.6);">
-                <div>
-                    <span class="badge" style="background: rgba(156, 39, 176, 0.4);">🧪 TEST 2</span>
-                    <span class="badge" style="background: rgba(33, 150, 243, 0.3);">No Semantics</span>
-                </div>
-                <h2>Test: LIFT Certificate without semantics</h2>
-                <p>Testing if removing the entire semantics block resolves the issue.</p>
-                <a href="test-lift-no-semantics.pkpass" class="btn">📲 Test 2: No Semantics</a>
-                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-LIFT-NO-SEMANTICS</p>
-            </div>
+                        <div class="pass-card" style="border: 2px solid rgba(46, 125, 50, 0.6); margin-bottom: 12px;">
+                            <span class="badge" style="background: rgba(46, 125, 50, 0.4);">Jazz Festival</span>
+                            <h3>South Bay Jazz Festival</h3>
+                            <a href="apple-jazz-festival.pkpass" class="btn" style="font-size: 14px; padding: 10px 20px;">📲 Jazz Festival</a>
+                        </div>
 
-            <div class="pass-card" style="border: 3px solid rgba(0, 150, 136, 0.6);">
-                <div>
-                    <span class="badge" style="background: rgba(0, 150, 136, 0.4);">🧪 TEST 3</span>
-                    <span class="badge" style="background: rgba(33, 150, 243, 0.3);">Minimal Structure</span>
-                </div>
-                <h2>Test: Minimal LIFT Certificate (Hello World style)</h2>
-                <p>Testing with minimal eventTicket structure - just primary/secondary/auxiliary fields, no complex backFields or semantics.</p>
-                <a href="test-lift-minimal.pkpass" class="btn">📲 Test 3: Minimal</a>
-                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-LIFT-MINIMAL</p>
-            </div>
+                        <div class="pass-card" style="border: 2px solid rgba(123, 31, 162, 0.6); margin-bottom: 12px;">
+                            <span class="badge" style="background: rgba(123, 31, 162, 0.4);">Disco</span>
+                            <h3>BOT-anist Disco</h3>
+                            <a href="apple-disco-concert.pkpass" class="btn" style="font-size: 14px; padding: 10px 20px;">📲 Disco Concert</a>
+                        </div>
 
-            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+                        <div class="pass-card" style="border: 2px solid rgba(23, 99, 183, 0.6); margin-bottom: 12px;">
+                            <span class="badge" style="background: rgba(23, 99, 183, 0.4);">NBA</span>
+                            <h3>Warriors Season Tickets</h3>
+                            <a href="apple-basketball-season.pkpass" class="btn" style="font-size: 14px; padding: 10px 20px;">📲 Warriors</a>
+                        </div>
 
-            <!-- Progressive Tests (Test 3 worked, so now adding complexity incrementally) -->
-            <div class="pass-card" style="border: 3px solid rgba(244, 67, 54, 0.6);">
-                <div>
-                    <span class="badge" style="background: rgba(244, 67, 54, 0.4);">🧪 TEST 4</span>
-                    <span class="badge" style="background: rgba(76, 175, 80, 0.3);">All BackFields</span>
-                </div>
-                <h2>Test: LIFT with All 8 BackFields</h2>
-                <p>Test 3 (minimal) works. Now adding all 8 backFields from full certificate to see if field complexity breaks it.</p>
-                <a href="test-lift-backfields.pkpass" class="btn">📲 Test 4: All BackFields</a>
-                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-LIFT-BACKFIELDS</p>
-            </div>
+                        <p style="font-size: 11px; opacity: 0.7; margin-top: 16px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 6px;">⚠️ Poster layout requires NFC entitlement. Without it, iOS degrades to standard layout.</p>
+                    </div>
+                </details>
 
-            <div class="pass-card" style="border: 3px solid rgba(63, 81, 181, 0.6);">
-                <div>
-                    <span class="badge" style="background: rgba(63, 81, 181, 0.4);">🧪 TEST 5</span>
-                    <span class="badge" style="background: rgba(76, 175, 80, 0.3);">Locations/Dates</span>
-                </div>
-                <h2>Test: LIFT with Locations + RelevantDate</h2>
-                <p>Testing if locations array, relevantDate, or maxDistance cause validation failures.</p>
-                <a href="test-lift-locations.pkpass" class="btn">📲 Test 5: Locations/Dates</a>
-                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-LIFT-LOCATIONS</p>
-            </div>
+                <details style="margin-bottom: 20px;">
+                    <summary style="cursor: pointer; font-size: 20px; font-weight: 600; margin-bottom: 16px; padding: 12px; background: rgba(255, 255, 255, 0.05); border-radius: 8px;">🔬 Previous Isolation Tests</summary>
+                    <div style="padding: 16px;">
+                        <p style="opacity: 0.8; margin-bottom: 16px;">V5 LIFT Certificate isolation tests and iOS 26 compatibility tests.</p>
 
-            <div class="pass-card" style="border: 3px solid rgba(233, 30, 99, 0.6);">
-                <div>
-                    <span class="badge" style="background: rgba(233, 30, 99, 0.4);">🧪 TEST 6</span>
-                    <span class="badge" style="background: rgba(76, 175, 80, 0.3);">Barcodes Array</span>
-                </div>
-                <h2>Test: LIFT with Barcodes Array</h2>
-                <p>Testing if having both singular 'barcode' AND 'barcodes' array causes iOS 26 validation failure.</p>
-                <a href="test-lift-barcodes-array.pkpass" class="btn">📲 Test 6: Barcodes Array</a>
-                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-LIFT-BARCODES-ARRAY</p>
-            </div>
+                        <p style="font-size: 13px; opacity: 0.7; margin-bottom: 8px;">V5 Tests: Date Field → Future Semantics → Front Fields → Back Fields → Complete V5</p>
+                        <p style="font-size: 13px; opacity: 0.7; margin-bottom: 8px;">iOS 26 Tests: Semantics+Dates → No Semantics → Minimal → BackFields → Locations → Barcodes → 5 BackFields</p>
+                        <p style="font-size: 11px; opacity: 0.6; margin-top: 12px;">See full index.html for complete test links.</p>
+                    </div>
+                </details>
 
-            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+                <details>
+                    <summary style="cursor: pointer; font-size: 20px; font-weight: 600; margin-bottom: 16px; padding: 12px; background: rgba(255, 255, 255, 0.05); border-radius: 8px;">💎 LIFT Certificate Ecosystem</summary>
+                    <div style="padding: 16px;">
+                        <p style="opacity: 0.8; margin-bottom: 16px;">Complete pass ecosystem: Base certificate + engagement events + learning workshops.</p>
 
-            <!-- Test 7: Reduce to 5 backFields (same count as working Event Poster V2) -->
-            <div class="pass-card" style="border: 3px solid rgba(121, 85, 72, 0.6);">
-                <div>
-                    <span class="badge" style="background: rgba(121, 85, 72, 0.4);">🧪 TEST 7</span>
-                    <span class="badge" style="background: rgba(255, 193, 7, 0.3);">5 BackFields</span>
-                </div>
-                <h2>Test: LIFT with 5 BackFields (Event Poster count)</h2>
-                <p>Test 4 (8 backFields) failed. Event Poster V2 (5 backFields) works. Testing if iOS 26 has a limit on backField count.</p>
-                <a href="test-lift-5backfields.pkpass" class="btn">📲 Test 7: 5 BackFields</a>
-                <p style="font-size: 11px; opacity: 0.7; margin-top: 8px;">Serial: TEST-LIFT-5BACKFIELDS</p>
-            </div>
+                        <div class="pass-card" style="border: 2px solid rgba(25, 118, 210, 0.7); margin-bottom: 12px;">
+                            <span class="badge" style="background: rgba(25, 118, 210, 0.6);">V4 & V5</span>
+                            <h3>LIFT Certificate V4/V5</h3>
+                            <a href="lift-certificate-v4.pkpass" class="btn" style="font-size: 14px; padding: 10px 20px;">📲 V4</a>
+                            <a href="lift-certificate-v5.pkpass" class="btn" style="font-size: 14px; padding: 10px 20px; margin-left: 8px;">📲 V5</a>
+                        </div>
 
-            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+                        <div class="pass-card" style="border: 2px solid rgba(13, 71, 161, 0.6); margin-bottom: 12px;">
+                            <span class="badge" style="background: rgba(13, 71, 161, 0.5);">Event</span>
+                            <h3>Impact Briefing Q4 2025</h3>
+                            <a href="impact-briefing-q4-2025.pkpass" class="btn" style="font-size: 14px; padding: 10px 20px;">📲 Briefing</a>
+                        </div>
 
-            <div class="pass-card" style="border: 3px solid rgba(76, 175, 80, 0.6); background: rgba(76, 175, 80, 0.1);">
-                <div>
-                    <span class="badge" style="background: rgba(76, 175, 80, 0.6);">✅ LIFT Certificate V4</span>
-                    <span class="badge" style="background: rgba(255, 193, 7, 0.4);">iOS 26 Ready</span>
-                    <span class="badge" style="background: rgba(156, 39, 176, 0.4);">Enhanced Details</span>
-                </div>
-                <h2>LIFT Certificate — Series 2025Q4</h2>
-                <p>Your regenerative capital certificate with enhanced iOS 26 structured details. Proof of participation, access credential, and dynamic financial instrument in Apple Wallet.</p>
-
-                <ul class="features">
-                    <li>💰 Maturity tracking: $3,780 USD projected value (2029-03-15)</li>
-                    <li>📊 Phase progression: ◉◉◉○○ Engagement → Residency → Anchorship</li>
-                    <li>📱 Enhanced event details with venue integration</li>
-                    <li>📍 Geofenced invites to Impact Briefings at Bell Tower Hall</li>
-                    <li>🔔 Smart notifications via locations + relevantDate</li>
-                    <li>✅ Verifiable via Exchange Reserve meta-ledger</li>
-                    <li>🎯 5 backFields (iOS 26 compatibility confirmed)</li>
-                </ul>
-
-                <a href="lift-certificate-v4.pkpass" class="btn">📲 Add LIFT Certificate V4</a>
-                <p style="font-size: 12px; opacity: 0.7; margin-top: 12px;">
-                    Holder: Raul Hernandez • Serial: LIFT-CERT-V4-2025Q4 • <a href="/verify/LIFT-CERT-V4-2025Q4" style="color: #fff; text-decoration: underline;">Verify certificate</a>
-                </p>
-                <p style="font-size: 11px; opacity: 0.9; margin-top: 8px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 6px;">
-                    ✅ <strong>V4 Changes:</strong> Added semantics (venueName, venueLocation, venuePhoneNumber) to activate iOS enhanced details section. Consolidated to 5 backFields per iOS 26 limit. Includes locations array + relevantDate for geofencing.
-                </p>
-                <p style="font-size: 11px; opacity: 0.6; margin-top: 8px;">
-                    <a href="lift-certificate-v3.pkpass" style="color: #fff; text-decoration: underline;">Previous version (V3)</a>
-                </p>
-            </div>
-
-            <div class="pass-card">
-                <div>
-                    <span class="badge">✨ Featured</span>
-                    <span class="badge">🎫 Event Pass</span>
-                    <span class="badge" style="background: rgba(76, 175, 80, 0.3);">NEW V2</span>
-                </div>
-                <h2>Impact Briefing — Capitol Fund</h2>
-                <p>Your exclusive Early Adopter certificate for the Capitol Fund Quarterly Update at Bell Tower Hall, Frederick, MD.</p>
-
-                <ul class="features">
-                    <li>📍 Geofencing: Get notified when you arrive at the venue</li>
-                    <li>⏰ Time-based reminders: Pass appears on lock screen 1 hour before</li>
-                    <li>🗺️ Apple Maps integration with directions</li>
-                    <li>📱 QR code for verification</li>
-                    <li>🔔 PassKit Web Service for real-time updates</li>
-                </ul>
-
-                <a href="event-poster-v2.pkpass" class="btn">📲 Add to Wallet (V2)</a>
-                <p style="font-size: 12px; opacity: 0.7; margin-top: 12px;">
-                    V2 built with proven test structure. <a href="event-poster.pkpass" style="color: #fff; text-decoration: underline;">Original version</a>
-                </p>
-            </div>
-
-            <div class="pass-card">
-                <div>
-                    <span class="badge">👋 Test Pass</span>
-                </div>
-                <h2>Hello World Pass</h2>
-                <p>A simple validation pass to test the PassKit integration and certificate signing chain.</p>
-
-                <a href="hello-world.pkpass" class="btn">📲 Add to Wallet</a>
-            </div>
-
-            <div class="pass-card" style="border: 2px solid rgba(255, 255, 255, 0.3);">
-                <div>
-                    <span class="badge">🔬 Isolation Tests</span>
-                </div>
-                <h2>Test Series: Field-by-Field Validation</h2>
-                <p>Progressive test passes to isolate which field causes Safari download failures. Each test builds on the previous, adding one feature at a time.</p>
-
-                <div style="margin-top: 20px;">
-                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 1: logoText</strong> — Adds logoText field only</p>
-                    <a href="test-1-logotext.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 1</a>
-
-                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 2: barcodes[]</strong> — Adds barcodes array</p>
-                    <a href="test-2-barcodes.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 2</a>
-
-                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 3: relevantDate</strong> — Adds time-based notification date</p>
-                    <a href="test-3-relevantdate.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 3</a>
-
-                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 4: locations</strong> — Adds geofencing (HIGH SUSPECT)</p>
-                    <a href="test-4-locations.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 4</a>
-
-                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 5: semantics</strong> — Adds Apple Maps integration (no phone)</p>
-                    <a href="test-5-semantics-basic.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 5</a>
-
-                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 6: phone</strong> — Adds venuePhoneNumber to semantics</p>
-                    <a href="test-6-semantics-phone.pkpass" class="btn" style="margin-bottom: 16px;">📲 Test 6</a>
-
-                    <p style="font-size: 13px; margin-bottom: 12px;"><strong>Test 7: webService</strong> — Adds webServiceURL (HIGHEST SUSPECT)</p>
-                    <a href="test-7-webservice.pkpass" class="btn">📲 Test 7</a>
-                </div>
+                        <p style="font-size: 11px; opacity: 0.6; margin-top: 16px;">+ Learning Events: Community Living, Infrastructure, Food & Farming workshops</p>
+                    </div>
+                </details>
             </div>
 
             <div class="notice">
@@ -852,7 +389,7 @@
                 <strong>🔐 Certificate Details:</strong>
                 Pass Type: pass.exchangereserve.lift<br>
                 Team ID: 5A984FTAG3<br>
-                Organization: Localight Inc. / LocalFund
+                Organization: Localight Inc. / LocalFund Events
             </div>
         </main>
 
@@ -863,7 +400,7 @@
                 <a href="mailto:hello@exchangereserve.org">Contact</a>
             </p>
             <p style="margin-top: 16px; font-size: 12px;">
-                Phase 1: PassKit Integration • Oct 2025
+                Phase 1: PassKit Integration • Nov 2025
             </p>
         </footer>
     </div>
