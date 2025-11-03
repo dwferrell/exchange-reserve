@@ -1,0 +1,84 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-EVENT-GUIDE-004",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "LocalFund Events",
+  "description": "Test: Event Guide with venueEntrance",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Event Guide Test Series",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "date",
+        "label": "Next Show",
+        "value": "November 15, 2025 @ 7:00 PM",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "venue",
+        "label": "Venue",
+        "value": "Bell Tower Hall"
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Event Guide Test - Show 1",
+    "venueName": "Bell Tower Hall",
+    "venueLocation": {
+      "latitude": 39.4143,
+      "longitude": -77.4105
+    },
+    "venuePhoneNumber": "+13015551200",
+    "venueEntrance": "Main entrance on Market Street",
+    "eventStartDate": "2025-11-15T19:00:00-05:00",
+    "eventEndDate": "2025-11-15T21:00:00-05:00"
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "show-2-dec",
+      "name": "Show 2 - December",
+      "dateInformation": {
+        "date": "2025-12-15T19:00:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Event Guide Test - Show 2",
+        "venueName": "Bell Tower Hall",
+        "venueLocation": {
+          "latitude": 39.4143,
+          "longitude": -77.4105
+        },
+        "venuePhoneNumber": "+13015551200",
+        "venueEntrance": "Main entrance on Market Street",
+        "eventStartDate": "2025-12-15T19:00:00-05:00",
+        "eventEndDate": "2025-12-15T21:00:00-05:00"
+      }
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "You're near Bell Tower Hall!",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-15T19:00:00-05:00",
+  "backgroundColor": "#1565c0",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#90caf9",
+  "sharingProhibited": false
+}
