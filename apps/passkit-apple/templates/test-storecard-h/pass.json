@@ -1,0 +1,59 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-STORE-H-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "LocalFund Events",
+  "description": "Test H: Location + Time - Bell Tower (tonight)",
+  "logoText": "LocalFund",
+  "storeCard": {
+    "headerFields": [
+      {
+        "key": "type",
+        "label": "Type",
+        "value": "Evening Event"
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "value": "Tonight"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "Event",
+        "value": "Bell Tower Gathering"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "time",
+        "label": "Time",
+        "value": "2025-11-02T20:00:00-05:00",
+        "dateStyle": "PKDateStyleNone",
+        "timeStyle": "PKTimeStyleShort"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "distance",
+        "label": "Distance",
+        "value": "Downtown Frederick"
+      }
+    ]
+  },
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "You're near Bell Tower Hall! Event at 8:00 PM.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-02T20:00:00-05:00",
+  "backgroundColor": "#7b1fa2",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#e1bee7",
+  "sharingProhibited": false
+}

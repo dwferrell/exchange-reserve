@@ -1,0 +1,51 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-STORE-G-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "LocalFund Events",
+  "description": "Test G: Time Alert - Tomorrow Morning",
+  "logoText": "LocalFund",
+  "storeCard": {
+    "headerFields": [
+      {
+        "key": "type",
+        "label": "Type",
+        "value": "Morning Event"
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "value": "Upcoming"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "Event",
+        "value": "Breakfast Meetup"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "time",
+        "label": "Time",
+        "value": "2025-11-03T09:00:00-05:00",
+        "dateStyle": "PKDateStyleShort",
+        "timeStyle": "PKTimeStyleShort"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "location",
+        "label": "Location",
+        "value": "Downtown Frederick"
+      }
+    ]
+  },
+  "relevantDate": "2025-11-03T09:00:00-05:00",
+  "backgroundColor": "#0097a7",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#b2ebf2",
+  "sharingProhibited": false
+}

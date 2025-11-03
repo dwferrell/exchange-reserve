@@ -1,0 +1,57 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-STORE-F-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "LocalFund Events",
+  "description": "Test F: Location Alert - Frederick Social TODAY",
+  "logoText": "LocalFund",
+  "storeCard": {
+    "headerFields": [
+      {
+        "key": "type",
+        "label": "Type",
+        "value": "Event Pass"
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "value": "Active"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "Event",
+        "value": "Community Gathering @ 7:00 PM"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "venue",
+        "label": "Venue",
+        "value": "Frederick Social"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "address",
+        "label": "Address",
+        "value": "50 Citizens Way"
+      }
+    ]
+  },
+  "locations": [
+    {
+      "latitude": 39.4142,
+      "longitude": -77.4089,
+      "relevantText": "You're near Frederick Social! Event starts at 7:00 PM.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-02T18:00:00-05:00",
+  "backgroundColor": "#d32f2f",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffcdd2",
+  "sharingProhibited": false
+}

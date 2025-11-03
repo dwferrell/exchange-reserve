@@ -314,6 +314,104 @@
 
             <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
 
+            <!-- STORECARD ISOLATION TESTS -->
+            <div style="background: rgba(0, 150, 136, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 3px solid rgba(0, 150, 136, 0.6);">
+                <h2 style="margin-bottom: 10px; font-size: 28px;">🏪 StoreCard Isolation Tests</h2>
+                <p style="opacity: 0.9; margin-bottom: 20px;">Testing storeCard pass type with location-based and time-based notifications (no NFC required). Exploring alternatives to Event Guide for passes without NFC entitlement.</p>
+
+                <div style="background: rgba(255, 255, 255, 0.1); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                    <h3 style="font-size: 18px; margin-bottom: 12px;">📋 Key Findings from EventTicket Tests</h3>
+                    <ul style="font-size: 14px; opacity: 0.9; line-height: 1.8; margin-left: 20px;">
+                        <li>✅ upcomingPassInformation with 1-2 events: <strong>Works</strong></li>
+                        <li>❌ upcomingPassInformation with 3+ events: <strong>Fails silently</strong></li>
+                        <li>❌ Event Guide: <strong>Requires NFC entitlement</strong> (per research findings)</li>
+                        <li>💡 <strong>StoreCard alternative:</strong> No NFC required, supports locations + relevantDate</li>
+                    </ul>
+                </div>
+
+                <!-- Test F -->
+                <div class="pass-card" style="border: 3px solid rgba(211, 47, 47, 0.8); margin-bottom: 16px;">
+                    <div>
+                        <span class="badge" style="background: rgba(211, 47, 47, 0.6);">🔬 Test F</span>
+                        <span class="badge" style="background: rgba(255, 152, 0, 0.4);">Location Alert</span>
+                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">TODAY 6 PM</span>
+                    </div>
+                    <h3>Community Gathering @ Frederick Social</h3>
+                    <p>Location-based notification test with TODAY's event and real venue (Frederick Social, 50 Citizens Way).</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>📍 Location: Frederick Social (39.4142, -77.4089)</li>
+                        <li>📅 relevantDate: TODAY @ 6:00 PM</li>
+                        <li>⚡ Trigger: 100m radius OR time-based alert</li>
+                        <li>🎨 Strip image below barcode</li>
+                        <li>🔔 Should notify when near venue OR at 6 PM</li>
+                    </ul>
+                    <a href="passes/test-storecard-f.html" class="btn" style="background: #d32f2f;">📲 Test F: Location TODAY</a>
+                </div>
+
+                <!-- Test G -->
+                <div class="pass-card" style="border: 3px solid rgba(0, 151, 167, 0.8); margin-bottom: 16px;">
+                    <div>
+                        <span class="badge" style="background: rgba(0, 151, 167, 0.6);">🔬 Test G</span>
+                        <span class="badge" style="background: rgba(33, 150, 243, 0.4);">Time Alert</span>
+                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">Tomorrow 9 AM</span>
+                    </div>
+                    <h3>Breakfast Meetup Tomorrow</h3>
+                    <p>Pure time-based notification test (NO location trigger) for tomorrow morning at 9:00 AM.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>📅 relevantDate: Nov 3, 2025 @ 9:00 AM</li>
+                        <li>❌ NO location triggers (time-only)</li>
+                        <li>📊 dateStyle: PKDateStyleShort</li>
+                        <li>🎨 Strip image below barcode</li>
+                        <li>🔔 Should appear on lock screen tomorrow morning</li>
+                    </ul>
+                    <a href="passes/test-storecard-g.html" class="btn" style="background: #0097a7;">📲 Test G: Time Tomorrow</a>
+                </div>
+
+                <!-- Test H -->
+                <div class="pass-card" style="border: 3px solid rgba(123, 31, 162, 0.8); margin-bottom: 16px;">
+                    <div>
+                        <span class="badge" style="background: rgba(123, 31, 162, 0.6);">🔬 Test H</span>
+                        <span class="badge" style="background: rgba(255, 152, 0, 0.4);">Location + Time</span>
+                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">Tonight 8 PM</span>
+                    </div>
+                    <h3>Bell Tower Gathering Tonight</h3>
+                    <p>Combined location AND time triggers - tests which condition fires first (Bell Tower location OR 8 PM tonight).</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>📍 Location: Bell Tower Hall (39.4143, -77.4105)</li>
+                        <li>📅 relevantDate: TODAY @ 8:00 PM</li>
+                        <li>⚡ Dual trigger: Location OR Time</li>
+                        <li>🎨 Strip image below barcode</li>
+                        <li>🔔 Should notify on whichever condition is met first</li>
+                    </ul>
+                    <a href="passes/test-storecard-h.html" class="btn" style="background: #7b1fa2;">📲 Test H: Location + Time</a>
+                </div>
+
+                <!-- Test I -->
+                <div class="pass-card" style="border: 3px solid rgba(0, 137, 123, 0.8); margin-bottom: 16px;">
+                    <div>
+                        <span class="badge" style="background: rgba(0, 137, 123, 0.6);">🔬 Test I</span>
+                        <span class="badge" style="background: rgba(255, 152, 0, 0.4);">Multi-Location</span>
+                        <span class="badge" style="background: rgba(156, 39, 176, 0.4);">3 Venues</span>
+                    </div>
+                    <h3>Multi-Venue Access Pass</h3>
+                    <p>Multiple location triggers - tests if pass appears when near ANY of 3 different venues across 2 states.</p>
+                    <ul class="features" style="font-size: 13px;">
+                        <li>📍 Location 1: Frederick Social (Frederick, MD)</li>
+                        <li>📍 Location 2: Bell Tower Hall (Frederick, MD)</li>
+                        <li>📍 Location 3: Test Arena (NYC)</li>
+                        <li>📅 relevantDate: TODAY @ 7:00 PM</li>
+                        <li>⚡ Should trigger near ANY venue OR at 7 PM</li>
+                    </ul>
+                    <a href="passes/test-storecard-i.html" class="btn" style="background: #00897b;">📲 Test I: Multi-Location</a>
+                </div>
+
+                <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
+                    🧪 <strong>StoreCard Features:</strong> No NFC required, location-based notifications, time-based alerts, strip image display, barcode/QR support, and web service updates. Unlike eventTicket, storeCard works without NFC entitlement.
+                </p>
+            </div>
+
+            <hr style="border: none; border-top: 2px solid rgba(255, 255, 255, 0.2); margin: 40px 0;">
+
             <!-- ARCHIVED PROTOTYPES SECTION -->
             <div style="background: rgba(158, 158, 158, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 2px solid rgba(158, 158, 158, 0.3);">
                 <h2 style="margin-bottom: 10px; font-size: 28px; opacity: 0.8;">📦 Archived Prototypes</h2>

@@ -1,0 +1,69 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-STORE-I-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "LocalFund Events",
+  "description": "Test I: Multi-Location Pass",
+  "logoText": "LocalFund",
+  "storeCard": {
+    "headerFields": [
+      {
+        "key": "type",
+        "label": "Type",
+        "value": "Multi-Venue"
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "value": "Active"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "access",
+        "label": "Access",
+        "value": "3 Locations Available"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "next",
+        "label": "Next Event",
+        "value": "Frederick Social - 7 PM"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "nearest",
+        "label": "Nearest",
+        "value": "Check for notifications"
+      }
+    ]
+  },
+  "locations": [
+    {
+      "latitude": 39.4142,
+      "longitude": -77.4089,
+      "relevantText": "You're near Frederick Social!",
+      "distance": 100
+    },
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "You're near Bell Tower Hall!",
+      "distance": 100
+    },
+    {
+      "latitude": 40.7580,
+      "longitude": -73.9855,
+      "relevantText": "You're near Test Arena in NYC!",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-02T19:00:00-05:00",
+  "backgroundColor": "#00897b",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#b2dfdb",
+  "sharingProhibited": false
+}
