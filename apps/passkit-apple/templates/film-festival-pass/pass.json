@@ -1,9 +1,9 @@
 {
   "formatVersion": 1,
   "passTypeIdentifier": "pass.exchangereserve.lift",
-  "serialNumber": "FILM-FESTIVAL-PASS-2025-001",
+  "serialNumber": "FILM-FESTIVAL-PASS-2025-001-A",
   "teamIdentifier": "5A984FTAG3",
-  "organizationName": "Localight Inc.",
+  "organizationName": "LocalFund Events",
   "description": "Independent Film Festival - All-Access Pass",
   "logoText": "LocalFund",
   "eventTicket": {
