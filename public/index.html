@@ -265,14 +265,28 @@
                     <a href="passes/test-upcoming-no-semantics.html" class="btn" style="font-size: 14px; padding: 10px 20px; margin-top: 8px;">📲 Test B: No Semantics</a>
                 </div>
 
+                <!-- Test C: 2 Events -->
+                <div class="pass-card" style="border: 2px solid rgba(0, 137, 123, 0.6); margin-bottom: 12px;">
+                    <div>
+                        <span class="badge" style="background: rgba(0, 137, 123, 0.6);">🔬 Test C</span>
+                        <span class="badge" style="background: rgba(255, 193, 7, 0.4);">2 Events</span>
+                    </div>
+                    <h4 style="font-size: 16px; margin: 8px 0;">2 Events Limit Test</h4>
+                    <p style="font-size: 13px; margin: 4px 0;">2 upcoming events. Testing if there's a hard limit between 1 and 3 events.</p>
+                    <a href="passes/test-upcoming-two-events.html" class="btn" style="font-size: 14px; padding: 10px 20px; margin-top: 8px;">📲 Test C: 2 Events</a>
+                </div>
+
                 <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
-                    🧪 <strong>Testing Strategy:</strong> Control test (NO upcoming events) SUCCEEDED ✅. Issue is confirmed to be with upcomingPassInformation. Testing minimal configurations to find exact cause.
+                    🧪 <strong>Testing Strategy:</strong> Finding the exact limit. Test A & B (1 event) SUCCEEDED. Tests 1-3 (3-4 events) FAILED. Now testing 2 events.
                 </p>
                 <p style="font-size: 12px; opacity: 0.8; margin-top: 12px; background: rgba(76, 175, 80, 0.15); padding: 12px; border-radius: 8px; border-left: 3px solid rgba(76, 175, 80, 0.6);">
-                    ✅ <strong>Control Test Result:</strong> Basic eventTicket WITHOUT upcomingPassInformation added successfully. Base structure works.
+                    ✅ <strong>Succeeded:</strong> Control (no upcoming), Test A (1 event with semantics), Test B (1 event no semantics)
                 </p>
                 <p style="font-size: 12px; opacity: 0.8; margin-top: 12px; background: rgba(244, 67, 54, 0.15); padding: 12px; border-radius: 8px; border-left: 3px solid rgba(244, 67, 54, 0.6);">
-                    ❌ <strong>Failed Tests:</strong> All 3 passes WITH upcomingPassInformation (LIFT Series, Summer Concerts, Film Festival) failed to add.
+                    ❌ <strong>Failed:</strong> LIFT Series (3 events), Summer Concerts (2 events), Film Festival (3 events)
+                </p>
+                <p style="font-size: 12px; opacity: 0.8; margin-top: 12px; background: rgba(33, 150, 243, 0.15); padding: 12px; border-radius: 8px; border-left: 3px solid rgba(33, 150, 243, 0.6);">
+                    💡 <strong>About "Below the Card" Display:</strong> Semantics don't automatically show below the card. They populate the Event Guide (detail view). Tap a pass to access venue info, maps, and event details.
                 </p>
             </div>
 

@@ -1,0 +1,100 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-UPCOMING-TWO-003",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "LocalFund Events",
+  "description": "Test: 2 events in upcomingPassInformation",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Test 3-Show Series",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "date",
+        "label": "First Show",
+        "value": "April 1, 2026 @ 8:00 PM",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "venue",
+        "label": "Venue",
+        "value": "Test Arena"
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Test 3-Show Series - Show 1",
+    "venueName": "Test Arena",
+    "venueLocation": {
+      "latitude": 40.7580,
+      "longitude": -73.9855
+    },
+    "eventStartDate": "2026-04-01T20:00:00-04:00",
+    "eventEndDate": "2026-04-01T23:00:00-04:00"
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "show-2",
+      "name": "Show 2",
+      "dateInformation": {
+        "date": "2026-05-01T20:00:00-04:00",
+        "timeZone": "America/New_York"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Test 3-Show Series - Show 2",
+        "venueName": "Test Arena",
+        "venueLocation": {
+          "latitude": 40.7580,
+          "longitude": -73.9855
+        },
+        "eventStartDate": "2026-05-01T20:00:00-04:00",
+        "eventEndDate": "2026-05-01T23:00:00-04:00"
+      }
+    },
+    {
+      "type": "event",
+      "identifier": "show-3",
+      "name": "Show 3",
+      "dateInformation": {
+        "date": "2026-06-01T20:00:00-04:00",
+        "timeZone": "America/New_York"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Test 3-Show Series - Show 3",
+        "venueName": "Test Arena",
+        "venueLocation": {
+          "latitude": 40.7580,
+          "longitude": -73.9855
+        },
+        "eventStartDate": "2026-06-01T20:00:00-04:00",
+        "eventEndDate": "2026-06-01T23:00:00-04:00"
+      }
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 40.7580,
+      "longitude": -73.9855,
+      "relevantText": "Test event nearby",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2026-04-01T20:00:00-04:00",
+  "backgroundColor": "#00897b",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#b2dfdb",
+  "sharingProhibited": false
+}
