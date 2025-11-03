@@ -1,0 +1,88 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-EVENT-TODAY-005",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "LocalFund Events",
+  "description": "Test: Event TODAY with real venue",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Community Gathering",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "date",
+        "label": "Date",
+        "value": "TODAY @ 7:00 PM",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "venue",
+        "label": "Venue",
+        "value": "Frederick Social"
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Community Gathering",
+    "venueName": "Frederick Social",
+    "venueLocation": {
+      "latitude": 39.4142,
+      "longitude": -77.4089
+    },
+    "venuePhoneNumber": "+13012282899",
+    "venueEntrance": "Main entrance on Citizens Way",
+    "venueRoom": "Main Hall",
+    "eventStartDate": "2025-11-02T19:00:00-04:00",
+    "eventEndDate": "2025-11-02T21:00:00-04:00",
+    "venueRegionName": "Frederick, MD"
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "next-gathering",
+      "name": "Next Gathering",
+      "dateInformation": {
+        "date": "2025-11-09T19:00:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Next Community Gathering",
+        "venueName": "Frederick Social",
+        "venueLocation": {
+          "latitude": 39.4142,
+          "longitude": -77.4089
+        },
+        "venuePhoneNumber": "+13012282899",
+        "venueEntrance": "Main entrance on Citizens Way",
+        "venueRoom": "Main Hall",
+        "eventStartDate": "2025-11-09T19:00:00-05:00",
+        "eventEndDate": "2025-11-09T21:00:00-05:00",
+        "venueRegionName": "Frederick, MD"
+      }
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4142,
+      "longitude": -77.4089,
+      "relevantText": "You're near Frederick Social!",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-11-02T19:00:00-04:00",
+  "backgroundColor": "#d32f2f",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffcdd2",
+  "sharingProhibited": false
+}
