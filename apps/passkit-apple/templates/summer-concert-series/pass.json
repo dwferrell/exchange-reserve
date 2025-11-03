@@ -1,0 +1,156 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "SUMMER-CONCERT-SERIES-2025-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "Summer Concert Series - Season Pass",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Summer Concert Series",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "kickoff",
+        "label": "Kickoff Concert",
+        "value": "June 20, 2025 @ 7:00 PM",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "venue",
+        "label": "Venue",
+        "value": "Central Park"
+      },
+      {
+        "key": "admission",
+        "label": "Type",
+        "value": "Season Pass"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "terms",
+        "label": "Season Pass Terms",
+        "value": "Valid for all 3 Summer Concert Series events. General admission standing room. No refunds or exchanges.\n\nGates open 1 hour before each show."
+      },
+      {
+        "key": "venue-info",
+        "label": "Venue Information",
+        "value": "Central Park SummerStage\nRumsey Playfield, Central Park\nNew York, NY 10022\n\nNearest subway: N/R/W to 5th Ave/59th St"
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Summer Concert Series - Kickoff",
+    "venueName": "Central Park SummerStage",
+    "venuePlaceID": "I17C250D2CDCB364A",
+    "venueLocation": {
+      "latitude": 40.7711,
+      "longitude": -73.9711
+    },
+    "venuePhoneNumber": "+12125551000",
+    "venueEntrance": "Enter at East 72nd Street",
+    "eventStartDate": "2025-06-20T19:00:00-04:00",
+    "eventEndDate": "2025-06-20T22:00:00-04:00",
+    "performerNames": ["The Summer Orchestra", "Rising Stars Band"],
+    "genre": "Pop/Rock"
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "summer-concert-july",
+      "name": "Midsummer Jazz Night",
+      "dateInformation": {
+        "date": "2025-07-18T19:30:00-04:00",
+        "timeZone": "America/New_York"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Midsummer Jazz Night",
+        "venueName": "Central Park SummerStage",
+        "venuePlaceID": "I17C250D2CDCB364A",
+        "venueLocation": {
+          "latitude": 40.7711,
+          "longitude": -73.9711
+        },
+        "venuePhoneNumber": "+12125551000",
+        "venueEntrance": "Enter at East 72nd Street",
+        "eventStartDate": "2025-07-18T19:30:00-04:00",
+        "eventEndDate": "2025-07-18T22:30:00-04:00",
+        "performerNames": ["Manhattan Jazz Collective", "Blue Note Quartet"],
+        "genre": "Jazz"
+      },
+      "additionalInfoFields": [
+        {
+          "key": "doors",
+          "label": "Gates Open",
+          "value": "6:30 PM"
+        },
+        {
+          "key": "special",
+          "label": "Special Guest",
+          "value": "Surprise guest performer"
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "identifier": "summer-concert-august",
+      "name": "Summer Finale Spectacular",
+      "dateInformation": {
+        "date": "2025-08-15T20:00:00-04:00",
+        "timeZone": "America/New_York"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeLivePerformance",
+        "eventName": "Summer Finale Spectacular",
+        "venueName": "Central Park SummerStage",
+        "venuePlaceID": "I17C250D2CDCB364A",
+        "venueLocation": {
+          "latitude": 40.7711,
+          "longitude": -73.9711
+        },
+        "venuePhoneNumber": "+12125551000",
+        "venueEntrance": "Enter at East 72nd Street",
+        "eventStartDate": "2025-08-15T20:00:00-04:00",
+        "eventEndDate": "2025-08-15T23:00:00-04:00",
+        "performerNames": ["The Finale Orchestra", "City Lights Band", "Summer Voices Choir"],
+        "genre": "Classical/Pop Fusion"
+      },
+      "additionalInfoFields": [
+        {
+          "key": "doors",
+          "label": "Gates Open",
+          "value": "7:00 PM"
+        },
+        {
+          "key": "fireworks",
+          "label": "Special Feature",
+          "value": "Fireworks finale at 10:45 PM"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 40.7711,
+      "longitude": -73.9711,
+      "relevantText": "You're near Central Park SummerStage! Concert starts soon.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-06-20T19:00:00-04:00",
+  "backgroundColor": "#1976d2",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#bbdefb",
+  "sharingProhibited": false
+}

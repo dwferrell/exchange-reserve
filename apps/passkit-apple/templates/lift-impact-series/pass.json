@@ -1,0 +1,181 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "LIFT-IMPACT-SERIES-2025-001",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "Localight Inc.",
+  "description": "LIFT Impact Briefings - 2025 Series Pass",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "SERIES",
+        "value": "LIFT Impact Briefings 2025",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "next-event",
+        "label": "Next Briefing",
+        "value": "Q1 Community Living",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "date",
+        "label": "Date",
+        "value": "March 15, 2025"
+      },
+      {
+        "key": "access",
+        "label": "Access",
+        "value": "Member"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "series-info",
+        "label": "2025 Impact Series",
+        "value": "Quarterly briefings on LIFT's three core priorities:\n\n• Community Living\n• Green Energy\n• Affordable Housing\n\nMember access to all 4 quarterly briefings. Each briefing includes impact updates, project milestones, and Q&A with leadership."
+      },
+      {
+        "key": "venue-details",
+        "label": "Venue Information",
+        "value": "Bell Tower Hall\n110 S Market St\nFrederick, MD 21701\n\nParking available in adjacent garage.\nDoors open 30 minutes before briefing."
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeConference",
+    "eventName": "Q1 2025 Impact Briefing: Community Living",
+    "venueName": "Bell Tower Hall",
+    "venueLocation": {
+      "latitude": 39.4143,
+      "longitude": -77.4105
+    },
+    "venuePhoneNumber": "+13015551200",
+    "venueEntrance": "Main entrance on Market Street",
+    "eventStartDate": "2025-03-15T14:00:00-04:00",
+    "eventEndDate": "2025-03-15T16:00:00-04:00"
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "lift-q2-2025",
+      "name": "Q2 2025: Green Energy Progress",
+      "dateInformation": {
+        "date": "2025-06-14T14:00:00-04:00",
+        "timeZone": "America/New_York"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeConference",
+        "eventName": "Q2 2025 Impact Briefing: Green Energy",
+        "venueName": "Bell Tower Hall",
+        "venueLocation": {
+          "latitude": 39.4143,
+          "longitude": -77.4105
+        },
+        "venuePhoneNumber": "+13015551200",
+        "venueEntrance": "Main entrance on Market Street",
+        "eventStartDate": "2025-06-14T14:00:00-04:00",
+        "eventEndDate": "2025-06-14T16:00:00-04:00"
+      },
+      "additionalInfoFields": [
+        {
+          "key": "topic",
+          "label": "Focus Topic",
+          "value": "Renewable energy projects & sustainability metrics"
+        },
+        {
+          "key": "speaker",
+          "label": "Guest Speaker",
+          "value": "Regional Energy Director"
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "identifier": "lift-q3-2025",
+      "name": "Q3 2025: Affordable Housing",
+      "dateInformation": {
+        "date": "2025-09-13T14:00:00-04:00",
+        "timeZone": "America/New_York"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeConference",
+        "eventName": "Q3 2025 Impact Briefing: Affordable Housing",
+        "venueName": "Bell Tower Hall",
+        "venueLocation": {
+          "latitude": 39.4143,
+          "longitude": -77.4105
+        },
+        "venuePhoneNumber": "+13015551200",
+        "venueEntrance": "Main entrance on Market Street",
+        "eventStartDate": "2025-09-13T14:00:00-04:00",
+        "eventEndDate": "2025-09-13T16:00:00-04:00"
+      },
+      "additionalInfoFields": [
+        {
+          "key": "topic",
+          "label": "Focus Topic",
+          "value": "Housing development milestones & community feedback"
+        },
+        {
+          "key": "presentation",
+          "label": "Special Presentation",
+          "value": "New project site tour (optional, 3:30 PM)"
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "identifier": "lift-q4-2025",
+      "name": "Q4 2025: Year-End Impact Review",
+      "dateInformation": {
+        "date": "2025-12-13T14:00:00-05:00",
+        "timeZone": "America/New_York"
+      },
+      "semantics": {
+        "eventType": "PKEventTypeConference",
+        "eventName": "Q4 2025 Impact Briefing: Year in Review",
+        "venueName": "Bell Tower Hall",
+        "venueLocation": {
+          "latitude": 39.4143,
+          "longitude": -77.4105
+        },
+        "venuePhoneNumber": "+13015551200",
+        "venueEntrance": "Main entrance on Market Street",
+        "eventStartDate": "2025-12-13T14:00:00-05:00",
+        "eventEndDate": "2025-12-13T17:00:00-05:00"
+      },
+      "additionalInfoFields": [
+        {
+          "key": "topic",
+          "label": "Focus Topic",
+          "value": "2025 impact summary across all three priorities"
+        },
+        {
+          "key": "special",
+          "label": "Special Event",
+          "value": "2026 investment opportunities preview & reception (4:00 PM)"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 39.4143,
+      "longitude": -77.4105,
+      "relevantText": "You're near Bell Tower Hall! LIFT Impact Briefing starting soon.",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2025-03-15T14:00:00-04:00",
+  "backgroundColor": "#1763b7",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#90caf9",
+  "sharingProhibited": false
+}
