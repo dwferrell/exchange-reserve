@@ -1,0 +1,69 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.exchangereserve.lift",
+  "serialNumber": "TEST-UPCOMING-NO-SEM-002",
+  "teamIdentifier": "5A984FTAG3",
+  "organizationName": "LocalFund Events",
+  "description": "Test: upcomingPassInformation without semantics",
+  "logoText": "LocalFund",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "EVENT",
+        "value": "Test Series No Semantics",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "date",
+        "label": "Next Show",
+        "value": "April 1, 2026 @ 8:00 PM",
+        "textAlignment": "PKTextAlignmentLeft"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "venue",
+        "label": "Venue",
+        "value": "Test Arena"
+      }
+    ]
+  },
+  "semantics": {
+    "eventType": "PKEventTypeLivePerformance",
+    "eventName": "Test Series No Semantics - Show 1",
+    "venueName": "Test Arena",
+    "venueLocation": {
+      "latitude": 40.7580,
+      "longitude": -73.9855
+    },
+    "eventStartDate": "2026-04-01T20:00:00-04:00",
+    "eventEndDate": "2026-04-01T23:00:00-04:00"
+  },
+  "upcomingPassInformation": [
+    {
+      "type": "event",
+      "identifier": "show-2-no-sem",
+      "name": "Show 2 (No Semantics)",
+      "dateInformation": {
+        "date": "2026-05-01T20:00:00-04:00",
+        "timeZone": "America/New_York"
+      }
+    }
+  ],
+  "locations": [
+    {
+      "latitude": 40.7580,
+      "longitude": -73.9855,
+      "relevantText": "Test event nearby",
+      "distance": 100
+    }
+  ],
+  "relevantDate": "2026-04-01T20:00:00-04:00",
+  "backgroundColor": "#ff5722",
+  "foregroundColor": "#ffffff",
+  "labelColor": "#ffccbc",
+  "sharingProhibited": false
+}

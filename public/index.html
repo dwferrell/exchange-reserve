@@ -238,11 +238,41 @@
                     <a href="passes/film-festival-pass.html" class="btn">📲 Test 3: Film Festival</a>
                 </div>
 
+                <hr style="border: none; border-top: 1px solid rgba(255, 255, 255, 0.2); margin: 30px 0;">
+
+                <h3 style="font-size: 20px; margin-bottom: 16px; opacity: 0.95;">🔬 Granular Isolation Tests</h3>
+                <p style="font-size: 14px; opacity: 0.85; margin-bottom: 16px;">Control test SUCCEEDED. Now testing minimal upcomingPassInformation to find the exact issue.</p>
+
+                <!-- Test A: Minimal -->
+                <div class="pass-card" style="border: 2px solid rgba(156, 39, 176, 0.6); margin-bottom: 12px;">
+                    <div>
+                        <span class="badge" style="background: rgba(156, 39, 176, 0.6);">🔬 Test A</span>
+                        <span class="badge" style="background: rgba(76, 175, 80, 0.4);">Minimal</span>
+                    </div>
+                    <h4 style="font-size: 16px; margin: 8px 0;">Minimal upcomingPassInformation</h4>
+                    <p style="font-size: 13px; margin: 4px 0;">1 upcoming event with ALL required fields: type, identifier, name, dateInformation, semantics (full event details)</p>
+                    <a href="passes/test-upcoming-minimal.html" class="btn" style="font-size: 14px; padding: 10px 20px; margin-top: 8px;">📲 Test A: Minimal</a>
+                </div>
+
+                <!-- Test B: No Semantics -->
+                <div class="pass-card" style="border: 2px solid rgba(255, 87, 34, 0.6); margin-bottom: 12px;">
+                    <div>
+                        <span class="badge" style="background: rgba(255, 87, 34, 0.6);">🔬 Test B</span>
+                        <span class="badge" style="background: rgba(244, 67, 54, 0.4);">No Semantics</span>
+                    </div>
+                    <h4 style="font-size: 16px; margin: 8px 0;">upcomingPassInformation without semantics</h4>
+                    <p style="font-size: 13px; margin: 4px 0;">1 upcoming event with only: type, identifier, name, dateInformation. NO semantics block in upcoming event.</p>
+                    <a href="passes/test-upcoming-no-semantics.html" class="btn" style="font-size: 14px; padding: 10px 20px; margin-top: 8px;">📲 Test B: No Semantics</a>
+                </div>
+
                 <p style="font-size: 12px; opacity: 0.8; margin-top: 20px; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 8px;">
-                    🧪 <strong>Testing Strategy:</strong> Install control test first. If it adds successfully, we know the base eventTicket structure works with "LocalFund Events" organization. Then test the three passes WITH upcomingPassInformation. If they fail to add, we've isolated the issue to the upcomingPassInformation feature implementation.
+                    🧪 <strong>Testing Strategy:</strong> Control test (NO upcoming events) SUCCEEDED ✅. Issue is confirmed to be with upcomingPassInformation. Testing minimal configurations to find exact cause.
                 </p>
-                <p style="font-size: 12px; opacity: 0.8; margin-top: 12px; background: rgba(33, 150, 243, 0.15); padding: 12px; border-radius: 8px; border-left: 3px solid rgba(33, 150, 243, 0.6);">
-                    📊 <strong>Current Status:</strong> iOS 26.1 on iPhone 16 Pro Max. Passes with upcomingPassInformation show "Add to Wallet" button with no error, but don't appear in Wallet. Previous test "Groove Night" (basic event WITHOUT upcoming events) successfully added.
+                <p style="font-size: 12px; opacity: 0.8; margin-top: 12px; background: rgba(76, 175, 80, 0.15); padding: 12px; border-radius: 8px; border-left: 3px solid rgba(76, 175, 80, 0.6);">
+                    ✅ <strong>Control Test Result:</strong> Basic eventTicket WITHOUT upcomingPassInformation added successfully. Base structure works.
+                </p>
+                <p style="font-size: 12px; opacity: 0.8; margin-top: 12px; background: rgba(244, 67, 54, 0.15); padding: 12px; border-radius: 8px; border-left: 3px solid rgba(244, 67, 54, 0.6);">
+                    ❌ <strong>Failed Tests:</strong> All 3 passes WITH upcomingPassInformation (LIFT Series, Summer Concerts, Film Festival) failed to add.
                 </p>
             </div>
 
